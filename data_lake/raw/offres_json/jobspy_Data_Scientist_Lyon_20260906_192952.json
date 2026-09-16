@@ -1,0 +1,442 @@
+[
+  {
+    "id": "jobspy_None",
+    "intitule": "Lead Tech Data (Python/Spark) - (H/F)",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "OPEN"
+    },
+    "lieuTravail": {
+      "libelle": "Villeurbanne, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4434618579"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Senior Data Analyst - Deals (M&A) - Lyon - F/H",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "PwC France"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4426330037"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Stage Informatique & Intelligence Artificielle F/H",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "VINCI Energies"
+    },
+    "lieuTravail": {
+      "libelle": "Rillieux-la-Pape, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4463736049"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Software Engineer h/f",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Siemens Digital Industries Software"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4461998049"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Consultant IA H/F",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Sully Group"
+    },
+    "lieuTravail": {
+      "libelle": ""
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4461167611"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Data and AI Engineer",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Sanofi"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4463341283"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Data Engineer",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Matawan"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4461990351"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Leader technique IA F/H",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Caisse nationale des allocations familiales - Cnaf"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4461173339"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Concepteur Développeur F/H",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "EDF"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4432590822"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Post-doctorat : modélisation épidémiologique, inférence bayésienne et intelligence artificielle",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "INRAE"
+    },
+    "lieuTravail": {
+      "libelle": "Marcy-l’Étoile, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4454048300"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Data & BI Analyst Finance - H/F",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Groupe BBL"
+    },
+    "lieuTravail": {
+      "libelle": "Saint-Quentin-Fallavier, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4463344691"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Analyste Etudes et Pilotage RH - H/F",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Crédit Agricole Loire Haute-Loire"
+    },
+    "lieuTravail": {
+      "libelle": "Saint-Étienne, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4461156321"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Stage de fin d'études - Consultant Santé Data Scientist",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Alcimed"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4463399081"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Développeur Big Data (Spark/Java) - (H/F)",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "OPEN"
+    },
+    "lieuTravail": {
+      "libelle": "Villeurbanne, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4434616675"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Consultant Data Architect H/F",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "STEP UP"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4463329408"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Ingénieur Développement Logiciel - ROM - h/f",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Siemens Digital Industries Software"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4462677686"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Candidature spontanée",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "SMADE"
+    },
+    "lieuTravail": {
+      "libelle": "Villeurbanne, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4202499832"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Analyste développeur DATA et IA en alternance (42)-F/H",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Casino, Spar, Vival"
+    },
+    "lieuTravail": {
+      "libelle": "St-Étienne, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4416598756"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Software Engineer  - Medical Imaging (Fullstack)",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Medpace"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4332569853"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Project Manager",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Cognite"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4345918360"
+    },
+    "_source": "linkedin"
+  }
+]

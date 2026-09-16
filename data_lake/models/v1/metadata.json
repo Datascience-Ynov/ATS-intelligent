@@ -1,0 +1,36 @@
+{
+  "version": "v1",
+  "date_creation": "2026-09-06T19:16:48.674230+00:00",
+  "modele_type": "RandomForestClassifier",
+  "modele_nom": "Régression Logistique",
+  "n_features": 14,
+  "performances": {
+    "cv_roc_auc_mean": 0.9522,
+    "cv_roc_auc_std": 0.023,
+    "test_accuracy": 0.86,
+    "test_precision": 0.8077,
+    "test_recall": 0.913,
+    "test_f1": 0.8571,
+    "test_roc_auc": 0.9408
+  },
+  "hyperparametres_optimises": {
+    "max_depth": 5,
+    "min_samples_split": 2,
+    "n_estimators": 200
+  },
+  "gridsearch_score": 0.9439,
+  "contexte": {
+    "projet": "ATS Intelligent — RNCP39586",
+    "auteur": "Mourad Amoussa",
+    "formation": "M2 IA & Data — Lyon Ynov Campus",
+    "description": "Modèle de matching CV ↔ Offre d'emploi IT",
+    "dataset": "Synthétique 500 échantillons (reproductible seed=42)",
+    "competences_rncp": [
+      "C5.2.1",
+      "C5.2.2",
+      "C5.2.3",
+      "C5.2.4",
+      "C5.3.1"
+    ]
+  }
+}

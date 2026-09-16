@@ -1,0 +1,39 @@
+{
+  "date_calcul": "2026-09-15T10:00:22.776846+00:00",
+  "nb_offres_total": 8,
+  "nb_sources": 2,
+  "top_competences": {
+    "Python": 7,
+    "Machine Learning": 4,
+    "Deep Learning": 4,
+    "Git": 4,
+    "PyTorch": 3,
+    "SQL": 3,
+    "CI/CD": 3,
+    "Azure": 3,
+    "Scikit-learn": 2,
+    "TensorFlow": 2,
+    "Docker": 2,
+    "NumPy": 2,
+    "Pandas": 2,
+    "DevOps": 2,
+    "Power BI": 2,
+    "Spark": 2,
+    "MongoDB": 1,
+    "LangChain": 1,
+    "NLP": 1,
+    "RAG": 1
+  },
+  "repartition_contrats": {
+    "CDI": 6,
+    "LIB": 1,
+    "NONE": 1
+  },
+  "repartition_villes": {
+    "69 - Lyon 1er Arrondissement": 4,
+    "69 - Lyon 3e Arrondissement": 1,
+    "69 - Lyon": 1,
+    "69 - Lyon 6e Arrondissement": 1,
+    "Lyon, Auvergne-Rhône-Alpes, France": 1
+  }
+}

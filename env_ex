@@ -1,0 +1,5 @@
+# Renomme ce fichier en .env et remplace la valeur ci-dessous par ta vraie clé
+# Obtenir une clé gratuite : https://build.nvidia.com/explore/discover
+
+NVIDIA_API_KEY=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
+APIFY_API_KEY=apify_api_yIsJfOfD5PmuJ4g7CXe35JzgXiXemS2GhZ12

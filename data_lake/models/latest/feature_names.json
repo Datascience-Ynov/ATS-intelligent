@@ -1,0 +1,16 @@
+[
+  "exp_gap",
+  "exp_match",
+  "exp_match_sq",
+  "exp_min_requis",
+  "global_score",
+  "loc_score",
+  "match_difficulty",
+  "offre_nb_skills",
+  "overlap_x_loc",
+  "skill_overlap",
+  "skill_ratio",
+  "skill_sql",
+  "skills_density",
+  "skills_sq"
+]

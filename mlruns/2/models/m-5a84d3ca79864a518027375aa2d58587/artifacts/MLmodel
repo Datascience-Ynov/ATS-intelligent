@@ -1,0 +1,23 @@
+artifact_path: /mnt/c/Users/HP/Data Science/Perso/Deep Learning/Projet/chatbot_ia_generative/mlruns/2/models/m-5a84d3ca79864a518027375aa2d58587/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.10.12
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.7.1
+    skops_trusted_types: null
+mlflow_version: 3.15.2
+model_id: m-5a84d3ca79864a518027375aa2d58587
+model_size_bytes: 4018942
+model_uuid: m-5a84d3ca79864a518027375aa2d58587
+prompts: null
+run_id: b1a5c0c0ba7a4ebd8fb59b007c457039
+utc_time_created: '2026-09-06 19:16:51.846166'

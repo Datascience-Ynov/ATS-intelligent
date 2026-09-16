@@ -1,0 +1,239 @@
+[
+  {
+    "id": "6169434",
+    "intitule": "Data Scientist (H/F)",
+    "description": "Depuis sa création, KLANIK s'est donnée pour mission de conjuguer expertise technologique et authenticité.\nCe pari audacieux, né à Marseille en 2011, en France, s'est transformé en une aventure internationale qui compte aujourd'hui plus de 800 collaborateurs, des implantations dans 10 pays et des filiales innovantes. Nous rejoignons en 2026 le groupe ALTEN, acteur mondial de l'ingénierie et des services numériques.\n\nNotre rôle : recruter les meilleurs talents & les connecter à nos clients pour les accompagner dans leurs projets digitaux. KLANIK est une société de conseil en informatique structurée autour de 5 pôles d'expertises : Data & IA, DevOps Cloud Infra, Cybersécurité, Software, Produit Agilité Pilotage.\nNos 800 talents ont des profils variés : tech (nos pôles d'expertises), opérationnels (fonctions commerciales et recrutement) et support.\n\nAu?delà des métiers, KLANIK cultive un modèle profondément humain, qui dépasse les frontières : de la Belgique à la Colombie, nos valeurs résonnent. Une culture fondée sur le partage, l'exigence et la bienveillance - un collectif où chacun peut trouver sa place. En témoignent nos filiales :\n- Klanik Esport : club Esport & agence de gamification;\n- Korner : incubateur de startups tech;\n- Kampus : organisme de formation certifié Qualiopi\n- l'Act'In Klanik, rôles qui permettent à nos collaborateurs de faire vivre leurs passions au-delà de leurs missions.\n\nNotre culture est résumée par cette phrase, souvent apposée sous notre logo : Human-Made Technology. La tech oui, mais une tech humaine, qui diffuse un modèle où l'authenticité de chacun est la priorité.\nKLANIK, en tant que société à mission, croit en la force de la diversité et de l'inclusion. Nos recrutements sont fondés sur les compétences, sans distinction d'origine, d'âge ou de genre, et tous nos postes sont ouverts aux personnes en situation de handicap. Nous sommes convaincus que la diversité de nos équipes est une force qui contribue à notre succès.\n\nLe poste : \n\nRejoignez une équipe engagée dans l'amélioration continue des chaînes communicantes et la valorisation des données pour optimiser leur exploitation. Vous interviendrez sur des sujets à fort impact, mêlant performance, supervision et innovation.\n\nVos missions principales :\n- Analyser le fonctionnement des chaînes communicantes \n- Modéliser leur comportement nominal\n- Développer des outils de supervision en temps réel et de détection automatique d'anomalies\n- Encadrer des Data Scientists juniors et participer aux revues de code\n- Contribuer aux orientations techniques du projet\n\nActivités complémentaires :\n- Industrialiser les prototypes dans les outils de supervision\n- Assurer une veille technologique sur les outils et méthodes\n- Partager vos connaissances et former vos pairs\n- Participer à la conception de solutions sécurisées pour le traitement de volumes de données\n\nProfil recherché : \n\nCompétences techniques : \n- Python 3 (impératif) : maîtrise des librairies Pandas, Polars, scikit-learn'\n- Modélisation prédictive & détection d'anomalies : anticipation des risques et optimisation des performances\n- Big Data : PySpark, gestion de pipelines de données à grande échelle\n- Bases de données : SQL / PostgreSQL, solutions de stockage optimisées\n- Visualisation & restitution : Tableau Software, PowerBI\n- Analyse de séries temporelles\n- Analyse de graphes : GNN, théorie des graphes\n- Outils de versioning & déploiement : GitLab\n- Connaissances UX/UI et des bases de l'agilité\n\nSoft skills & posture :\n- Capacité à proposer des solutions scalables, lisibles et sécurisées pour les équipes Data\n- Esprit critique et sens de l'optimisation des ressources\n- Capacité à vulgariser les approches techniques auprès de profils non techniques\n- Autonomie, rigueur et esprit collaboratif",
+    "dateCreation": "2026-08-21T11:22:02.373Z",
+    "dateActualisation": "2026-08-21T11:22:02.373Z",
+    "lieuTravail": {
+      "libelle": "69 - Lyon 1er Arrondissement",
+      "codePostal": "69001",
+      "commune": "69381"
+    },
+    "romeCode": "M1405",
+    "romeLibelle": "Data scientist",
+    "appellationlibelle": "Data scientist",
+    "entreprise": {
+      "nom": "KLANIK"
+    },
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "E",
+    "experienceLibelle": "5 An(s)",
+    "salaire": {},
+    "complementExercice": "Temps plein",
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/6169434",
+      "partenaires": [
+        {
+          "nom": "PMEJOB",
+          "url": "https://www.jobposting.pro/emploi-2677722-120",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/pmejob80.png"
+        }
+      ]
+    },
+    "contexteTravail": {},
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "6107750",
+    "intitule": "Data Scientist - Vision par Ordinateur / Traitement d'Images (H/F)",
+    "description": " Agixis - Société de conseil et d'expertise IT, spécialisée dans la santé, l'IoT et l'industrie 4.0 ainsi que la transformation digitale. \n\n Qui sommes-nous - \n\nChez Agixis, nous sommes des Agicien-nes passionné-e-s qui accompagnons nos clients dans la création de services numériques à fort impact. \nDepuis 2010, nous combinons expertise technique, créativité et agilité pour concevoir des solutions performantes, robustes et évolutives dans des domaines variés : santé, industrie, énergie, banque/assurance, green IT, etc. \n\nNotre force : une culture d'entreprise conviviale, le partage des savoirs, des challenges techniques stimulants et le plaisir de construire ensemble des solutions innovantes\n\nLe poste : \n\nNous recrutons aujourd'hui 2 Data Scientist avec des compétences en traitement d'images par ordinateur pour nos clients, l'un dans le domaine de la santé, l'autre dans la robotique.\n\nVos responsabilités au quotidien :\n\n- R&D et Conception : Explorer, concevoir et implémenter des architectures de Deep Learning (CNN, Transformers pour la vision) adaptées aux problématiques d'images.\n\n- Traitement de la donnée : Gérer le cycle de vie de la donnée (nettoyage, augmentation d'images, labellisation).\n\n-Industrialisation : Optimiser et déployer les modèles en production (MLOps), parfois sous des contraintes de calcul embarqué (Edge AI).\n\n-Veille et Conseil : Assurer une veille scientifique active sur l'état de l'art (Computer Vision) et être force de proposition auprès du client.\n\nProfil recherché : \n\nFormation : Diplôme d'Ingénieur ou Master 2 (Bac+5 / Doctorat) spécialisé en Data Science, Intelligence Artificielle ou Traitement du Signal/Images.\n\nExpérience : Vous justifiez d'une expérience solide de 3 ans minimum (hors stages/alternance) sur un poste similaire en Data science / computer vision.\n\nHard Skills :\n\nMaîtrise parfaite de Python et de ses écosystèmes Data/Image (OpenCV, Scikit-Image, NumPy).\n\nExcellente pratique des frameworks de Deep Learning (PyTorch ou TensorFlow).\n\nConnaissance des outils de versioning (Git) et des pipelines de déploiement (Docker, CI/CD).\n\nSoft Skills : Curiosité technique, rigueur scientifique, autonomie et un excellent sens du relationnel pour interagir directement avec nos clients.",
+    "dateCreation": "2026-08-19T11:21:36.894Z",
+    "dateActualisation": "2026-08-19T11:21:36.894Z",
+    "lieuTravail": {
+      "libelle": "69 - Lyon 1er Arrondissement",
+      "codePostal": "69001",
+      "commune": "69381"
+    },
+    "romeCode": "M1405",
+    "romeLibelle": "Data scientist",
+    "appellationlibelle": "Data scientist",
+    "entreprise": {
+      "nom": "Agixis"
+    },
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "E",
+    "experienceLibelle": "2 An(s)",
+    "salaire": {},
+    "complementExercice": "Temps plein",
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/6107750",
+      "partenaires": [
+        {
+          "nom": "PMEJOB",
+          "url": "https://www.jobposting.pro/emploi-2673178-120",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/pmejob80.png"
+        }
+      ]
+    },
+    "contexteTravail": {},
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "5945622",
+    "intitule": "Data Scientist Senior Python / Graph Neural Networks (H/F)",
+    "description": "RESPONSABILITÉS : \n\nDans le cadre du renforcement d'une équipe Data & IA, nous recherchons un Data Scientist Senior pour contribuer à un programme innovant de modélisation et de prédiction sur des données structurées en graphes.\nVous intégrerez une équipe pluridisciplinaire composée de Data Scientists, Tech Leads et experts métier afin de concevoir des modèles de nouvelle génération permettant de répondre à des problématiques complexes à fort enjeu opérationnel.\n\nVos missions\n - Formaliser les objectifs scientifiques en lien avec les cas d'usage métier.\n - Concevoir et faire évoluer les architectures de modèles GNN.\n - Définir les stratégies d'expérimentation, de validation et d'évaluation des modèles.\n - Superviser la préparation et la qualité des données d'entraînement.\n - Analyser les performances des modèles et identifier les axes d'amélioration.\n - Produire les livrables scientifiques, les bilans d'étude et la documentation associée.\n - Accompagner et challenger les travaux d'un Data Scientist de l'équipe.\n - Collaborer avec les équipes de développement et les experts métier pour maximiser l'impact opérationnel des modèles.\n - Assurer une veille active sur les technologies Graph Machine Learning.\n - Contribuer à l'industrialisation des solutions développées.\n\n\nStack technique\nCompétences indispensables\n - Python\n - PyTorch\n - Torch-Geometric\n - Graph Neural Networks (GNN)\n - Machine Learning\n - Deep Learning\n - Pandas\n - Scikit-Learn\n - SQL\n - PostgreSQL\n - Linux\n - Git\nCompétences appréciées\n - MLOps\n - Docker\n - GPU Computing\n - Graph Machine Learning\n - Data Engineering\n - Environnements Cloud\n\nPROFIL RECHERCHÉ : \n\nParlons de vous\n - Diplômé(e) d'une formation supérieure en Informatique, Data Science, Intelligence Artificielle, Mathématiques Appliquées ou domaine équivalent.\n - Vous justifiez d'au moins 5 à 8 ans d'expérience en Data Science, dont une expérience significative sur des sujets de Machine Learning avancé et/ou Deep Learning.\n - Vous disposez d'une première expérience concrète autour des Graph Neural Networks, du Graph ML ou de problématiques similaires.\n - Vous êtes capable d'échanger aussi bien avec des experts techniques qu'avec des interlocuteurs métier.\n - Vous appréciez les environnements mêlant recherche appliquée, innovation et enjeux opérationnels.\nVos atouts\n - Excellentes capacités d'analyse et de résolution de problèmes.\n - Forte rigueur scientifique.\n - Esprit de synthèse et qualités rédactionnelles.\n - Curiosité technologique et goût pour l'innovation.\n - Autonomie et capacité à prendre des décisions techniques.\n - Leadership naturel et aptitude à accompagner d'autres profils Data.",
+    "dateCreation": "2026-08-13T04:32:08.458Z",
+    "dateActualisation": "2026-08-13T04:32:08.458Z",
+    "lieuTravail": {
+      "libelle": "69 - Lyon 7e Arrondissement",
+      "codePostal": "69007",
+      "commune": "69387"
+    },
+    "romeCode": "M1405",
+    "romeLibelle": "Data scientist",
+    "appellationlibelle": "Data scientist",
+    "entreprise": {
+      "nom": "SULLY GROUP"
+    },
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "E",
+    "experienceLibelle": "Expérience exigée",
+    "salaire": {},
+    "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "qualificationCode": "9",
+    "qualificationLibelle": "Cadre",
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/5945622",
+      "partenaires": [
+        {
+          "nom": "BEETWEEN",
+          "url": "https://app.beetween.com/WeaselWeb/p/#/apply/job/cafeeal2jo8/data-scientist-senior-python-graph-neural-networks-h-f",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/beetween80.png"
+        }
+      ]
+    },
+    "contexteTravail": {
+      "horaires": [
+        "35H/semaine\nTravail en journée"
+      ]
+    },
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "5503391",
+    "intitule": "Ingénieur / Ingénieure data scientist (H/F)",
+    "description": "Offre collectée par La bonne alternance : Introduit des techniques de Data Science et d'Intelligence Artificielle pour résoudre des problématiques métier, prendre des décisions et/ou automatiser des opérations. Transforme des données brutes en informations exploitables et structure ces données. Développe des algorithmes d'apprentissage selon les besoins des équipes métiers. Coordonne le développement, les tests de résultats et améliore la solution sur sa durée de vie. Le salaire d'un apprenti est fixé par la réglementation en vigueur. Il dépend de plusieurs facteurs. Un simulateur à jour est disponible à l'adresse https://labonnealternance.apprentissage.beta.gouv.fr/salaire-alternant",
+    "dateCreation": "2026-07-28T05:34:22.009Z",
+    "dateActualisation": "2026-07-28T05:34:22.009Z",
+    "lieuTravail": {
+      "libelle": "69 - Lyon 8e Arrondissement",
+      "codePostal": "69008",
+      "commune": "69388"
+    },
+    "romeCode": "M1405",
+    "romeLibelle": "Data scientist",
+    "appellationlibelle": "Ingénieur / Ingénieure data scientist",
+    "entreprise": {
+      "nom": "CENTRE LEON BERARD"
+    },
+    "typeContrat": "CDD",
+    "typeContratLibelle": "CDD - 12 Mois",
+    "natureContrat": "Contrat apprentissage",
+    "experienceExige": "D",
+    "experienceLibelle": "Débutant accepté",
+    "salaire": {
+      "commentaire": "Salaire selon barème légal apprenti"
+    },
+    "dureeTravailLibelle": "35H/semaine\nHoraires annuels",
+    "alternance": true,
+    "contact": {},
+    "nombrePostes": 1,
+    "qualificationCode": "9",
+    "qualificationLibelle": "Cadre",
+    "trancheEffectifEtab": "2000 à 4999 salariés",
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/5503391",
+      "partenaires": [
+        {
+          "nom": "LABONNEALTERNANCE",
+          "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/offres_emploi_lba/6a670e901ae407c4c7c579f1/ingénieur-ingénieure-data-scientist",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/labonnealternance80.png"
+        }
+      ]
+    },
+    "contexteTravail": {
+      "horaires": [
+        "35H/semaine\nHoraires annuels"
+      ]
+    },
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "4773021",
+    "intitule": "Data Scientist - IA (H/F)",
+    "description": "DESCRIPTION DU POSTE\nVous rejoignez l'équipe Innovation de l'entreprise, composée de 4 personnes, dont la mission est de développer les futurs produits stratégiques de l'éditeur.\nL'entreprise investit aujourd'hui dans un programme de R&D confidentiel autour de l'Intelligence Artificielle, destiné à faire émerger une nouvelle génération de solutions à forte valeur ajoutée.\nPlusieurs Proof of Concept ont déjà permis de valider les premières orientations techniques. L'enjeu consiste désormais à transformer ces travaux de recherche en fonctionnalités robustes et industrialisables.\nDans ce contexte, vous interviendrez sur l'ensemble de la chaîne de développement des modèles IA :\n- reprise et amélioration des PoC existants ;\n- expérimentation de nouveaux algorithmes de Machine Learning et Deep Learning ;\n- traitement et valorisation de données complexes ;\n- industrialisation des modèles développés ;\n- collaboration avec les équipes logicielles afin d'intégrer ces innovations aux futurs produits.\nL'objectif n'est pas de développer des solutions basées sur des LLM, mais de concevoir des modèles répondant à des problématiques industrielles complexes grâce au Data Mining, au Data Processing et au Deep Learning.\nEnvironnement technologique : Deep Learning, Data Mining, Data Processing, Python / environnements de développement IA.\nPourquoi rejoindre cette entreprise ?\n- Un projet unique : vous participerez à la création d'un nouveau produit innovant, porté directement par la R&D et soutenu par un financement régional.\n- Une IA orientée industrie : ici, l'objectif n'est pas d'intégrer simplement des LLM, mais de développer des algorithmes capables d'exploiter et de valoriser des données métier complexes.\n- Une forte autonomie technique : le manager recherche une personne capable d'apporter un véritable regard critique sur les travaux existants et de faire évoluer les choix technologiques.\n- Un environnement serein : l'entreprise affiche un très faible turnover, une excellente ambiance de travail et des équipes évoluant sans pression excessive.\n\n\nPROFIL RECHERCHÉ\nLe profil recherché :\n- Vous êtes diplômé(e) d'une formation supérieure spécialisée en Data Science, Intelligence Artificielle ou Machine Learning.\n- Vous disposez d'environ 3 années d'expérience (alternance comprise).\n\n\nCOMPLÉMENTS\nCompléments :\n- Lieu : Lyon\n- Contrat : CDI\n- Salaire : 35-40K fixe\nSi votre profil correspond, nous reviendrons vers vous dans les 7 jours à compter de la date d'envoi.\n",
+    "dateCreation": "2026-07-09T23:01:03.000Z",
+    "dateActualisation": "2026-08-07T23:01:10.000Z",
+    "lieuTravail": {
+      "libelle": "69 - Lyon 6e Arrondissement",
+      "latitude": 45.768146,
+      "longitude": 4.849691,
+      "codePostal": "69006",
+      "commune": "69386"
+    },
+    "romeCode": "H1206",
+    "romeLibelle": "Ingénieur / Ingénieure R&D en industrie",
+    "appellationlibelle": "Ingénieur / Ingénieure études et procédés industriels",
+    "entreprise": {
+      "nom": "SILKHOM SAS",
+      "description": "Notre client est un éditeur de logiciel de CFAO innovant. Historiquement positionné sur le développement de son produit core en C/C++ , l'entreprise a amorcé il y a deux ans un virage stratégique majeur vers les technologies Web et l'Intelligence Artificielle.\nPortée par une organisation R&D structurée et dynamique , l'entreprise a créé un pôle Innovation dédié à la création de solutions disruptives. Bénéficiant d'un soutien et d'une subvention de la Région pour accélérer ses collabo...\n"
+    },
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "D",
+    "experienceLibelle": "Débutant accepté",
+    "salaire": {
+      "libelle": "Annuel de 35000.0 Euros à 40000.0 Euros"
+    },
+    "dureeTravailLibelle": "\nTravail en journée",
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "codeNAF": "70.22Z",
+    "secteurActivite": "70",
+    "secteurActiviteLibelle": "Conseil pour les affaires et autres conseils de gestion",
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/4773021",
+      "partenaires": [
+        {
+          "nom": "NICOKA",
+          "url": "https://silkhom.nicoka.com/public/jobs/2137-2b16a8f85cc1ce4/?source=90",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/nicoka80.png"
+        }
+      ]
+    },
+    "contexteTravail": {
+      "horaires": [
+        "\nTravail en journée"
+      ]
+    },
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  }
+]

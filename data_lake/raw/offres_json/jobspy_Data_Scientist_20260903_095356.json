@@ -1,0 +1,948 @@
+[
+  {
+    "id": "jobspy_https://ensemble.aesio.fr/offres-emploi/detailoffr",
+    "intitule": "Analyste SOC Cybersécurité & Protection de la Donnée H/F",
+    "description": {
+      "libelle": "Intitulé du poste :\n**Analyste SOC Cybersécurité \\& Protection de la Donnée H/F**\n-------------------------------------------------------------\n\n**Description de la mission**\n-----------------------------\n\n\nNotre Service SOC recherche deux Analystes SOC afin de renforcer son dispositif de cybersécurité. Vous interviendrez sur l'ensemble de la chaîne de défense : détection et investigation des incidents, gestion des vulnérabilités, surveillance de la surface d'attaque et classification des données sensibles. Vous évoluerez dans un environnement dynamique, polyvalent, analyse et collaboration sont essentielles.\n\n**Vos missions :**\n\n* Superviser et analyser les événements et alertes de sécurité au travers de Splunk (SIEM).\n* Réaliser les investigations et participer aux activités de réponse aux incidents à l'aide de Cortex.\n* Piloter le processus de gestion des vulnérabilités : scans, qualification, priorisation et suivi des plans de remédiation via Cyberwatch.\n* Assurer la surveillance de la surface d'attaque externe avec des outils EASM et contribuer à sa réduction.\n* Superviser l'utilisation et la protection des données classifiées, analyser les alertes associées, suivre les indicateurs de conformité et coordonner les actions correctives avec les équipes concernées.\n* Participer aux investigations liées aux incidents de fuite de données et aux alertes DLP.\n  \n\nConstruire et maintenir des tableaux de bord, indicateurs et reportings de sécurité (KPI/KRI).\n* Coordonner les actions de remédiation avec les équipes infrastructures, applications et métiers.\n* Sensibiliser les utilisateurs aux bonnes pratiques de sécurité et de protection de l'information.\n\nRéaliser une veille active sur les menaces, vulnérabilités critiques, évolutions réglementaires et nouvelles fonctionnalités des solutions de sécurité.  \n* \n\n**Rejoindre AESIO mutuelle, c'est ouvrir la porte à une série d'avantages attractifs tels que :**\n\n* **Organisation flexible** : du lundi au vendredi sur une base de 39h par semaine avec 24 RTT. Télétravail partiel possible\n* **Package attractif** : accord d’intéressement et de participation, épargne salariale avec abondement.\n* **Qualité de vie au travail** : carte restaurant prise en charge à 60% par l’entreprise et CSE offrant de nombreux avantages (billetterie, chèques vacances, etc.).\n* **Mobilité facilitée** : prise en charge à 75% des frais de transport urbains \\+ un forfait mobilité durable (150€/an).\n* **Protection complète** : mutuelle et prévoyance entreprise.\n* **Évolutions possibles** : de réelles perspectives de mobilité au sein du groupe AEMA.\n\n**Être une mutuelle, c’est avant tout prendre soin de chacun :** 6 jours d’absence pour enfant malade, un congé proche aidant, et un accompagnement bienveillant au retour de congé maternité ou adoption (1 mois et demi payé à 100 % ou 3 mois à 50 %). Des  \n\nactions concrètes pour notre engagement en faveur de l’égalité femmes\\-hommes.\n\n**Profil**\n----------\n\n\nVous avez une expérience de **5 ans** minimum dans un SOC ou dans un environnement cybersécurité opérationnelle.\n\n\nLa maitrise de Splunk (recherches SPL, tableaux de bord, alerting) est demandée.\n\n\nLa connaissance de la gestion des vulnérabilités et de l’outil Cyberwatch est requise ainsi que la connaissance de Microsoft Purview ou de solutions équivalentes de protection de la donnée.\n\n\nLa maitrise de Cortex XSOAR/XDR et des outils EASM (Purplemet ou équivalent) est un plus.\n\n\nL'adaptabilité à des environnements changeants et de bonnes compétences en communication sont des qualités essentielles.\n\n**Vous serez également évalué sur les compétences suivantes :**\n\n* Analyse et diagnostic : capacité à analyser des situations et à identifier les enjeux\n* Sens du collectif : la capacité à travailler en équipe\n* Curiosité : aptitude à rechercher, comprendre et approfondir l’information auprès de différents interlocuteurs\n* Pédagogie : la capacité à expliquer et à vulgariser des travaux complexes, s’exprimer de manière claire à l’écrit comme à l’oral\n\n**Outils utilisés :** **Splunk · Cyberwatch · Cortex · Microsoft Purview**\n\n**Pourquoi nous rejoindre ?**\n\n\nVous intégrerez une équipe SOC à taille humaine avec un périmètre riche et varié, vous permettant de développer une expertise complète allant de la détection des menaces à la protection des données sensibles, en passant par la réduction proactive de la surface d'attaque.\n\n**INFORMATIONS SUR LE PROCESSUS DE RECRUTEMENT**\n\nEnvoyez nous votre candidature avant le 16/09\\.\n\n  \n\nVotre candidature sera examinée par Chloé Bourrette qui est votre point de contact (LinkedIn) pour toute question.  \n\n\n\n  \n\nAprès un 1er échange téléphonique, si votre profil correspond, nous vous proposerons un entretien en visioconférence ou en présentiel avec la chargée de recrutement et le manager. Vous recevrez une réponse sous 10 jours après l’entretien.  \n\n\n\n  \n\nCertifiée ISO 9001, notre entreprise valorise également l’inclusion et la diversité, en étant handi\\-accueillante.\n  \n\nDécouvrez nos engagements\n\n\n### **Temps de travail**\n\n\nTemps plein  \n\n### **Contrat de travail**\n\n\nContrat à durée indéterminée  \n\n### **Rémunération**\n\n\nentre 45 et 55 k€**FICHE DU POSTE**\n------------------\n\n  \n\nContrat à durée indéterminée  \n\nentre 45 et 55 k€  \n\n120 Bd Marius Vivier Merle, 69003 Lyon, France  \n\nRéférence  \n\n2026\\-5268"
+    },
+    "entreprise": {
+      "nom": "AÉSIO"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, ARA, FR"
+    },
+    "typeContrat": "fulltime",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://fr.indeed.com/viewjob?jk=b3610028bf41af28"
+    },
+    "_source": "indeed"
+  },
+  {
+    "id": "jobspy_https://jobs.jems-group.com/poste/hx9hfbjt40-data-",
+    "intitule": "Data Analyst /Data Modeling H/F",
+    "description": {
+      "libelle": "**A propos de nous**\n--------------------\n\n\nNous sommes **le premier industriel de la donnée en Europe**. Notre métier est de **créer, manager et exploiter** le patrimoine data de nos clients.\n\n\nNous avons la conviction que chaque entreprise peut adopter une **démarche innovante de gestion de la donnée** et créer des **cas d’usage disruptifs** en réduisant l'impact écologique et en diminuant la dette technique.\n  \n\n  \n\nNous comptons plus de 900 collaborateurs en mission chez nos clients grands comptes dans tout secteur d’activité : banque, assurance, santé, énergie, e\\-commerce, automobile, luxe, retail, transport, agritech…\n\n\n**MissionS proposéeS**\n----------------------\n\n\nNous recherchons pour une entreprise de renommée française spécialisée dans le secteur de la santé, **un Data Analyst H/F en CDI sur Lyon.**\n\n\nLa mission consiste à **mettre en place, modéliser et implémenter un business process partir de documents, artefacts et dashboards déjà existants**\n\n\n**Doté(e) d'un \"Product Mindset\", vous serez amené a faire le pont entre les équipes métiers, les process et la data.**\n\n\nVous serez en charge de:\n\n\n* Analyser les documents, artefacts, données et dashboards\n* Echanger de manière transverse avec les équipes métiers et data\n* Clarifier et formaliser les Business Process\n* Construire les maps et modèles de process\n* faire le lien entre les processus métiers et données disponibles\n* concevoir et implémenter les data modèles dans **snowflakes et DBT**\n* définir et suivre les KPIs qui permettent de monitorer les processus\n* traduire les dashboards en insight business\n* Identifier les gaps, anomalies et points de blocage\n**Notre profil idéal**\n----------------------\n\n\nEn tant que Data Analyst vous maitrisez :\n  \n\n* DBT, Snowflake\n* Le requêtage SQL\n* Data modeling, Process mapping\n* Anglais obligatoire\n\nVous êtes diplômé(e) d'une école d'ingénieur ou d'un parcours universitaire technique.\n  \n\nVous justifiez d'au minimum 6 ans d'expérience professionnelle minimum en tant que Data Analyst ou Analytics Engineer\n  \nLyon\n38,50h\n/semaine\nDe 50000€\nà 58000€\n/an\nCDI\nData\nFrançais"
+    },
+    "entreprise": {
+      "nom": "Jems Group"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, ARA, FR"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://fr.indeed.com/viewjob?jk=e79bf13688c2055e"
+    },
+    "_source": "indeed"
+  },
+  {
+    "id": "jobspy_https://www.free-work.com/fr/tech-it/job-mission/d",
+    "intitule": "Data Analyst /Data Modeling H/F",
+    "description": {
+      "libelle": "Nous recherchons pour une entreprise de renommée française spécialisée dans le secteur de la santé, un Data Analyst H/F en CDI sur Lyon.\n  \nLa mission consiste à mettre en place, modéliser et implémenter un business process partir de documents, artefacts et dashboards déjà existants\n  \nDoté(e) d'un \"Product Mindset\", vous serez amené a faire le pont entre les équipes métiers, les process et la data.\n  \n  \n\n**Vous serez en charge de:**  \n\n? Analyser les documents, artefacts, données et dashboards\n  \n? Echanger de manière transverse avec les équipes métiers et data\n  \n? Clarifier et formaliser les Business Process\n  \n? Construire les maps et modèles de process\n  \n? faire le lien entre les processus métiers et données disponibles\n  \n? concevoir et implémenter les data modèles dans snowflakes et DBT\n  \n? définir et suivre les KPIs qui permettent de monitorer les processus\n  \n? traduire les dashboards en insight business\n  \n? Identifier les gaps, anomalies et points de blocage\n  \n  \n\n**Référence de l'offre :** hx9hfbjt40\n  \n  \n\n**Profil candidat:****En tant que Data Analyst vous maitrisez :**  \n\n? DBT, Snowflake\n  \n  \n\n? Le reque?tage SQL\n  \n  \n\n? Data modeling, Process mapping\n  \n  \n\n? Anglais obligatoire\n  \n  \n\nVous êtes diplômé(e) d'une école d'ingénieur ou d'un parcours universitaire technique.\n  \n  \n\nVous justifiez d'au minimum 6 ans d'expérience professionnelle minimum en tant que Data Analyst ou Analytics Engineer"
+    },
+    "entreprise": {
+      "nom": "JEMS"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, ARA, FR"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://fr.indeed.com/viewjob?jk=71d57b26840b06ad"
+    },
+    "_source": "indeed"
+  },
+  {
+    "id": "jobspy_https://jobs.ashbyhq.com/Resilience%20Care/8c695ea",
+    "intitule": "Data Scientist (AI)",
+    "description": {
+      "libelle": "**The company**\n===============\n\n\nResilience Care is a leading French remote patient monitoring (RPM) company and a clinical research partner, founded in 2021 with a mission: better care.  \n\nWe provide RPM solutions in oncology, gastroenterology and psychiatry, combining ePRO collection with AI techniques. Our platform supports healthcare professionals with early side‑effect detection for continuous and proactive care, and our patient mobile app helps measure and manage symptoms with tailored resources.  \n\nOur solutions improve care pathways, enrich continuous patient understanding, and accelerate clinical research through the collection, structuring and in‑depth analysis of real‑world data. They are currently deployed in routine care for 35,000 patients across 200\\+ healthcare institutions, and also support around twenty academic and industry clinical studies.  \n\nWe put data at the service of care and therapeutic innovation, with the ambition to enable every patient to benefit from personalized medicine.\n\n**Your role**\n=============\n\n**In a nutshell**: You will design and deliver machine learning models on real\\-world patient health data to support Medical Affairs studies and build emerging product capabilities for the future devellopement of the Resilience product.\n\n**Your impact**: Bring strong ML methodology, reliable models and actionable outputs to Medical Affairs and Product teams, in a scale\\-up environment focused on delivery.\n\n**Your day\\-to\\-day**\n\n* Build predictive models for Medical Affairs studies on patient datasets.\n* Work with longitudinal/repeated\\-measures data (time series, repeated observations) using appropriate approaches.\n* Define validation strategies and metrics aligned with clinical / real\\-world constraints.\n* Deliver “light” productionization: automated recalculation, scheduling, scoring, and monitoring.\n* Partner with Medical and Product to frame needs and communicate methodological choices clearly.\n* Contribute to applied healthcare ML watch and propose practical improvements.\n\n**Your team**\n=============\n\n* **Your future teammates**: Dynamic team with medical and pharma expertise.\n* **Your manager**: Nicoleta \\- Director Translational Research – RWE \\& Biostatistics\n\n**Profile**\n===========\n\n* **You are a good fit if you can**:\n\n\n\t+ Code in **Python** and/or **R**.\n\t+ Use **SQL** for data extraction and preparation.\n\t+ Apply ML methods to **healthcare** datasets with real\\-world constraints.\n\t+ Handle **longitudinal / repeated\\-measures** data (e.g., mixed\\-effects models).\n\t+ Set up scoring/recalculation pipelines and basic monitoring.\n\t+ Explain assumptions, limitations and results in a clear, inclusive way.\n* **You are a good fit if you have**:\n\n\n\t+ Strong ownership and autonomy.\n\t+ Humility and a learning mindset.\n\t+ Tenacity and problem\\-solving skills.\n\t+ Ability to manage several topics in parallel.\n\t+ Flexibility in a scale\\-up context.\n\t+ Collaborative communication with cross\\-functional teams.\n* **You are a good fit if you have already**:\n\n\n\t+ 3–5 years of Data Science experience (or equivalent).\n\t+ Delivered models to production (even lightweight) or shipped scoring pipelines.\n\t+ Worked with non\\-technical stakeholders to scope and deliver outcomes.\n\t+ Exposure to healthcare / biostat / life sciences (highly preferred).\n* **Nice to have**:\n\n\n\t+ A strong interest in applied methodology watch with tangible impact.\n\n**Why join us?**\n================\n\n* A clear mission: improving patient care with data.\n* High\\-impact topics: real\\-world data, clinical research acceleration, emerging product capabilities.\n* A results\\-oriented scale\\-up environment with strong expectations on quality.\n\n**Hiring process**\n==================\n\n* **Screening (15 min)**: motivation, prerequisites and context.\n* **Manager interview (45 min)**: role expectations, methods and collaboration.\n* **Case study (45 min to 1 h)**: technical discussions and practical use cases with multiple interviewers.\n* **Team fit \\- Panel interviews (30 min each)**: discussions with multiple interviewers of the team.\n\n**GDPR** : Your personal data will be processed for the purposes of recruitment related activities, which include setting up and conducting interviews and tests for applicants, evaluating and assessing the results thereto, and as is otherwise needed in the recruitment and hiring processes. They will be available only for people involved in the process and erased after 2 years of inactivity.\n\n\nUnder GDPR and as Resilience attach great importance to privacy, please note that you have the right to request access to your personal data, to request that your personal data be rectified or erased. The Data Protection Officer can be contacted at privacy@resilience.care\n\n\nFor more information, please check our privacy policy."
+    },
+    "entreprise": {
+      "nom": "Resilience Care"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, ARA, FR"
+    },
+    "typeContrat": "fulltime",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://fr.indeed.com/viewjob?jk=ff97241f3c031c27"
+    },
+    "_source": "indeed"
+  },
+  {
+    "id": "jobspy_http://fr.indeed.com/job/data-analyst-en-alternanc",
+    "intitule": "Data Analyst en alternance – Master (H/F)",
+    "description": {
+      "libelle": "**À propos du poste**  \nNous recherchons un(e) étudiant(e) en Master passionné(e) par la data et l’analyse pour rejoindre notre équipe en alternance en tant que Data Analyst. Ce poste dynamique vous permettra de développer vos compétences en gestion de données, visualisation et modélisation tout en contribuant activement à des projets stratégiques. Vous serez intégré(e) à une équipe innovante, prête à vous accompagner dans votre parcours professionnel et à vous offrir une expérience enrichissante dans un environnement stimulant. Ce poste est rémunéré, offrant une opportunité concrète d’appliquer vos connaissances académiques dans un contexte professionnel.\n\n**Responsabilités**\n\n* Collecter, nettoyer et analyser des données provenant de différentes sources pour soutenir la prise de décision.\n* Concevoir et maintenir des tableaux de bord interactifs avec des outils tels que Power BI, Tableau ou Visio pour visualiser les indicateurs clés.\n* Participer à la conception et à l’optimisation de bases de données relationnelles en utilisant SQL, Oracle ou Microsoft SQL Server.\n* Développer des scripts automatisés avec Python, R ou Bash (Unix shell) pour améliorer les processus d’analyse et d’intégration de données (ETL).\n* Collaborer avec les équipes agiles pour définir les besoins métier, planifier et suivre l’avancement des projets data.\n* Contribuer à la modélisation de données et à la conception de solutions innovantes pour optimiser la gestion des informations.\n* Documenter les processus, réaliser des analyses approfondies et présenter les résultats aux parties prenantes.\n\n**Profil recherché**\n\n* Étudiant(e) en Master spécialisé en Data Science, Informatique ou domaine équivalent avec une forte appétence pour l’analyse de données.\n* Maîtrise avancée d’outils tels que Power BI, Tableau, Visio ainsi que des compétences en SQL, Python et R.\n* Bonne connaissance des bases de données Oracle, Microsoft SQL Server ou autres systèmes relationnels.\n* Expérience ou connaissance en conception de bases de données et en développement ETL.\n* Capacité à travailler dans un environnement Agile avec une forte orientation projet.\n* Compétences en analyse, synthèse et communication pour présenter efficacement les résultats.\n* Connaissance des outils VBA, Bash (Unix shell), ainsi que des notions de design de bases de données sera un plus.\n\nRejoignez\\-nous pour faire avancer votre carrière dans un secteur innovant où votre passion pour la data pourra s’épanouir pleinement !\n\nMerci de nous adresser votre candidature à l'adresse mail: recrutement@leadandconnect.fr\n\nRémunération : 29 704,06€ à 65 992,73€ par an\n\nLieu du poste : En présentiel"
+    },
+    "entreprise": {
+      "nom": "Lead&connect"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, ARA, FR"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://fr.indeed.com/viewjob?jk=74e7e2401b167e81"
+    },
+    "_source": "indeed"
+  },
+  {
+    "id": "jobspy_https://jobs.layan.eu/fr/offer-of-heomi-no-110091/",
+    "intitule": "Alternance Data Analyst en alternance H/F",
+    "description": {
+      "libelle": "**Description de l’offre d’emploi**\n-----------------------------------\n\n**Qui sommes\\-nous ?**\n\n **Acteur incontournable du courtage en Assurances, Heomi construit depuis plus de 30 ans, des programmes d’Assurances à destination des particuliers, des travailleurs non\\-salariés et des entreprises.**\n\n\nLeader Français dans la distribution de produits d’assurance en ligne et précurseur en la matière, Heomi est résolument tourné vers le digital.\n\n**Notre force est d’appartenir au Groupe FINARE** qui s’est construit sur des expertises fortes permettant aux structures du Groupe d’intervenir sur l’ensemble de la chaîne de valeur notamment dans les domaines de l’assurance et de l’épargne.\n\n\nLe Groupe FINARE en quelques mots c’est : plus de 1700 collaborateurs répartis dans 3 pays (France, Luxembourg, Maroc), 3 pôles d’activités (assurance, placements, services) et un CA de 150 M€ en 2024\\.\n\n **Régulièrement classé parmi le top 10 des meilleurs courtiers grossiste en Assurances, Heomi est en constante croissance depuis sa création et nous ne comptons pas nous arrêter là ! Notre ambition :** devenir le numéro 1 du courtage en Assurances !\n\n **Nos valeurs :** Engagement, Performance, Innovation, Capital Humain. Si vous êtes sensible à nos valeurs, alors nous sommes surement faits pour nous entendre !\n\n  \n\nDans le cadre de la poursuite de notre développement, nous recrutons un(e) **Data Analyst en alternance H/F,** au sein de notre établissement de Villeurbanne (69\\).\n\n **Les Missions :**\n\n  \n\nRejoindre Heomi, c'est dire oui à une expérience qui a du sens, celle où les rencontres et les missions vous poussent à grandir chaque jour au sein d’une équipe engagée et dynamique.\n\n  \n\nDans le cadre de votre alternance, vous accompagnerez les équipes de la Direction Technique et de l'Offre produit du Groupe Finare dans la gestion quotidienne et le pilotage des projets transverses.\n\n  \n\nVos missions seront notamment les suivantes :\n\n* Optimisation des processus de reporting ;\n* Développement des tableaux de bord ;\n* Contrôle et fiabilisation des données ;\n* Documentation et structuration des processus.\n**Profil recherché**\n--------------------\n\n\nVous préparez un Master 2 en Économétrie, Statistiques, Data Science ou formation équivalente, et vous souhaitez développer vos compétences en analyse et valorisation de la donnée.\n\n\nVous avez de bonnes bases en traitement et analyse de données et un intérêt pour le reporting et la visualisation de données.\n\n\nCurieux(se) et rigoureux(se), vous appréciez comprendre les données, améliorer leur qualité et contribuer à l’optimisation des processus.\n\n **Les petits plus du poste :**\n\n* Participation/Intéressement ;\n* Epargne salariale ;\n* Mutuelle entreprise avantageuse ;\n* Prévoyance, retraite complémentaire ;\n* Titres restaurant\n* Remboursement de 60% du titre de transport.\n* Avantages CSE (chèque cadeaux, évènements d’entreprise...).\n\n *Rémunération en fonction de la grille conventionnelle*\n\n **Le process de recrutement :**\n\n* Entretien RH avec notre Chargé(e) de recrutement.\n* Si cette étape est validée, vous aurez un ou deux entretiens opérationnels avec les managers.\n\n  \n\nLa diversité des profils et expériences des talents qui composent nos équipes est le reflet de notre politique RSE et de nos engagements *Tous nos postes à pourvoir sont ouverts aux personnes en situation de handicap.*\n\n**Détails du contrat**\n----------------------\n\n* Nombre d’heures hebdomadaires : 35\n**Horaires du poste**\n---------------------\n\n* Travail en journée\n* Du lundi au vendredi"
+    },
+    "entreprise": {
+      "nom": "HEOMI"
+    },
+    "lieuTravail": {
+      "libelle": "Villeurbanne, ARA, FR"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://fr.indeed.com/viewjob?jk=3d19cbb84fdb1e92"
+    },
+    "_source": "indeed"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Machine Learning Engineer",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Arkane Cloud"
+    },
+    "lieuTravail": {
+      "libelle": "Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4462147104"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Analyste de données – Biostatisticien(ne)",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Epimentis"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4462146256"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Développeur Databricks Confirmé F/H",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Winside Technology"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4448298180"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Data Scientist (AI)",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Resilience Care"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4461770039"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Senior Data Scientist - IA Générative F/H",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Devoteam Data Driven"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4460254035"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "RWE Biostatistician",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Resilience Care"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4461762202"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Data Analyst en alternance H/F",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Fiducial"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4452822527"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Senior AI ML Engineer M/F",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "ORIS Materials Intelligence"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4461772098"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "AI development engineer F/M/D",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "bioMérieux"
+    },
+    "lieuTravail": {
+      "libelle": "Craponne, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4459517096"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Data Engineer Modern Data Stack F/H",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Orange Business"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4440126488"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "DATA ENGINEER AZURE / DATABRICKS H/F",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Kicklox"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4461561366"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Expert Snowflake (H/F/NB)",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Keyrus"
+    },
+    "lieuTravail": {
+      "libelle": "Villeurbanne, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4460655041"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "ALTERNANCE- Contrôleur de gestion  F/H",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Visiativ"
+    },
+    "lieuTravail": {
+      "libelle": "Charbonnières-les-Bains, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4451196740"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Consultant senior en Finance et Transformation digitale H/F",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "ELSEN / implid"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4461756578"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Consultant confirmé en Finance et Transformation Digitale H/F",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "ELSEN / implid"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4461768283"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Scientific Data Analyst",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Sanofi"
+    },
+    "lieuTravail": {
+      "libelle": "Marcy-l’Étoile, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4461221960"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Data Analyst (H/F)",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "ITERA"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4459209611"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "AI Engineer - AWS (H/F/NB)",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Keyrus"
+    },
+    "lieuTravail": {
+      "libelle": "Villeurbanne, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4460006592"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Analyste des ventes - Alternance (H/F)",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Talia.fr"
+    },
+    "lieuTravail": {
+      "libelle": "Tassin-la-Demi-Lune, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4459208515"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Senior Data Architect (H/F) - Freelance",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Selectra"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4459210012"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Analyste des ventes - Alternance (H/F)",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Talia.fr"
+    },
+    "lieuTravail": {
+      "libelle": "Décines-Charpieu, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4459200683"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Architecte Data - Senior - H/F - CDI",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Talan"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4461272909"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Software Engineer",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Siemens Digital Industries Software"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4461385946"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Software Engineer h/f",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Siemens Digital Industries Software"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4461383995"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Lead Data & Ai Engineer",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Mindquest"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4462764907"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Ingénieurs en Intelligence Artificielle (H/F)",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Infologic"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4431513830"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Data Analyst /Data Modeling H/F",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Jems Group"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4462428424"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Data Analyst Confirmé H/F",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Jems Group"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4459979125"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Assistant d'études F/H/X",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Kisio"
+    },
+    "lieuTravail": {
+      "libelle": "Villeurbanne, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4456883255"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "AI Engineer",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Scaleway"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4459955067"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Data & AI Engineer - F/H",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Niji"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4440455469"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Ingénieur Data Microsoft H/F",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Alliade Habitat"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4462795017"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Ingénieur Data Azure / Data Engineer H/F",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "SCC France"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4461303272"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Stage : Ingénieur - Audit et déploiement de l'IA (H/F)",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Colas France"
+    },
+    "lieuTravail": {
+      "libelle": "Biol, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4458897585"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Ingénieur Data / DevOps Azure - Databricks H/F",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Viveris"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4462408978"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "MLOps Senior Energie  (IT) / Freelance",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Free-Work"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4459961605"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Alternance en Supply Chain H/F",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Volvo Group"
+    },
+    "lieuTravail": {
+      "libelle": "Bourg-en-Bresse, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4462165480"
+    },
+    "_source": "linkedin"
+  }
+]

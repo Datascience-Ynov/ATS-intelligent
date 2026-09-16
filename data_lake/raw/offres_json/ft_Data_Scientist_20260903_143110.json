@@ -1,0 +1,83 @@
+[
+  {
+    "id": "6535850",
+    "intitule": "Data scientist (H/F)",
+    "description": "Description du poste :\n\nVous rejoignez l'équipe Data Science & IA composée de spécialistes Data et IA, au sein de la Direction Data (30 collaborateurs Aux côtés d'Abdelhakim, vous serez l'un des référents techniques sur les sujets d'IA Générative et accompagnerez les métiers dans la conception de solutions innovantes.\n\n\nLe poste s'articule autour de trois grands axes Conception et développement de solutions IA : développement d'agents IA, conception de solutions basées sur des LLM et des architectures RAG, optimisation de la qualité des réponses produites, maîtrise des coûts d'exploitation des modèles.***Industrialisation des solutions : mise en place des pratiques MLOps, industrialisation des pipelines, monitoring et observabilité, gouvernance et sécurisation des modèles.***Accompagnement des métiers : identification et qualification des cas d'usage, challenge des besoins afin de proposer les meilleures approches techniques, accompagnement des utilisateurs dans l'adoption des solutions d'IA, conduite du changement autour des nouveaux outils.\n\nPourquoi rejoindre cette entreprise Des projets GenAI concrets : vous développerez des solutions utilisées quotidiennement par les métiers.***Un rôle clé dans la transformation IA : vous interviendrez de la définition du besoin jusqu'à la mise en production.***Une forte autonomie technique : vous participerez aux choix d'architecture et aux orientations techniques de l'équipe.***Un environnement moderne : Azure, Databricks, MLOps et IA Générative au cœur des nouveaux projets.***Des conditions attractives : Contrat cadre au forfait, RTT, 2 jours de télétravail, variable sur objectif, restaurant d'entreprise, salle de sport, conciergerie .\n\nDescription du profil Vous justifiez d'au moins 5 ans d'expérience en Data Science.***Vous possédez 2 à 3 années d'expérience significative sur des projets d'IA Générative Vous maîtrisez les technologies LLM , RAG et les principes de développement d'agents IA.***Vous êtes à l'aise pour échanger directement avec les équipes métiers et transformer leurs besoins en solutions techniques.",
+    "dateCreation": "2026-09-03T03:27:33.878Z",
+    "dateActualisation": "2026-09-03T03:27:33.878Z",
+    "lieuTravail": {
+      "libelle": "69 - Chaponnay",
+      "codePostal": "69970",
+      "commune": "69270"
+    },
+    "romeCode": "M1405",
+    "romeLibelle": "Data scientist",
+    "appellationlibelle": "Data scientist",
+    "entreprise": {},
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "E",
+    "experienceLibelle": "1 An(s)",
+    "salaire": {},
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/6535850",
+      "partenaires": [
+        {
+          "nom": "METEOJOB",
+          "url": "https://www.meteojob.com/jobs/56491689?utm_source=pole-emploi&utm_medium=aggregator-free",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/meteojob80.png"
+        }
+      ]
+    },
+    "contexteTravail": {},
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "6169434",
+    "intitule": "Data Scientist (H/F)",
+    "description": "Depuis sa création, KLANIK s'est donnée pour mission de conjuguer expertise technologique et authenticité.\nCe pari audacieux, né à Marseille en 2011, en France, s'est transformé en une aventure internationale qui compte aujourd'hui plus de 800 collaborateurs, des implantations dans 10 pays et des filiales innovantes. Nous rejoignons en 2026 le groupe ALTEN, acteur mondial de l'ingénierie et des services numériques.\n\nNotre rôle : recruter les meilleurs talents & les connecter à nos clients pour les accompagner dans leurs projets digitaux. KLANIK est une société de conseil en informatique structurée autour de 5 pôles d'expertises : Data & IA, DevOps Cloud Infra, Cybersécurité, Software, Produit Agilité Pilotage.\nNos 800 talents ont des profils variés : tech (nos pôles d'expertises), opérationnels (fonctions commerciales et recrutement) et support.\n\nAu?delà des métiers, KLANIK cultive un modèle profondément humain, qui dépasse les frontières : de la Belgique à la Colombie, nos valeurs résonnent. Une culture fondée sur le partage, l'exigence et la bienveillance - un collectif où chacun peut trouver sa place. En témoignent nos filiales :\n- Klanik Esport : club Esport & agence de gamification;\n- Korner : incubateur de startups tech;\n- Kampus : organisme de formation certifié Qualiopi\n- l'Act'In Klanik, rôles qui permettent à nos collaborateurs de faire vivre leurs passions au-delà de leurs missions.\n\nNotre culture est résumée par cette phrase, souvent apposée sous notre logo : Human-Made Technology. La tech oui, mais une tech humaine, qui diffuse un modèle où l'authenticité de chacun est la priorité.\nKLANIK, en tant que société à mission, croit en la force de la diversité et de l'inclusion. Nos recrutements sont fondés sur les compétences, sans distinction d'origine, d'âge ou de genre, et tous nos postes sont ouverts aux personnes en situation de handicap. Nous sommes convaincus que la diversité de nos équipes est une force qui contribue à notre succès.\n\nLe poste : \n\nRejoignez une équipe engagée dans l'amélioration continue des chaînes communicantes et la valorisation des données pour optimiser leur exploitation. Vous interviendrez sur des sujets à fort impact, mêlant performance, supervision et innovation.\n\nVos missions principales :\n- Analyser le fonctionnement des chaînes communicantes \n- Modéliser leur comportement nominal\n- Développer des outils de supervision en temps réel et de détection automatique d'anomalies\n- Encadrer des Data Scientists juniors et participer aux revues de code\n- Contribuer aux orientations techniques du projet\n\nActivités complémentaires :\n- Industrialiser les prototypes dans les outils de supervision\n- Assurer une veille technologique sur les outils et méthodes\n- Partager vos connaissances et former vos pairs\n- Participer à la conception de solutions sécurisées pour le traitement de volumes de données\n\nProfil recherché : \n\nCompétences techniques : \n- Python 3 (impératif) : maîtrise des librairies Pandas, Polars, scikit-learn'\n- Modélisation prédictive & détection d'anomalies : anticipation des risques et optimisation des performances\n- Big Data : PySpark, gestion de pipelines de données à grande échelle\n- Bases de données : SQL / PostgreSQL, solutions de stockage optimisées\n- Visualisation & restitution : Tableau Software, PowerBI\n- Analyse de séries temporelles\n- Analyse de graphes : GNN, théorie des graphes\n- Outils de versioning & déploiement : GitLab\n- Connaissances UX/UI et des bases de l'agilité\n\nSoft skills & posture :\n- Capacité à proposer des solutions scalables, lisibles et sécurisées pour les équipes Data\n- Esprit critique et sens de l'optimisation des ressources\n- Capacité à vulgariser les approches techniques auprès de profils non techniques\n- Autonomie, rigueur et esprit collaboratif",
+    "dateCreation": "2026-08-21T11:22:02.373Z",
+    "dateActualisation": "2026-08-21T11:22:02.373Z",
+    "lieuTravail": {
+      "libelle": "69 - Lyon 1er Arrondissement",
+      "codePostal": "69001",
+      "commune": "69381"
+    },
+    "romeCode": "M1405",
+    "romeLibelle": "Data scientist",
+    "appellationlibelle": "Data scientist",
+    "entreprise": {
+      "nom": "KLANIK"
+    },
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "E",
+    "experienceLibelle": "5 An(s)",
+    "salaire": {},
+    "complementExercice": "Temps plein",
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/6169434",
+      "partenaires": [
+        {
+          "nom": "PMEJOB",
+          "url": "https://www.jobposting.pro/emploi-2677722-120",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/pmejob80.png"
+        }
+      ]
+    },
+    "contexteTravail": {},
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  }
+]

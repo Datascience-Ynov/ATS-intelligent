@@ -1,0 +1,150 @@
+# ═══════════════════════════════════════════════════════════════════
+# ATS Intelligent — docker-compose.yml
+# Lance tous les services d'un coup :
+#   docker compose up --build
+# Auteur : Mourad Amoussa | RNCP39586
+# ═══════════════════════════════════════════════════════════════════
+
+services:
+
+  # ─── 1. PostgreSQL ──────────────────────────────────────────────
+  postgres:
+    image: postgres:15-alpine
+    container_name: ats_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB:           ${DB_NAME:-ats_db}
+      POSTGRES_USER:         ${DB_USER:-postgres}
+      POSTGRES_PASSWORD:     ${DB_PASSWORD:-postgres}
+      # Fixe le warning "no actual collation version" en forçant la locale C (stable entre OS)
+      POSTGRES_INITDB_ARGS:  "--locale=C --encoding=UTF8"
+      LC_ALL:                C
+    ports:
+      - "15432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-postgres} -d ${DB_NAME:-ats_db}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  # ─── 2. MLflow ──────────────────────────────────────────────────
+  mlflow:
+    build:
+      context: .
+      dockerfile: Dockerfile.mlflow
+    container_name: ats_mlflow
+    restart: unless-stopped
+    ports:
+      - "5001:5001"
+    volumes:
+      - mlflow_data:/mlflow
+    environment:
+      MLFLOW_BACKEND_STORE_URI: sqlite:////mlflow/mlflow.db
+      MLFLOW_DEFAULT_ARTIFACT_ROOT: /mlflow/artifacts
+    command: >
+      mlflow server
+      --backend-store-uri sqlite:////mlflow/mlflow.db
+      --default-artifact-root /mlflow/artifacts
+      --host 0.0.0.0
+      --port 5001
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5001/"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+  # ─── 3. FastAPI (scoring ML) ────────────────────────────────────
+  fastapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ats_fastapi
+    restart: unless-stopped
+    command: uvicorn api.scoring_api:app --host 0.0.0.0 --port 8001
+    ports:
+      - "8001:8001"
+    environment:
+      MLFLOW_TRACKING_URI: http://mlflow:5001
+      DB_HOST:             postgres
+      DB_PORT:             5432
+      DB_NAME:             ${DB_NAME:-ats_db}
+      DB_USER:             ${DB_USER:-postgres}
+      DB_PASSWORD:         ${DB_PASSWORD:-postgres}
+      NVIDIA_API_KEY:      ${NVIDIA_API_KEY}
+      GMAIL_APP_PASSWORD:  ${GMAIL_APP_PASSWORD:-}
+      ALERT_EMAIL_FROM:    ${ALERT_EMAIL_FROM:-251102mourad@gmail.com}
+      ALERT_EMAIL_TO:      ${ALERT_EMAIL_TO:-251102mourad@gmail.com}
+    volumes:
+      - ./data_lake:/app/data_lake
+    depends_on:
+      postgres:
+        condition: service_healthy
+      mlflow:
+        condition: service_healthy
+
+  # ─── 4. Streamlit (interface utilisateur) ───────────────────────
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ats_streamlit
+    restart: unless-stopped
+    command: streamlit run app.py --server.port 8501 --server.address 0.0.0.0 --server.headless true
+    ports:
+      - "8501:8501"
+    environment:
+      MLFLOW_TRACKING_URI: http://mlflow:5001
+      DB_HOST:             postgres
+      DB_PORT:             5432
+      DB_NAME:             ${DB_NAME:-ats_db}
+      DB_USER:             ${DB_USER:-postgres}
+      DB_PASSWORD:         ${DB_PASSWORD:-postgres}
+      NVIDIA_API_KEY:      ${NVIDIA_API_KEY}
+      FT_CLIENT_ID:        ${FT_CLIENT_ID:-}
+      FT_CLIENT_SECRET:    ${FT_CLIENT_SECRET:-}
+      SCORING_API_URL:     http://fastapi:8001
+    volumes:
+      - ./data_lake:/app/data_lake
+    depends_on:
+      postgres:
+        condition: service_healthy
+      mlflow:
+        condition: service_healthy
+      fastapi:
+        condition: service_started
+
+  # ─── 5. ETL Scheduler (pipeline toutes les 2h) ──────────────────
+  etl-scheduler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ats_etl_scheduler
+    restart: unless-stopped
+    command: python -m etl.scheduler
+    environment:
+      MLFLOW_TRACKING_URI: http://mlflow:5001
+      DB_HOST:             postgres
+      DB_PORT:             5432
+      DB_NAME:             ${DB_NAME:-ats_db}
+      DB_USER:             ${DB_USER:-postgres}
+      DB_PASSWORD:         ${DB_PASSWORD:-postgres}
+      FT_CLIENT_ID:        ${FT_CLIENT_ID:-}
+      FT_CLIENT_SECRET:    ${FT_CLIENT_SECRET:-}
+      # Nombre max d'offres par run ETL — modifier dans .env (20=rapide, 50=équilibré, 100=complet)
+      ETL_MAX_OFFRES:      ${ETL_MAX_OFFRES:-20}
+    volumes:
+      - ./data_lake:/app/data_lake
+    depends_on:
+      postgres:
+        condition: service_healthy
+      mlflow:
+        condition: service_healthy
+
+volumes:
+  postgres_data:
+  mlflow_data:

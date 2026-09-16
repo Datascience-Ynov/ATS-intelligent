@@ -1,0 +1,232 @@
+[
+  {
+    "id": "6539035",
+    "intitule": "Data engineer Senior Microsoft Lyon H/F",
+    "description": "RESPONSABILITÉS : \n\nIntégré à l'équipe de Sébastien qui pilote l'activité Data chez Expertime (30 personnes), votre mission est de délivrer des projets data.\nExpertime a été le 1er partenaire français à évangéliser sur la technologie grâce aux évènements Fabric in a Day de Microsoft et souhaite poursuivre son investissement en renforçant ses équipes avec des personnes passionnées et convaincues par cette nouvelle vision technologique proposée par l'éditeur Microsoft\nEn tant que data engineer spécialisé en Microsoft Fabrics H/F, vous interviendrez dans le cadre de projets qui répondent aux enjeux clients d'exploitation des données, et notamment :\n - Analyser et qualifier les besoins et les problématiques « métier » de nos clients\n - Participer à la définition et la mise en œuvre des solutions Data adaptées aux contextes des projets\n - Collaborer avec les équipes Métiers dans leurs travaux d'identification et de documentation des données\n - Collaborer avec les Consultants et des Ingénieurs spécialistes de la data sur les projets et œuvrer à la qualité de leurs réalisations et des livrables\n - Collaborer sur tous les domaines d'activité data : BI et Analytics, Big Data, Data Science et IA\n - Collaborer en transverse avec les autres expertises (UX/UI, architectes logiciels et techniques, experts cloud et DevOps) afin de concevoir et délivrer les solutions les plus adaptées et performantes\n - Travailler dans un contexte agile et porter des approches novatrices\nEn parallèle, vous participez à la montée en compétences des collaborateurs et à l'interface entre les équipes métiers (internes et externes).\nAlors si vous vous retrouvez dans cette description, que les termes Onelake, les Dataflows, les Shortcuts, Data Activator ou encore le Real-Time Hub sont des fonctionnalités qui vous parle et vous intéresse, ou que vous souhaitez basculer depuis un univers OnPremise ou PaaS Azure vers cette nouvelle expérience de travail apportée par Microsoft Fabric, cette annonce est faite pour vous!\n\nStack technique que vous rencontrerez chez Expertime : Azure et ses nombreuses briques (Azure data factory, Azure database, Azure analysis services...), Power query, Power BI, SQL et le dernier né de Microsoft \"Fabric\" bien entendu.\n\nPROFIL RECHERCHÉ : \n\nVéritable passionné par la DATA et diplômé d'une école d'ingénieur, vous avez une expérience de plus de 8 ans en environnement informatique, sur un poste senior en environnement Data et Microsoft (Team Lead, Architecte ou encore Consultant Senior).\n - Maîtrise des architectures Data Onpremise, Cloud, de SQL, d'un outil ETL (Azure Data Factory ou autres) et de Data Visualisation.\n - Maîtrise des problématiques de sécurité, Infrastructure et réseau dans le Cloud\n - Conception, modélisation et optimisation de base de données\n - Connaissance de l'environnement Azure, MSBI, SQL Server ou de notions d'IA (Python, R ou Machine Learning)\n - Vous aimez ne pas rester sur vos acquis et toujours apprendre par le biais d'auto-formation, de veille technologique, formations ou encore par la participation aux événements communautaires Tech\n - Votre curiosité vous amène à quotidiennement faire de la veille\n - Vous êtes ouvert.e aux échanges, capable de comprendre un besoin métier et le traduire en besoin technique. Votre sens de la relation client est régulièrement souligné professionnellement\n - Vous aimez travailler en équipe tout en étant autonome dans vos fonctions Vous aimé intervenir simultanément sur plusieurs projets avec des équipes différentes\n - Vous possédez à minima un anglais technique (lecture / rédaction de documents en anglais)\n - Vous êtes à l'aise dans la communication écrite et orale, et vous faites preuve de qualités pédagogiques et d'adaptabilité relationnelle pour convaincre\n\n\nPourquoi nous rejoindre ?\nNous sommes une entreprise à taille humaine avec une vraie proximité de nos Consultants.\nVous aimez la diversité des contextes et des secteurs d'activité.\nVotre poste n'est pas figé, vous allez acquérir une réelle polyvalence avec la possibilité de créer votre poste de demain tout en répondant à un besoin d'Expertime.\nL'adaptabilité est un élément clé de succès chez Expertime. Vous pourrez développer vos compétences de manière constante. Nous prônons l'ambition, l'innovation, et l'entrepreneuriat !\n\n\nEnvironnement de travail :\n - Poste à pourvoir en CDI à temps plein, à Viroflay (accessible en transport en commun et/ou vélo),\n - Rémunération fixe + variable individuel et collectif (package de 55 à 70k€ selon l'expérience), prime de participation,\n - Mutuelle prise en charge à 100% par l'entreprise, couvrant intégralement le collaborateur et sa famille,\n - 3 jours de télétravail possible par semaine (rythme hybride et personnalisable),",
+    "dateCreation": "2026-09-03T04:31:42.962Z",
+    "dateActualisation": "2026-09-05T04:31:41.556Z",
+    "lieuTravail": {
+      "libelle": "69 - Lyon 2e Arrondissement",
+      "codePostal": "69002",
+      "commune": "69382"
+    },
+    "romeCode": "M1802",
+    "romeLibelle": "Expert / Experte systèmes et réseaux informatiques",
+    "appellationlibelle": "Consultant / Consultante informatique",
+    "entreprise": {
+      "nom": "EXPERTIME"
+    },
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "D",
+    "experienceLibelle": "Débutant accepté",
+    "salaire": {},
+    "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "qualificationCode": "9",
+    "qualificationLibelle": "Cadre",
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/6539035",
+      "partenaires": [
+        {
+          "nom": "BEETWEEN",
+          "url": "https://app.beetween.com/WeaselWeb/p/#/apply/job/dvud1l6yc48/data-engineer-senior-microsoft-lyon-h-f",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/beetween80.png"
+        }
+      ]
+    },
+    "contexteTravail": {
+      "horaires": [
+        "35H/semaine\nTravail en journée"
+      ]
+    },
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "5945622",
+    "intitule": "Data Scientist Senior Python / Graph Neural Networks (H/F)",
+    "description": "RESPONSABILITÉS : \n\nDans le cadre du renforcement d'une équipe Data & IA, nous recherchons un Data Scientist Senior pour contribuer à un programme innovant de modélisation et de prédiction sur des données structurées en graphes.\nVous intégrerez une équipe pluridisciplinaire composée de Data Scientists, Tech Leads et experts métier afin de concevoir des modèles de nouvelle génération permettant de répondre à des problématiques complexes à fort enjeu opérationnel.\n\nVos missions\n - Formaliser les objectifs scientifiques en lien avec les cas d'usage métier.\n - Concevoir et faire évoluer les architectures de modèles GNN.\n - Définir les stratégies d'expérimentation, de validation et d'évaluation des modèles.\n - Superviser la préparation et la qualité des données d'entraînement.\n - Analyser les performances des modèles et identifier les axes d'amélioration.\n - Produire les livrables scientifiques, les bilans d'étude et la documentation associée.\n - Accompagner et challenger les travaux d'un Data Scientist de l'équipe.\n - Collaborer avec les équipes de développement et les experts métier pour maximiser l'impact opérationnel des modèles.\n - Assurer une veille active sur les technologies Graph Machine Learning.\n - Contribuer à l'industrialisation des solutions développées.\n\n\nStack technique\nCompétences indispensables\n - Python\n - PyTorch\n - Torch-Geometric\n - Graph Neural Networks (GNN)\n - Machine Learning\n - Deep Learning\n - Pandas\n - Scikit-Learn\n - SQL\n - PostgreSQL\n - Linux\n - Git\nCompétences appréciées\n - MLOps\n - Docker\n - GPU Computing\n - Graph Machine Learning\n - Data Engineering\n - Environnements Cloud\n\nPROFIL RECHERCHÉ : \n\nParlons de vous\n - Diplômé(e) d'une formation supérieure en Informatique, Data Science, Intelligence Artificielle, Mathématiques Appliquées ou domaine équivalent.\n - Vous justifiez d'au moins 5 à 8 ans d'expérience en Data Science, dont une expérience significative sur des sujets de Machine Learning avancé et/ou Deep Learning.\n - Vous disposez d'une première expérience concrète autour des Graph Neural Networks, du Graph ML ou de problématiques similaires.\n - Vous êtes capable d'échanger aussi bien avec des experts techniques qu'avec des interlocuteurs métier.\n - Vous appréciez les environnements mêlant recherche appliquée, innovation et enjeux opérationnels.\nVos atouts\n - Excellentes capacités d'analyse et de résolution de problèmes.\n - Forte rigueur scientifique.\n - Esprit de synthèse et qualités rédactionnelles.\n - Curiosité technologique et goût pour l'innovation.\n - Autonomie et capacité à prendre des décisions techniques.\n - Leadership naturel et aptitude à accompagner d'autres profils Data.",
+    "dateCreation": "2026-08-13T04:32:08.458Z",
+    "dateActualisation": "2026-08-13T04:32:08.458Z",
+    "lieuTravail": {
+      "libelle": "69 - Lyon 7e Arrondissement",
+      "codePostal": "69007",
+      "commune": "69387"
+    },
+    "romeCode": "M1405",
+    "romeLibelle": "Data scientist",
+    "appellationlibelle": "Data scientist",
+    "entreprise": {
+      "nom": "SULLY GROUP"
+    },
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "E",
+    "experienceLibelle": "Expérience exigée",
+    "salaire": {},
+    "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "qualificationCode": "9",
+    "qualificationLibelle": "Cadre",
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/5945622",
+      "partenaires": [
+        {
+          "nom": "BEETWEEN",
+          "url": "https://app.beetween.com/WeaselWeb/p/#/apply/job/cafeeal2jo8/data-scientist-senior-python-graph-neural-networks-h-f",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/beetween80.png"
+        }
+      ]
+    },
+    "contexteTravail": {
+      "horaires": [
+        "35H/semaine\nTravail en journée"
+      ]
+    },
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "5684981",
+    "intitule": "Alternance Data Analyst & IA - Lyon (H/F)",
+    "description": "L'ISCOD, spécialiste de la formation en Digital Learning, recherche pour son entreprise partenaire, spécialisée dans les médias, les radios, le digital et l'évènementiel, un(e) Data Analyst & IA, pour préparer l'une de nos formations diplômantes reconnues par l'Etat de niveau 5 à niveau 7 (Bac+2, Bachelor/Bac+3 ou Mastère/Bac+5).Choisissez l'alternance nouvelle génération avec l'ISCOD !\nLES MISSIONS\nâ-ªï¸Z Analyse des performances digitales et des audiences.â-ªï¸Z CrÃ©ation de tableaux de bord et de dashboards.â-ªï¸Z DÃ©veloppement de solutions d'automatisation et d'outils internes.â-ªï¸Z Collecte, structuration et fiabilisation des donnÃ©es.Â â-ªï¸Z Formulation de recommandations basÃ©es sur les donnÃ©es pour accompagner les dÃ©cisions stratÃ©giques.\n\nPROFIL RECHERCHE\nBac+4/5 en data science, intelligence artificielle ou informatiqueMaîtrise de Python et des bibliothèques data (Pandas, Scikit-learn)Compétences en modélisation prédictive et machine learningBonne pratique du SQL et de la manipulation de bases de donnéesMaîtrise des outils de datavisualisation (Power BI, Looker Studio, Tableau)Capacité à automatiser des traitements et développer des scriptsIntérêt pour la performance digitale et le marketing dataAutonome, curieux(se) et rigoureux(se)Bon esprit d'analyse et de synthèse",
+    "dateCreation": "2026-08-02T12:21:33.000Z",
+    "dateActualisation": "2026-08-18T11:27:04.813Z",
+    "lieuTravail": {
+      "libelle": "69 - Lyon 2e Arrondissement",
+      "codePostal": "69002",
+      "commune": "69382"
+    },
+    "romeCode": "M1419",
+    "romeLibelle": "Data analyst",
+    "appellationlibelle": "Data analyst",
+    "entreprise": {
+      "nom": "ISCOD"
+    },
+    "typeContrat": "CDD",
+    "typeContratLibelle": "CDD - 12 Mois",
+    "natureContrat": "Contrat apprentissage",
+    "experienceExige": "E",
+    "experienceLibelle": "1 An(s)",
+    "salaire": {},
+    "complementExercice": "Temps plein",
+    "alternance": true,
+    "contact": {},
+    "nombrePostes": 1,
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/5684981",
+      "partenaires": [
+        {
+          "nom": "PMEJOB",
+          "url": "https://www.pmejob.fr/offre-emploi-alternance-data-analyst-&-ia-lyon-lyon-2575005.html#utm_source=Pole_emploi&utm_medium=free&utm_campaign=Pole_emploi",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/pmejob80.png"
+        }
+      ]
+    },
+    "contexteTravail": {},
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "5659038",
+    "intitule": "Data Scientists Experts en Intelligence Artificielle F/H",
+    "description": "Nous recherchons plusieurs profils à très forte expertise technique réunissant les caractéristiques suivantes :Capacité à intervenir sur l'ensemble de la chaîne de valeur d'un projet IA (Intelligence Artificielle) ; ML (Machine Learning), DL (Deep Learning), IA GEN (Intelligence Artificielle Générative), Time Series, Optimisation sous contrainte, de la compréhension du besoin métier jusqu'à l'industrialisation de la solution.Forte autonomie, esprit d'innovation et aptitude à interagir avec des experts métiers, techniques et scientifiques.- Comprendre les cas d'usage- Collecte de Données- Préparation et Nettoyage des Données- Exploration et Visualisation des Données- Modélisation, Développement et Utilisation de Modèles- Sélection d'Algorithmes : Choisir les algorithmes d'apprentissage machine (Machine Learning) ou d'apprentissage profond (Deep Learning) les plus appropriés pour le problème.- Entraînement des Modèles : Former les modèles en utilisant des ensembles dedonnées d'entraînement et ajuster les paramètres pour optimiser les performances- Validation des Modèles : Utiliser des techniques de validation croisée pour évaluerla robustesse des modèles et éviter le surajustement (overfitting).- Instancier des modèles de langages pré-entraînés (LLMs, embeddings,Rerankers.) et les intégrer dans des solutions complexes type RAG (RetrievalAugmented Generation).- Évaluation des Modèles- Déploiement des Modèles- Surveillance et Maintenance des Modèles- Documentation et Communication  ",
+    "dateCreation": "2026-08-01T11:52:08.404Z",
+    "dateActualisation": "2026-08-01T11:52:08.404Z",
+    "lieuTravail": {
+      "libelle": "69 - Lyon",
+      "commune": "69123"
+    },
+    "romeCode": "M1889",
+    "romeLibelle": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+    "appellationlibelle": "Expert / Experte en Intelligence Artificielle",
+    "entreprise": {},
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "D",
+    "experienceLibelle": "Débutant accepté",
+    "salaire": {},
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/5659038",
+      "partenaires": [
+        {
+          "nom": "DIRECTEMPLOI",
+          "url": "https://www.directemploi.com/candidatOffre/55885458?utm_source=pole-emploi&utm_medium=referral&utm_campaign=Pôle-Emploi",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/directemploi80.png"
+        }
+      ]
+    },
+    "contexteTravail": {},
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "4773021",
+    "intitule": "Data Scientist - IA (H/F)",
+    "description": "DESCRIPTION DU POSTE\nVous rejoignez l'équipe Innovation de l'entreprise, composée de 4 personnes, dont la mission est de développer les futurs produits stratégiques de l'éditeur.\nL'entreprise investit aujourd'hui dans un programme de R&D confidentiel autour de l'Intelligence Artificielle, destiné à faire émerger une nouvelle génération de solutions à forte valeur ajoutée.\nPlusieurs Proof of Concept ont déjà permis de valider les premières orientations techniques. L'enjeu consiste désormais à transformer ces travaux de recherche en fonctionnalités robustes et industrialisables.\nDans ce contexte, vous interviendrez sur l'ensemble de la chaîne de développement des modèles IA :\n- reprise et amélioration des PoC existants ;\n- expérimentation de nouveaux algorithmes de Machine Learning et Deep Learning ;\n- traitement et valorisation de données complexes ;\n- industrialisation des modèles développés ;\n- collaboration avec les équipes logicielles afin d'intégrer ces innovations aux futurs produits.\nL'objectif n'est pas de développer des solutions basées sur des LLM, mais de concevoir des modèles répondant à des problématiques industrielles complexes grâce au Data Mining, au Data Processing et au Deep Learning.\nEnvironnement technologique : Deep Learning, Data Mining, Data Processing, Python / environnements de développement IA.\nPourquoi rejoindre cette entreprise ?\n- Un projet unique : vous participerez à la création d'un nouveau produit innovant, porté directement par la R&D et soutenu par un financement régional.\n- Une IA orientée industrie : ici, l'objectif n'est pas d'intégrer simplement des LLM, mais de développer des algorithmes capables d'exploiter et de valoriser des données métier complexes.\n- Une forte autonomie technique : le manager recherche une personne capable d'apporter un véritable regard critique sur les travaux existants et de faire évoluer les choix technologiques.\n- Un environnement serein : l'entreprise affiche un très faible turnover, une excellente ambiance de travail et des équipes évoluant sans pression excessive.\n\n\nPROFIL RECHERCHÉ\nLe profil recherché :\n- Vous êtes diplômé(e) d'une formation supérieure spécialisée en Data Science, Intelligence Artificielle ou Machine Learning.\n- Vous disposez d'environ 3 années d'expérience (alternance comprise).\n\n\nCOMPLÉMENTS\nCompléments :\n- Lieu : Lyon\n- Contrat : CDI\n- Salaire : 35-40K fixe\nSi votre profil correspond, nous reviendrons vers vous dans les 7 jours à compter de la date d'envoi.\n",
+    "dateCreation": "2026-07-09T23:01:03.000Z",
+    "dateActualisation": "2026-08-07T23:01:10.000Z",
+    "lieuTravail": {
+      "libelle": "69 - Lyon 6e Arrondissement",
+      "latitude": 45.768146,
+      "longitude": 4.849691,
+      "codePostal": "69006",
+      "commune": "69386"
+    },
+    "romeCode": "H1206",
+    "romeLibelle": "Ingénieur / Ingénieure R&D en industrie",
+    "appellationlibelle": "Ingénieur / Ingénieure études et procédés industriels",
+    "entreprise": {
+      "nom": "SILKHOM SAS",
+      "description": "Notre client est un éditeur de logiciel de CFAO innovant. Historiquement positionné sur le développement de son produit core en C/C++ , l'entreprise a amorcé il y a deux ans un virage stratégique majeur vers les technologies Web et l'Intelligence Artificielle.\nPortée par une organisation R&D structurée et dynamique , l'entreprise a créé un pôle Innovation dédié à la création de solutions disruptives. Bénéficiant d'un soutien et d'une subvention de la Région pour accélérer ses collabo...\n"
+    },
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "D",
+    "experienceLibelle": "Débutant accepté",
+    "salaire": {
+      "libelle": "Annuel de 35000.0 Euros à 40000.0 Euros"
+    },
+    "dureeTravailLibelle": "\nTravail en journée",
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "codeNAF": "70.22Z",
+    "secteurActivite": "70",
+    "secteurActiviteLibelle": "Conseil pour les affaires et autres conseils de gestion",
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/4773021",
+      "partenaires": [
+        {
+          "nom": "NICOKA",
+          "url": "https://silkhom.nicoka.com/public/jobs/2137-2b16a8f85cc1ce4/?source=90",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/nicoka80.png"
+        }
+      ]
+    },
+    "contexteTravail": {
+      "horaires": [
+        "\nTravail en journée"
+      ]
+    },
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  }
+]
