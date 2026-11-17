@@ -32,7 +32,50 @@ load_dotenv()
 
 
 def _get_db():
-    """Connexion PostgreSQL — DATABASE_URL (Supabase/Streamlit Cloud) ou variables individuelles (local)."""
+    """Connexion PostgreSQL — supporte DATABASE_URL (Supabase) ou paramètres séparés (local).
+    Si DATABASE_URL contient un @ dans le mot de passe, préférer DB_HOST/DB_PASSWORD séparés.
+    """
+    # Essai 1 : paramètres séparés (prioritaires si DB_HOST est défini — évite pb d'encodage URL)
+    try:
+        db_host = st.secrets.get("DB_HOST", "")
+    except Exception:
+        db_host = ""
+    if not db_host:
+        db_host = os.getenv("DB_HOST", "")
+    if db_host:
+        try:
+            pw = st.secrets.get("DB_PASSWORD", "")
+        except Exception:
+            pw = ""
+        if not pw:
+            pw = os.getenv("DB_PASSWORD", "postgres")
+        try:
+            port_val = st.secrets.get("DB_PORT", "")
+        except Exception:
+            port_val = ""
+        if not port_val:
+            port_val = os.getenv("DB_PORT", "5432")
+        try:
+            dbname = st.secrets.get("DB_NAME", "")
+        except Exception:
+            dbname = ""
+        if not dbname:
+            dbname = os.getenv("DB_NAME", "postgres")
+        try:
+            user = st.secrets.get("DB_USER", "")
+        except Exception:
+            user = ""
+        if not user:
+            user = os.getenv("DB_USER", "postgres")
+        return psycopg2.connect(
+            host=db_host,
+            port=int(port_val),
+            dbname=dbname,
+            user=user,
+            password=pw,
+        )
+
+    # Essai 2 : DATABASE_URL (attention aux @ dans le mot de passe → encoder %40)
     try:
         url = st.secrets.get("DATABASE_URL", "")
     except Exception:
@@ -41,6 +84,8 @@ def _get_db():
         url = os.getenv("DATABASE_URL", "")
     if url:
         return psycopg2.connect(url)
+
+    # Fallback local Docker
     return psycopg2.connect(
         host=os.getenv("DB_HOST", "127.0.0.1"),
         port=int(os.getenv("DB_PORT", 15432)),
