@@ -223,6 +223,38 @@ div[data-testid="stBottom"] {
     background-color: #2ed4b4 !important;
 }
 
+/* ── Menus déroulants (selectbox) ── */
+div[data-baseweb="select"] > div,
+div[data-baseweb="select"] > div:focus-within {
+    background-color: #1a2535 !important;
+    border-color: #2a3a50 !important;
+    border-radius: 8px !important;
+}
+div[data-baseweb="select"] * {
+    background-color: #1a2535 !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+/* Liste déroulée */
+ul[data-testid="stSelectboxVirtualDropdown"],
+div[data-baseweb="popover"] ul,
+div[data-baseweb="menu"] {
+    background-color: #1a2535 !important;
+    border: 1px solid #2a3a50 !important;
+}
+div[data-baseweb="menu"] li,
+div[data-baseweb="menu"] li * {
+    background-color: #1a2535 !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+div[data-baseweb="menu"] li:hover,
+div[data-baseweb="menu"] li[aria-selected="true"] {
+    background-color: #263548 !important;
+}
+/* Icône chevron */
+div[data-baseweb="select"] svg { fill: #4ef2d2 !important; }
+
 /* ── File uploader ── */
 div[data-testid="stFileUploader"] {
     background-color: #1a2535 !important;
