@@ -308,16 +308,6 @@ def _save_offers_to_db(offers) -> int:
 
 # ── Fournisseurs LLM (tous OpenAI-compatibles) ───────────────────────────────
 PROVIDERS: dict[str, dict] = {
-    "Groq": {
-        "base_url":  "https://api.groq.com/openai/v1",
-        "env_key":   "GROQ_API_KEY",
-        "link":      "https://console.groq.com",
-        "caption":   "Groq · Llama 3 (gratuit)",
-        "models": [
-            "llama-3.3-70b-versatile",   # Production gratuit — recommandé
-            "llama-3.1-8b-instant",      # Production gratuit — rapide
-        ],
-    },
     "OpenRouter": {
         "base_url":  "https://openrouter.ai/api/v1",
         "env_key":   "OPENROUTER_API_KEY",
@@ -329,8 +319,25 @@ PROVIDERS: dict[str, dict] = {
             "nvidia/nemotron-3.5-super-vl-120b:free",   # NVIDIA Nemotron 3.5 Super VL
             "baidu/ernie-5.5-flash-preview:free",       # Baidu ERNIE 5.5 Flash
             "meta-llama/llama-3.1-8b-instruct:free",    # Llama 3.1 8B (si dispo)
+            "google/gemma-4-31b-it:free",
+            "google/gemma-4-26b-a4b-it:free",
+            "nvidia/nemotron-3.5-super-vl:free",
+            "inclusionai/ling-3.2-flash:free",
+
         ],
     },
+
+    "Groq": {
+        "base_url":  "https://api.groq.com/openai/v1",
+        "env_key":   "GROQ_API_KEY",
+        "link":      "https://console.groq.com",
+        "caption":   "Groq · Llama 3 (gratuit)",
+        "models": [
+            "llama-3.3-70b-versatile",   # Production gratuit — recommandé
+            "llama-3.1-8b-instant",      # Production gratuit — rapide
+        ],
+    },
+    
     "NVIDIA NIM": {
         "base_url":  "https://integrate.api.nvidia.com/v1",
         "env_key":   "NVIDIA_API_KEY",
@@ -372,7 +379,7 @@ class App:
 
         # ── Initialiser le state tôt pour lire le provider persisté ──────────
         self._init_state()
-        provider_name = st.session_state.get("provider", "Groq")
+        provider_name = st.session_state.get("provider", "OpenRouter")
         provider = PROVIDERS[provider_name]
 
         # ── Lecture de la clé API pour le fournisseur actif ──────────────────
@@ -414,7 +421,7 @@ class App:
             ("job_offers", []),
             ("matched_offers", []),
             ("offre_cible_chat", None),
-            ("provider", "Groq"),
+            ("provider", "OpenRouter"),
             ("model", "llama-3.3-70b-versatile"),
         ]:
             st.session_state.setdefault(key, default)
@@ -426,12 +433,12 @@ class App:
 
             # ── Sélection du fournisseur LLM ─────────────────────────────────
             provider_names = list(PROVIDERS.keys())
-            prev_provider = st.session_state.get("provider", "Groq")
+            prev_provider = st.session_state.get("provider", "OpenRouter")
             selected_provider = st.selectbox(
                 "Fournisseur IA",
                 provider_names,
                 index=provider_names.index(prev_provider) if prev_provider in provider_names else 0,
-                help="Groq (clé GROQ_API_KEY) · NVIDIA NIM (NIM_API_KEY) · Gemini (GEMINI_API_KEY)",
+                help="OpenRouter (clé OPENROUTER_API_KEY) · NVIDIA NIM (NVIDIA_API_KEY) · Gemini (GEMINI_API_KEY)",
             )
             if selected_provider != prev_provider:
                 st.session_state.provider = selected_provider
