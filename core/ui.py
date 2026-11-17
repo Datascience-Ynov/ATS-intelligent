@@ -4,10 +4,21 @@ Composants UI — helpers de rendu HTML statiques pour Streamlit.
 
 from __future__ import annotations
 import html as _html
+import re as _re
 
 import streamlit as st
 
 from .models import JobOffer
+
+
+def _clean_url(raw: str) -> str:
+    """Extrait l'URL propre depuis une chaîne qui pourrait contenir du HTML brut.
+    Ex: '<a class="job-link" href="https://...">' → 'https://...'
+    """
+    if raw and raw.strip().startswith("<"):
+        m = _re.search(r'href=["\']([^"\']+)["\']', raw)
+        return m.group(1) if m else "#"
+    return raw or "#"
 
 
 class UI:
@@ -51,7 +62,7 @@ class UI:
             <div class="avatar">🤖</div>
             <div class="bubble-welcome">
                 👋 Bonjour ! Je suis votre assistant IA propulsé par
-                <strong>Llama 3</strong> via NVIDIA NIM.
+                <strong>Llama 3.1</strong> via <strong>Groq</strong>.
                 Posez-moi n'importe quelle question, je suis là pour vous aider !
             </div>
         </div>
@@ -101,6 +112,6 @@ class UI:
             <div class="job-snippet">{_html.escape(snippet)}{"…" if len(snippet) >= 280 else ""}</div>
             {score_html}
             {analysis_html}
-            <a class="job-link" href="{offer.url}" target="_blank">→ Voir l'offre complète</a>
+            <a class="job-link" href="{_clean_url(offer.url)}" target="_blank">→ Voir l'offre complète</a>
         </div>
         """, unsafe_allow_html=True)

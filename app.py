@@ -769,12 +769,15 @@ class App:
                             offer.analysis = enriched.analysis
                             n_ok += 1
                         except Exception as _llm_err:
-                            # OOM ou erreur réseau : on continue sans crasher
+                            # Erreur API Groq (quota, clé invalide, rate-limit...) — on continue sans crasher
                             offer.analysis = None
+                            err_msg = str(_llm_err)
+                            # Raccourcir les messages d'erreur très longs
+                            err_short = err_msg[:120] + "…" if len(err_msg) > 120 else err_msg
                             st.warning(
                                 f"⚠️ Analyse IA ignorée pour « {offer.title[:60]} » "
-                                f"(VRAM insuffisante ou erreur réseau). "
-                                f"Le score RF reste valide.",
+                                f"— Erreur Groq : {err_short}. "
+                                f"Le score ML reste valide.",
                                 icon="⚠️",
                             )
                     progress.empty()
