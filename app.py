@@ -883,11 +883,13 @@ class App:
                         alt.Chart(counts)
                         .mark_bar(color="#4ef2d2")
                         .encode(
-                            x=alt.X("Contrat:N", title="", axis=alt.Axis(labelAngle=0)),
-                            y=alt.Y("Offres:Q", title="Nombre d'offres"),
+                            x=alt.X("Contrat:N", title="", axis=alt.Axis(labelAngle=0, labelColor="#d1dce8", titleColor="#d1dce8")),
+                            y=alt.Y("Offres:Q", title="Nombre d'offres", axis=alt.Axis(labelColor="#d1dce8", titleColor="#d1dce8")),
                             tooltip=["Contrat", "Offres"],
                         )
-                        .properties(height=260)
+                        .properties(height=260, background="transparent")
+                        .configure_view(strokeWidth=0)
+                        .configure_axis(gridColor="#2a3a4a")
                     )
                     st.altair_chart(chart, use_container_width=True)
                     with st.expander("📋 Requête SQL équivalente"):
@@ -910,11 +912,13 @@ GROUP BY type_contrat ORDER BY nb_offres DESC;
                     alt.Chart(top10)
                     .mark_bar(color="#4ef2d2")
                     .encode(
-                        x=alt.X("Occurrences:Q", title="Nombre d'offres"),
-                        y=alt.Y("Compétence:N", sort="-x", title=""),
+                        x=alt.X("Occurrences:Q", title="Nombre d'offres", axis=alt.Axis(labelColor="#d1dce8", titleColor="#d1dce8")),
+                        y=alt.Y("Compétence:N", sort="-x", title="", axis=alt.Axis(labelColor="#d1dce8")),
                         tooltip=["Compétence", "Occurrences"],
                     )
-                    .properties(height=260)
+                    .properties(height=260, background="transparent")
+                    .configure_view(strokeWidth=0)
+                    .configure_axis(gridColor="#2a3a4a")
                 )
                 st.altair_chart(chart, use_container_width=True)
                 with st.expander("📋 Requête SQL équivalente"):
