@@ -381,7 +381,7 @@ RÈGLES :
                 pass
 
         # Fallback : afficher le texte brut sans HTML
+        # Ne pas écraser offer.score ici — le MLScorer a déjà attribué un score valide
         clean = _strip_html(raw).strip()
-        offer.score    = 0
         offer.analysis = clean if clean else "Analyse indisponible pour cette offre."
         return offer

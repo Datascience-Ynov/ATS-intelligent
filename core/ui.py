@@ -72,28 +72,21 @@ class UI:
 
     @staticmethod
     def render_job_card(offer: JobOffer) -> None:
-        """Affiche une carte offre avec score et analyse si disponibles."""
+        """Affiche une carte offre avec score et analyse si disponibles.
+
+        Chaque section est rendue dans un st.markdown() séparé pour contourner
+        le bug Streamlit qui échappe le HTML nested dans un seul bloc.
+        """
         score_class = (
             "score-high" if offer.score >= 70
             else "score-mid" if offer.score >= 40
             else "score-low"
         )
+        # Afficher le badge même si score=0 (ML score peut être faible mais valide)
         score_html = (
             f'<span class="score-badge {score_class}">Compatibilité : {offer.score} %</span>'
-            if offer.score else ""
+            if offer.score is not None else ""
         )
-        analysis_html = ""
-        if offer.analysis:
-            safe_analysis = (
-                _html.escape(offer.analysis)
-                .replace("\n", "<br>")
-                .replace("**Points forts :**", "<strong>Points forts :</strong>")
-                .replace("**Points faibles :**", "<strong>Points faibles :</strong>")
-                .replace("**Conseil :**", "<strong>Conseil :</strong>")
-                .replace("**", "")   # neutralise tout ** résiduel (LLM markdown → casse st.markdown)
-                .replace("*", "")    # idem pour * simple
-            )
-            analysis_html = f'<div class="analysis-box">{safe_analysis}</div>'
 
         # Séparer entreprise et localisation si encodés en "Entreprise — Ville"
         comp  = offer.company  or (offer.source.split(" — ", 1)[0] if offer.source else "")
@@ -107,13 +100,33 @@ class UI:
         body_lines = [l for l in offer.body.split("\n") if not l.startswith(("Poste :", "Entreprise :", "Localisation :", "Contrat :", "Rémunération :"))]
         snippet = " ".join(body_lines)[:280]
 
+        # ── 1. En-tête de la carte (titre + meta + snippet + score) ──────────
         st.markdown(f"""
         <div class="job-card">
             <div class="job-title">{_html.escape(offer.title)}</div>
             <div class="job-meta">{company_html} {location_html} {contract_html} {date_html}</div>
             <div class="job-snippet">{_html.escape(snippet)}{"…" if len(snippet) >= 280 else ""}</div>
             {score_html}
-            {analysis_html}
-            <a class="job-link" href="{_clean_url(offer.url)}" target="_blank">→ Voir l'offre complète</a>
         </div>
         """, unsafe_allow_html=True)
+
+        # ── 2. Analyse IA (rendue séparément pour éviter le bug nested HTML) ──
+        if offer.analysis:
+            safe_analysis = (
+                _html.escape(offer.analysis)
+                .replace("\n", "<br>")
+                .replace("**Points forts :**", "<strong>Points forts :</strong>")
+                .replace("**Points faibles :**", "<strong>Points faibles :</strong>")
+                .replace("**Conseil :**", "<strong>Conseil :</strong>")
+                .replace("**", "")
+                .replace("*", "")
+            )
+            st.markdown(
+                f'<div class="analysis-box">{safe_analysis}</div>',
+                unsafe_allow_html=True,
+            )
+
+        # ── 3. Lien vers l'offre (st.link_button — 100% fiable) ───────────────
+        clean_url = _clean_url(offer.url)
+        if clean_url and clean_url != "#":
+            st.link_button("→ Voir l'offre complète", url=clean_url)
