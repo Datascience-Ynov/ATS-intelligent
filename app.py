@@ -308,42 +308,45 @@ def _save_offers_to_db(offers) -> int:
 
 # ── Fournisseurs LLM (tous OpenAI-compatibles) ───────────────────────────────
 PROVIDERS: dict[str, dict] = {
-    # "Groq": {   ← désactivé temporairement (modèles en cours de dépréciation)
-    #     "base_url":  "https://api.groq.com/openai/v1",
-    #     "env_key":   "GROQ_API_KEY",
-    #     "link":      "https://console.groq.com",
-    #     "caption":   "Groq · Llama 3",
-    #     "models": [
-    #         "llama-3.3-70b-versatile",
-    #         "llama-3.1-8b-instant",
-    #     ],
-    # },
+    "Groq": {
+        "base_url":  "https://api.groq.com/openai/v1",
+        "env_key":   "GROQ_API_KEY",
+        "link":      "https://console.groq.com",
+        "caption":   "Groq · Llama 3 (gratuit)",
+        "models": [
+            "llama-3.3-70b-versatile",   # Production gratuit — recommandé
+            "llama-3.1-8b-instant",      # Production gratuit — rapide
+        ],
+    },
+    "OpenRouter": {
+        "base_url":  "https://openrouter.ai/api/v1",
+        "env_key":   "OPENROUTER_API_KEY",
+        "link":      "https://openrouter.ai/keys",
+        "caption":   "OpenRouter · modèles :free (gratuit)",
+        "models": [
+            "meta-llama/llama-3.3-70b-instruct:free",   # Llama 3.3 70B — gratuit
+            "meta-llama/llama-3.1-8b-instruct:free",    # Llama 3.1 8B — rapide
+            "google/gemma-2-9b-it:free",                # Gemma 2 9B — gratuit
+            "mistralai/mistral-7b-instruct:free",       # Mistral 7B — gratuit
+            "microsoft/phi-3-mini-128k-instruct:free",  # Phi-3 Mini — gratuit
+        ],
+    },
     "NVIDIA NIM": {
         "base_url":  "https://integrate.api.nvidia.com/v1",
-        "env_key":   "NVIDIA_API_KEY",   # nom utilisé dans .env et secrets Streamlit
+        "env_key":   "NVIDIA_API_KEY",
         "link":      "https://build.nvidia.com",
         "caption":   "NVIDIA NIM · Llama / Mistral",
         "models": [
-            "meta/llama-3.3-70b-instruct",          # Llama 3.3 70B
-            "meta/llama-3.1-70b-instruct",           # Llama 3.1 70B
-            "meta/llama-3.1-8b-instruct",            # Llama 3.1 8B (rapide)
-            "nvidia/llama-3.1-nemotron-70b-instruct",# NIM optimisé NVIDIA
-            "mistralai/mistral-7b-instruct-v0.2",    # Mistral 7B
-            "google/gemma-2-9b-it",                  # Gemma 2 9B (NIM)
-            "microsoft/phi-3-mini-128k-instruct",    # Phi-3 Mini
+            "meta/llama-3.3-70b-instruct",
+            "meta/llama-3.1-70b-instruct",
+            "meta/llama-3.1-8b-instruct",
+            "nvidia/llama-3.1-nemotron-70b-instruct",
+            "mistralai/mistral-7b-instruct-v0.2",
+            "google/gemma-2-9b-it",
         ],
     },
-    "Google Gemini": {
-        "base_url":  "https://generativelanguage.googleapis.com/v1beta/openai/",
-        "env_key":   "GEMINI_API_KEY",
-        "link":      "https://aistudio.google.com/apikey",
-        "caption":   "Google AI Studio · Gemini",
-        "models": [
-            "gemini-2.0-flash",   # Gratuit — le plus rapide
-            "gemini-1.5-flash",   # Gratuit — stable
-            "gemini-1.5-pro",     # Gratuit (quota limité) — le plus capable
-        ],
-    },
+    # "Google Gemini": endpoint OpenAI-compatible non disponible sur tier gratuit AI Studio (402)
+    # → utiliser OpenRouter/Groq à la place
 }
 
 
@@ -411,8 +414,8 @@ class App:
             ("job_offers", []),
             ("matched_offers", []),
             ("offre_cible_chat", None),
-            ("provider", "NVIDIA NIM"),
-            ("model", "meta/llama-3.3-70b-instruct"),
+            ("provider", "Groq"),
+            ("model", "llama-3.3-70b-versatile"),
         ]:
             st.session_state.setdefault(key, default)
 
