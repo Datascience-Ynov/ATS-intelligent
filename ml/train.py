@@ -610,7 +610,16 @@ def run_full_pipeline(skip_grid_search: bool = False,
     
     # ── MLflow Tracking & Model Registry (C5.3.1) ─────────────────────────────
     try:
-        mlflow.set_tracking_uri("sqlite:///mlflow.db")
+        # URI vers le serveur MLflow Docker (localhost:5001)
+        # Fallback sur SQLite local si le serveur est inaccessible
+        import os as _os
+        _mlflow_uri = _os.getenv("MLFLOW_TRACKING_URI", "http://127.0.0.1:5001")
+        try:
+            import requests as _req
+            _req.get(_mlflow_uri, timeout=2)
+        except Exception:
+            _mlflow_uri = "sqlite:///mlflow.db"
+        mlflow.set_tracking_uri(_mlflow_uri)
         mlflow.set_experiment("ATS_Matching_Model")
         with mlflow.start_run(run_name=f"RF_GridSearchCV_{version}"):
             # Hyperparamètres GridSearchCV

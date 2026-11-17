@@ -1,0 +1,885 @@
+[
+  {
+    "id": "6927451",
+    "intitule": "Lead Tech Python / Data (F/H)  - Freelance",
+    "description": "Taux journalier (TJM): 430 à 440 €/j\n\nA LIRE ATTENTIVEMENT AVANT DE POSTULER \n\n 2 jours de télétravail / semaine -  Lyon (07) -  Expérience de 5 ans minimum\n\nVous aimez toujours développer, mais vous avez aussi envie d'avoir un vrai rôle dans les choix techniques et la qualité des développements ?\n\nNous recherchons un-e Lead Tech Python pour rejoindre une équipe Agile chez l'un de nos clients et devenir l'un de ses référents techniques.\n\nL'enjeu du poste : concevoir et faire évoluer des applications et traitements orientés Data, tout en accompagnant l'équipe vers des pratiques de développement robustes et industrialisées.\n\nVotre rôle : développer, cadrer et faire progresser l'équipe\n\nVous garderez une vraie proximité avec le code. Vous développerez et maintiendrez en Python des API, dashboards et pipelines permettant de traiter, analyser et visualiser les données.\n\nEn tant que référent.e technique, vous interviendrez sur plusieurs dimensions :\n\n- Conception & développement : développer des applications et traitements Data en Python et participer aux choix de conception associés.\n\n- Qualité logicielle : réaliser les code reviews, challenger les implémentations et diffuser les bonnes pratiques de développement.\n\n- Cadrage technique : analyser les besoins, étudier les solutions possibles et accompagner les projets dans leurs choix techniques.\n\n- Industrialisation : contribuer à rendre les développements plus fiables, maintenables et facilement déployables.\n\n- Accompagnement : apporter votre expertise aux développeurs, aux PO et aux différentes équipes projet.\n\n- Transverse : travailler avec les autres équipes techniques pour faire remonter les besoins et contribuer à la mise en place de pratiques communes.\n\nVous pourrez également intervenir ponctuellement sur des études Data et accompagner plusieurs projets sur leurs problématiques techniques.\n\nL'environnement technique\n\n- Python : FastAPI, Dash, Pandas, PyTest, parallélisation, packaging\n- Data : Spark, PySpark, Scala, Hadoop\n- Bases de données : PostgreSQL, Teradata, SQL\n- CI/CD & versioning : Git, GitLab CI/CD, Bitbucket\n- Organisation : Jira, Confluence, environnement Agile\n\nCe qui fera la différence sur ce poste\n\nTrois compétences sont réellement indispensables.\n\n1. Une expertise solide en Python\n\nVous avez au moins 5 ans d'expérience en développement Python et maîtrisez suffisamment son écosystème pour concevoir des applications et traitements Data robustes et maintenables.\n\nUne expérience avec FastAPI, Pandas, Dash, PyTest ou des problématiques de parallélisation et de packaging sera directement utile dans votre quotidien.\n\n2. Une excellente maîtrise de Spark\n\nVous avez déjà travaillé avec Spark, notamment PySpark et/ou Scala, sur des problématiques de traitement de données à forte volumétrie.\n\nVous êtes également à l'aise avec SQL et avez idéalement évolué dans des environnements utilisant PostgreSQL, Teradata ou Hadoop.\n\n3. Une vraie posture de Lead Tech\n\nVous savez challenger une solution, effectuer une code review et expliquer pourquoi une pratique technique est préférable à une autre.\n\nVous êtes capable de cadrer un sujet, prendre position techniquement et transmettre vos recommandations avec pédagogie, aussi bien auprès de développeurs que de PO ou d'équipes transverses.\n\nL'objectif n'est donc pas uniquement de trouver un excellent développeur Python : nous recherchons quelqu'un capable de faire progresser techniquement les projets et les personnes qui travaillent dessus.\n\nSi vous êtes prêt.e à relever ce défi et à contribuer à des projets stimulants, n'hésitez pas à postuler dès maintenant ! \n\nBienvenue chez CELAD - L'ingénierie à visage humain\n\nDepuis 1990, CELAD accompagne la transformation digitale des entreprises, en conjuguant innovation technologique et proximité humaine. D'abord ancrés dans le monde bancaire, nous sommes aujourd'hui une ESN de référence dans les Systèmes d'Information et l'Informatique Industrielle, forte de plus de 1750",
+    "dateCreation": "2026-09-16T10:03:00.288Z",
+    "dateActualisation": "2026-09-16T10:03:00.288Z",
+    "lieuTravail": {
+      "libelle": "69 - Lyon",
+      "commune": "69123"
+    },
+    "romeCode": "H1218",
+    "romeLibelle": "Responsable de projet recherche et développement",
+    "appellationlibelle": "R&D Senior Program Manager",
+    "entreprise": {
+      "nom": "Collective.work"
+    },
+    "typeContrat": "LIB",
+    "typeContratLibelle": "Profession libérale",
+    "natureContrat": "Emploi non salarié",
+    "experienceExige": "D",
+    "experienceLibelle": "Débutant accepté",
+    "salaire": {
+      "commentaire": "430-440 € par jour"
+    },
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/6927451",
+      "partenaires": [
+        {
+          "nom": "XTRAMILE",
+          "url": "https://api-v2-multidiff.xtramile.io/collect/c341c2d38f34a086e2c9aa1cf3b2a7e5",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/xtramile80.png"
+        }
+      ]
+    },
+    "contexteTravail": {},
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "6927396",
+    "intitule": "Lead Tech Java / Angular / Kafka (F/H)  - Freelance",
+    "description": "Taux journalier (TJM): 430 à 440 €/j\n\nA LIRE ATTENTIVEMENT AVANT DE POSTULER \n\n 2 jours de télétravail / semaine -  Lyon (07) -  Expérience de 5 ans minimum\n\nVous aimez encore mettre les mains dans le code, mais vous avez aussi envie d'avoir un impact sur les choix techniques d'une équipe ?\n\nNous recherchons un.e Lead Tech Java / Angular / Kafka pour rejoindre une équipe Agile chez l'un de nos clients.\n\nVous interviendrez de bout en bout sur les sujets, du cadrage jusqu'à la production, tout en accompagnant l'équipe sur ses pratiques de développement.\n\nLe contexte devrait particulièrement vous intéresser si vous aimez les architectures distribuées et souhaitez évoluer à la frontière entre développement logiciel et Data Engineering.\n\nPourquoi avons-nous besoin de vous ?\n\nVous rejoindrez une équipe Agile qui souhaite renforcer son expertise technique avec un référent capable de prendre la responsabilité de plusieurs sujets techniques.\n\nVotre rôle sera double : contribuer directement à la conception et au développement des solutions, mais aussi aider l'équipe à prendre les bonnes décisions techniques et à maintenir un niveau d'exigence élevé sur la qualité, les performances, la sécurité et la maintenabilité.\n\nVous travaillerez également avec les Product Owners et différentes équipes transverses. L'objectif : ne pas traiter la technique indépendamment du besoin, mais comprendre les enjeux fonctionnels pour proposer des solutions pertinentes.\n\nConcrètement, sur quoi allez-vous travailler ?\n\nVous développerez et ferez évoluer des applications web avec Java / Spring Boot côté back-end et Angular côté front-end.\n\nVotre rôle de Lead Tech vous amènera également à :\n\n- concevoir et challenger des architectures capables de monter en charge\n\n- cadrer techniquement les nouveaux sujets avant leur développement\n\n- accompagner l'équipe dans ses choix de conception et d'implémentation\n\n- réaliser des revues de code et diffuser les pratiques Clean Code et SOLID\n\n- travailler sur les problématiques de performance, de sécurité, d'observabilité et de maintenabilité\n\n- collaborer avec les équipes Data sur des problématiques impliquant notamment Kafka et Spark\n\n- accompagner les PO dans la compréhension et le cadrage des sujets techniques\n\n- contribuer à l'industrialisation des projets\n\n- intervenir sur l'ensemble du cycle de vie d'un sujet, du POC jusqu'à sa mise en production.\n\nVous aurez également un rôle transverse : certains projets pourront solliciter votre expertise pour challenger une solution, résoudre un problème technique ou définir un cadre commun avec d'autres équipes.\n\nUn rôle de Lead Tech qui reste proche du produit\n\nNous recherchons quelqu'un qui ne souhaite pas opposer technique et fonctionnel.\n\nSur une User Story, par exemple, vous pourrez partir du besoin métier, challenger les exigences avec le responsable produit, proposer une solution, participer à sa conception et à son développement, puis accompagner sa mise en production.\n\nMême logique côté front : au-delà du développement Angular, vous pourrez être force de proposition sur l'UI/UX, avec une attention portée à l'ergonomie, au responsive et à l'accessibilité.\n\nVotre leadership passera donc autant par votre expertise technique que par votre capacité à expliquer vos choix, faire progresser l'équipe et créer de l'adhésion autour des bonnes pratiques.\n\nVotre environnement technique\n\nLe socle principal repose sur : Java 21/25 - Spring Boot 3.5/4.0 - Spring Batch 5/6 - Spring Security - Angular 18 à 22 - Kafka - Spark - PostgreSQL 15\n\nVous pourrez également travailler avec : Python - Hadoop - Airflow - Grafana - Kibana\n\nL'environnement comporte donc une vraie dimension Data Engineering, sans pour autant transformer le poste en rôle de Data Engineer.\n\nCe qu'il vous faut pour réussir sur cette mission\n\nTrois éléments sont réellement déterminants.\n\n1/ Java, Angular et SQL : vous avez une expertise solide en développement, avec plus de 7 ans de pratique de Java et plus",
+    "dateCreation": "2026-09-16T10:02:28.999Z",
+    "dateActualisation": "2026-09-16T10:02:28.999Z",
+    "lieuTravail": {
+      "libelle": "69 - Lyon",
+      "commune": "69123"
+    },
+    "romeCode": "I1404",
+    "romeLibelle": "Conseiller / Conseillère support technique informatique",
+    "appellationlibelle": "Technicien / Technicienne helpdesk",
+    "entreprise": {
+      "nom": "Collective.work"
+    },
+    "typeContrat": "LIB",
+    "typeContratLibelle": "Profession libérale",
+    "natureContrat": "Emploi non salarié",
+    "experienceExige": "D",
+    "experienceLibelle": "Débutant accepté",
+    "salaire": {
+      "commentaire": "430-440 € par jour"
+    },
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/6927396",
+      "partenaires": [
+        {
+          "nom": "XTRAMILE",
+          "url": "https://api-v2-multidiff.xtramile.io/collect/20af0d0797accd50fbbc4a64a76d3ef5",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/xtramile80.png"
+        }
+      ]
+    },
+    "contexteTravail": {},
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "6895106",
+    "intitule": "Tech Lead Python ESRI FME - Freelance - Freelance (H/F)",
+    "description": "Taux journalier (TJM): 450 € HT/jour\n\nCONTEXTE\n\nPour un grand compte du secteur de l'énergie, nous recherchons un Tech Lead / Développeur Python Senior pour reprendre progressivement le leadership technique d'une plateforme d'Infrastructure de Données Spatiales (IDS).\nLa mission s'inscrit dans la durée, avec une transition organisée avec le Tech Lead actuellement en poste.\n\nMISSIONS\n\n * Reprendre progressivement le leadership technique de l'équipe.\n * Développer et maintenir les composants de la solution en Python.\n * Intervenir directement sur les environnements ESRI et FME.\n * Encadrer techniquement deux développeurs, dont un profil junior.\n * Réaliser les revues de code et sécuriser les choix techniques.\n * Participer aux rituels Agile / SAFe et aux PI Planning.\n * Contribuer à terme à la trajectoire de migration vers AWS.\n\nLe poste reste fortement hands-on : nous cherchons un Tech Lead capable de développer et résoudre les sujets techniques complexes, pas uniquement de coordonner l'équipe.\n\nCONDITIONS DE TRAVAIL\n\n * Localisation : Lyon\n * 3 jours sur site par semaine\n * PI Planning : 3 jours à Courbevoie par trimestre\n * Démarrage : dès que possible\n * Durée cible : 2 ans\n * TJM cible : 450 € HT/jour, avec possibilité d'étudier un positionnement supérieur pour un profil particulièrement pertinent sur Python / ESRI / FME et Tech Lead.\n\n 1. 7 ans d'expérience minimum en développement logiciel\n 2. Très bonne maîtrise de Python\n 3. Expérience professionnelle concrète sur ESRI\n 4. Expérience professionnelle concrète sur FME\n 5. Expérience de Tech Lead, référent technique ou encadrement de développeurs\n 6. Python + ESRI + FME sont obligatoires\n 7. Appréciés : Django, AWS, Agile / SAFe, expérience SIG, géomatique ou données spatiales",
+    "dateCreation": "2026-09-15T10:02:00.217Z",
+    "dateActualisation": "2026-09-15T10:02:00.217Z",
+    "lieuTravail": {
+      "libelle": "69 - Lyon",
+      "commune": "69123"
+    },
+    "romeCode": "H1218",
+    "romeLibelle": "Responsable de projet recherche et développement",
+    "appellationlibelle": "R&D Senior Program Manager",
+    "entreprise": {
+      "nom": "Collective.work"
+    },
+    "typeContrat": "LIB",
+    "typeContratLibelle": "Profession libérale",
+    "natureContrat": "Emploi non salarié",
+    "experienceExige": "D",
+    "experienceLibelle": "Débutant accepté",
+    "salaire": {
+      "commentaire": "450 € par jour"
+    },
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/6895106",
+      "partenaires": [
+        {
+          "nom": "XTRAMILE",
+          "url": "https://api-v2-multidiff.xtramile.io/collect/b047e489bdea9b237ba2facf9446478a",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/xtramile80.png"
+        }
+      ]
+    },
+    "contexteTravail": {},
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "6825282",
+    "intitule": "Tech Lead Dynamics - Freelance (H/F)",
+    "description": "Taux journalier (TJM): 575€ / jour\n\nNotre client dans le secteur Industrie recherche un/une Tech Lead Dynamics H/F\n\nDescription de la mission :\n\nAu sein de la Direction de la Transformation Digitale, nous cherchons un(e) LEADER TECHNIQUE MICROSOFT DYNAMICS (F/H).\n\nDans le cadre des objectifs de la Direction de la Transformation Digitale et de la DSI, le/la LEADER TECHNIQUE MICROSOFT DYNAMICS (F/H) aura pour mission d'assurer le pilotage technique des applications commerciales ainsi que d'amélioration continue du SI.\n\nA ce titre, elle/il sera en relais auprès des autres fonctions de l'entreprise (BPO, directions métiers, équipes IT).\n\nSes missions principales sont les suivantes :\n\nPilotage des applications IT Sales/CRM\n\n * \n\n   Pour les applications soutenant les activités commerciales du groupe (Microsoft Dynamics, Hubspot, HighSpot) il/elle est garant(e) de la performance, de l'évolution et du maintien en condition opérationnel de ces solutions.\n\n * \n\n   Il/elle participe à la stratégie applicative pour le domaine Ventes & CRM en alignement avec les objectifs business.\n\n * \n\n   Il/Elle assure la conception et le chiffrage des solutions techniques à mettre en place suivant les besoins business\n\n * \n\n   Il/Elle participe aux paramétrages/développements de ces solutions\n\n * \n\n   Il/Elle supervise le travail de l'équipe MOE du périmètre\n\n * \n\n   Il/Elle participe et anime les cérémonies agiles (Daily, Refinement, Sprint Planning, Retro.etc)\n\n * \n\n   Il/elle a la charge de développer une relation de proximité avec les référents métiers et les IT Zone Managers des filiales commerciales du groupe\n\n * \n\n   Il/elle assure la gestion du support L3\n\nPilotage de l'amélioration continue du SI.\n\n * \n\n   Pilotage du suivi des licences\n\n * \n\n   Pilotage du backlog de demandes\n\n * \n\n   Propose/Pilote des projets visant à améliorer le SI de son périmètre ou les processus liés.\n\n * \n\n   Promouvoir les méthodologies assurant la qualité du SI.\n\n * \n\n   Maintenir un référentiel documentaire.\n\n * \n\n   S'assurer du respect des normes documentaires.\n\n * \n\n   Assure une veille technologique\n\nGestion administrative.\n\n * \n\n   Gestion de prestataires.\n\n * \n\n   Gestion des projets dans l'outil PPM du groupe\n\n * \n\n   Reporting d'activité\n\nRequirements\n\nDe formation supérieure de niveau BAC+5 (école d'ingénieur ou informatique), vous bénéficiez d'une une solide expérience d'au moins 5 ans dans des fonctions similaires, idéalement autour des fonctions commerciales.\n\nVous connaissez des solutions CRM, idéalement Microsoft Dynamics, les outils de suivi de type Jira, outils de ticketing (IVANTI), Azure DevOps.\n\nVous avez de bonnes connaissances globales en informatique, qui vous procure une solide polyvalence technique.\n\nVotre anglais est absolument courant pour faciliter nos échanges avec les filiales du Groupe.\n\nDoté(e) d'une excellente capacité d'analyse et de synthèse, vous maitrisez le mode projet et savez fonctionner en transversal.\n\nCompétences / Qualités indispensables :\n\nVous connaissez des solutions CRM, idéalement Microsoft Dynamics, les outils de suivi de type Jira, outils de ticketing (IVANTI), Azure DevOps\n\nCompétences / Qualités qui seraient un + :\n\nVous aimez travailler en équipe tout en étant capable d'autonomie. Vous êtes reconnu(e) pour votre écoute, votre communication et votre relationnel facilitant dans les échanges, en interne comme en externe, et en France comme à l'international.\n\nInformations concernant le télétravail :\n\n4 mois full présence puis 2 J / remote par semaine\n\n * \n\n   Vous connaissez des solutions CRM, idéalement Microsoft Dynamics, les outils de suivi de type Jira, outils de ticketing (IVANTI), Azure DevOps",
+    "dateCreation": "2026-09-11T10:02:03.662Z",
+    "dateActualisation": "2026-09-12T10:02:00.547Z",
+    "lieuTravail": {
+      "libelle": "69 - Tarare",
+      "codePostal": "69170",
+      "commune": "69243"
+    },
+    "romeCode": "D1406",
+    "romeLibelle": "Directeur / Directrice des ventes",
+    "appellationlibelle": "Manager commercial junior des forces de vente",
+    "entreprise": {
+      "nom": "Collective.work"
+    },
+    "typeContrat": "LIB",
+    "typeContratLibelle": "Profession libérale",
+    "natureContrat": "Emploi non salarié",
+    "experienceExige": "D",
+    "experienceLibelle": "Débutant accepté",
+    "salaire": {
+      "commentaire": "575 € par jour"
+    },
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/6825282",
+      "partenaires": [
+        {
+          "nom": "XTRAMILE",
+          "url": "https://api-v2-multidiff.xtramile.io/collect/bd1e821d27549ff8a80a79fe7dda03c8",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/xtramile80.png"
+        }
+      ]
+    },
+    "contexteTravail": {},
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "213QKFZ",
+    "intitule": "Tech Lead Java (H/F)",
+    "description": "Rejoignez une aventure qui a du sens\nPrenez la direction d'un projet ambitieux où votre expertise technique sera un véritable moteur de transformation. En tant que Technical Leader Java, vous jouerez un rôle central dans les choix d'architecture, l'accompagnement des équipes et la réussite de solutions innovantes. Ce poste est l'opportunité idéale pour mettre en valeur votre vision, votre leadership et votre capacité à créer des applications robustes, performantes et durables.\n\n Vos missions à nos côtés:\nVous intervenez en tant que référent technique et garant de la cohérence globale du projet. À ce titre, vous serez amené à :\nDevenir l'interlocuteur technique privilégié auprès des architectes, des développeurs et des parties prenantes du projet.\nAnimer et renforcer la relation technique avec le client comme avec les équipes internes.\nParticiper activement à la conception, au développement et à la documentation des solutions.\nEncadrer et accompagner les équipes dans un environnement agile (Scrum, Kanban).\nDévelopper et optimiser l'intégration continue et contribuer aux opérations de déploiement.\nPrendre en charge les enjeux de performance, de sécurité et de scalabilité.\nContribuer aux réponses à appels d'offres via le chiffrage et la rédaction technique. \n\nLes atouts pour réussir:\nDe formation ingénieur ou équivalent Bac+5, vous justifiez d'au moins 8 années d'expérience sur une fonction similaire, avec une forte dimension technique et un réel goût pour la transmission.\n\n Vous maîtrisez parfaitement l'écosystème Java, Spring, Hibernate, ainsi que les bases de données relationnelles.\nVous êtes également à l'aise avec les technologies frontend (Angular 9+, HTML5, CSS3, JavaScript, Bootstrap, PrimeNG, Material) et disposez de solides connaissances en environnements DevOps (Jenkins, Git, Linux) et en architectures Cloud.\n\nVotre leadership naturel, votre capacité à fédérer, et votre sens du collectif font la différence. Curieux, rigoureux et animé par l'envie d'innover, vous appréciez les défis techniques et avez à cœur de délivrer des solutions fiables et à forte valeur ajoutée. \n\nRémunération:\nFourchette de salaire réévalué selon expérience : 45k€ - 60k€ \n\nCe que nous proposons:\nJusqu'à 3 jours de télétravail par semaine\nTickets restaurant (valeur faciale 10€, prise en charge 60%)\nÉvénements d'intégration et moments conviviaux réguliers\nTous vos congés disponibles dès votre arrivée\nProgramme de cooptation jusqu'à 2750 €\nAccès aux activités sociales et culturelles\nAide à la mobilité durable (vélo, covoiturage) ",
+    "dateCreation": "2026-09-09T13:18:58.220Z",
+    "dateActualisation": "2026-09-09T13:18:58.220Z",
+    "lieuTravail": {
+      "libelle": "69 - VILLEURBANNE",
+      "latitude": 45.766184,
+      "longitude": 4.877063,
+      "codePostal": "69100",
+      "commune": "69266"
+    },
+    "romeCode": "M1805",
+    "romeLibelle": "Développeur / Développeuse informatique",
+    "appellationlibelle": "Développeur / Développeuse informatique",
+    "entreprise": {
+      "nom": "ATOS FRANCE",
+      "description": "Atos est un leader international de la transformation digitale avec plus de 104 000 collaborateurs dans 73 pays et un chiffre d'affaires annuel de plus de 11 milliards d'euros. Numéro un européen du Cloud, de la cybersécurité et des supercalculateurs, le groupe fournit des solutions intégrées de Cloud Hybride Orchestré, Big Data, Applications Métiers et Environnement de Travail Connecté.\n",
+      "url": "http://fr.atos.net",
+      "entrepriseAdaptee": false
+    },
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "E",
+    "experienceLibelle": "8 An(s)",
+    "formations": [
+      {
+        "niveauLibelle": "Bac+5 et plus ou équivalents",
+        "exigence": "E"
+      }
+    ],
+    "langues": [
+      {
+        "libelle": "Anglais",
+        "exigence": "E"
+      }
+    ],
+    "competences": [
+      {
+        "code": "300688",
+        "libelle": "Application web",
+        "exigence": "S"
+      },
+      {
+        "code": "109846",
+        "libelle": "Concevoir une application web",
+        "exigence": "S"
+      }
+    ],
+    "salaire": {
+      "libelle": "Annuel de 45000.00 Euros à 60000.00 Euros"
+    },
+    "dureeTravailLibelle": "36H30/semaine\nTravail en journée",
+    "dureeTravailLibelleConverti": "Temps plein",
+    "alternance": false,
+    "contact": {
+      "nom": "ATOS FRANCE - Mme Magali BRUSSON",
+      "coordonnees1": "https://jobs.atos.net/job/Lyon-Tech-Lead-Java-FH/1286833601/",
+      "urlPostulation": "https://jobs.atos.net/job/Lyon-Tech-Lead-Java-FH/1286833601/"
+    },
+    "agence": {},
+    "nombrePostes": 1,
+    "accessibleTH": false,
+    "qualificationCode": "9",
+    "qualificationLibelle": "Cadre",
+    "codeNAF": "62.02A",
+    "secteurActivite": "62",
+    "secteurActiviteLibelle": "Conseil en systèmes et logiciels informatiques",
+    "trancheEffectifEtab": "250 à 499 salariés",
+    "origineOffre": {
+      "origine": "1",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/213QKFZ"
+    },
+    "offresManqueCandidats": false,
+    "contexteTravail": {
+      "horaires": [
+        "36H30/semaine\nTravail en journée"
+      ]
+    },
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "6738136",
+    "intitule": "Tech Lead (F/H) h/f",
+    "description": "Description de l'entrepriseBPCE Solutions Informatiques, une entreprise dynamique et innovante fait partie du groupe BPCE, 2ème groupe bancaire français. Nos 2600 collaborateurs, présents sur 19 villes en France, imaginent et inventent, des solutions SI pour faciliter la vie des utilisateurs des Caisses d'épargne, des Banques Populaires et de plusieurs autres filiales. Entreprise humaine et engagée, notre politique de Responsabilité sociale de l'entreprise porte des sujets clés comme la mixité, la diversité, le handicap, la qualité de vie au travail et le développement durable. Plus de 80 métiers sont présents au sein de BPCE SI et plus de 50 technologies et langages de développement sont utilisés dans nos solutions bancaires ! Passionné(e) par l'informatique et envie de nouveaux challenges ? Rejoignez nos équipes d'experts et intervenez sur nos projets innovants en utilisant les dernières tendances technologiques (IA générative, Low Code / No Code, Cloud, DevOps). Alors, pour booster votre carrière et profiter de la diversité des terrains de jeux que proposent BPCE Solutions informatiques et le Groupe BPCE, rejoignez-nous ! Poste et missionsAu sein de la plateforme Solutions Transverses, vous intégrerez le produit \"Services Transverses d'Échanges\" en tant que Tech Lead (F/H). Le produit se compose de plusieurs solutions d'échanges de données et de messages ainsi que tous les transferts de fichiers pour répondre aux besoins métiers des différentes entités du Groupe BPCE. En tant que Tech Lead (F/H), vos principales missions seront les suivantes : La définition et le pilotage des choix d'architecture backend et frontend pour garantir la scalabilité et la performance des systèmes, La mise en place et la promotion des bonnes pratiques de développement (tests, CI/CD, documentation). En collaboration avec les architectes, CTO, équipes Usines et déploiement et Méthode groupe BPCE SI vous serez le garant des livrables en termes de robustesse et conformité aux exigences de qualité, La conception et le développement des fonctionnalités critiques en optimisant le backend et le frontend, La supervision des mises en production et garantissez la stabilité des applications, vous proposez toute amélioration visant à une meilleure performance des systèmes, end to end, Vous contribuez à la vision produit en apportant une expertise technique et des recommandations basées sur, Vous participez aux projets en méthodologie et rituels Agile. Vous avez une appétence pour les projets technique et appréciez travailler sur des sujets à multiples technologies ? Ça tombe bien car ce poste est fait pour vous. Vous travaillerez dans un contexte riche, avec des interlocuteurs multiples au sein de différentes entités de BPCE Solutions Informatiques et plus largement du Groupe BPCE.Profil et compétences requisesDiplômé(e) d'une formation de niveau BAC+3/5 en informatique, vous avez au moins 4 années d'expérience sur un poste similaire. Compétences techniques requises : Java, API JAVA, REST- C, C # , sprintBoot Connaissances Socle : Linux, Z os, Windows Compétences techniques souhaitées : Containeurisation IHM (NSDK, ASP.NET, CSS3, HTML5, Angular JS et Angular) Python Vous avez le sens du résultat, du service client et un esprit collaboratif. Doté(e) d'un excellent relationnel vous êtes capable d'échanger avec de nombreux interlocuteurs.Informations complémentaires sur le posteOrganisation du temps de travail : Poste en forfait jours. Notre processus de recrutement : Notre processus de recrutement se déroule en 3 phases : Un échange téléphonique avec nos équipes RH afin de comprendre votre projet professionnel Un échange en visio ou sur site avec nos équipes RH pour faire plus ample connaissance et présenter nos projets Un échange en visio ou sur site avec le/la futur/e manager et éventuellement votre future équipe Nos avantages ? ?BPCE SI, c'est un cadre de travail agréable avec un accompagnement de proximité, des formations, de multiples évolutions possibles au sein du groupe. ? Un package de rémunération attrayant comprenant une part variable sur objectif individuel et une prime d'intéressement. ? 80 % de prise en charge des frais de transports en commun !  Environ 9 semaines de congés annuels (congés et RTT) ? Travail hybride ! 30 jours de télétravail par trimestre et flexibilité des horaires ?Une politique familiale, des aides et une flexibilité pour les collaborateurs aidants, les parents et futurs parents. ? Accès à un Plan Epargne Entreprise avec abondement ! Et un très bon niveau de protection sociale. ? Un CSE actif ! Des locaux attractifs et des comités d'animations par site Et bien plus encore ! Nous pourrons en discuter en entretien ! A bientôt ! L'équipe RH",
+    "dateCreation": "2026-09-08T22:26:45.195Z",
+    "dateActualisation": "2026-09-08T22:26:45.195Z",
+    "lieuTravail": {
+      "libelle": "69 - Villeurbanne",
+      "codePostal": "69100",
+      "commune": "69266"
+    },
+    "romeCode": "E1125",
+    "romeLibelle": "Concepteur / Conceptrice de jeux vidéo",
+    "appellationlibelle": "Lead graphiste - jeux vidéo",
+    "entreprise": {},
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "E",
+    "experienceLibelle": "Expérience exigée",
+    "salaire": {},
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/6738136",
+      "partenaires": [
+        {
+          "nom": "JOBINLIVE",
+          "url": "http://www.missionhandicap.com/emploi/BPCE-BPCE_INFO01883#utm_source=PoleEmploi",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/jobinlive80.png"
+        }
+      ]
+    },
+    "contexteTravail": {},
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "6706378",
+    "intitule": "Tech Lead Data Engineer H/F",
+    "description": "RESPONSABILITÉS : \n\nNous recherchons un(e) Tech Lead Data Engineer capable de trouver des solutions innovantes et robustes à l'ensemble des problématiques Data.\nVous aurez la charge de :\n - Assurer la mise en œuvre de l'accès, du référencement et de la qualité de la donnée\n - Assurer l'industrialisation, la supervision et l'intégration des solutions\n - Rédiger les normes de développement\n - Participer à la rédaction du manuel d'exploitation\nEn tant que Tech Lead, vous savez :\n - Vous présenter et promouvoir des architectures data face au client\n - Identifier et comprendre les besoins métiers\n - Former, encadrer et faire évoluer les consultants juniors\n - Participer à la réponse aux appels d'offres (avant-vente)\n\nPROFIL RECHERCHÉ : \n\nEn tant que Tech Lead Data Engineer vous maîtrisez :\n - Le langage SQL\n - Un langage objet (Python, JAVA, Scala)\n - Un framework de calcul distribué\n - Un bus de messages: Kafka, RabbitMQ\n - Des Outils d'alimentation de données: Talend, Matillion, Stambia\n - Des Moteurs de recherche: suite ELK (ElasticSearch, Logstash, Kibana), SolR, services Cloud\n - Le Stockage des données: stockage objet et/ou distribué (HDFS, deltalake ou blob/S3)\n - L'intégration continue (Git, JUnit, SonarQube, Jenkins)\n - Un cloud provider (AWS, GCP, Azure) ou une distribution Big Data (Hortonworks, Cloudera, Datastax)\n - Les concepts de la modélisation relationnelle et non-relationnelle\nDiplômé(e) d'une école d'ingénieur ou d'une université, vous justifiez d'une expérience professionnelle d'au minimum 5 ans dans un contexte projet Data. Rigoureux(se), proactif(ve) et autonome vous restez en veille technologique et êtes force de proposition. Vous êtes capable de prendre de la hauteur et vous adapter aux enjeux du projet.",
+    "dateCreation": "2026-09-08T04:32:01.133Z",
+    "dateActualisation": "2026-09-08T04:32:01.133Z",
+    "lieuTravail": {
+      "libelle": "69 - Lyon 1er Arrondissement",
+      "codePostal": "69001",
+      "commune": "69381"
+    },
+    "romeCode": "M1811",
+    "romeLibelle": "Data engineer",
+    "appellationlibelle": "Architecte de données informatiques",
+    "entreprise": {
+      "nom": "JEMS"
+    },
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "E",
+    "experienceLibelle": "Expérience exigée",
+    "salaire": {
+      "libelle": "Annuel de 50000.0 Euros à 70000.0 Euros"
+    },
+    "dureeTravailLibelle": "39H/semaine\nTravail en journée",
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "qualificationCode": "9",
+    "qualificationLibelle": "Cadre",
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/6706378",
+      "partenaires": [
+        {
+          "nom": "BEETWEEN",
+          "url": "https://app.beetween.com/WeaselWeb/p/#/apply/job/dedbg6qwsh8/tech-lead-data-engineer-h-f",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/beetween80.png"
+        }
+      ]
+    },
+    "contexteTravail": {
+      "horaires": [
+        "39H/semaine\nTravail en journée"
+      ]
+    },
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "213NCJL",
+    "intitule": "Tech Lead .Net (H/F)",
+    "description": "Rôles & Missions :\n\nAu sein d'une équipe Tech & Product organisée en mode agile, vous intervenez comme référent.e technique sur des solutions logicielles innovantes, au cœur d'un environnement en forte évolution orienté cloud.\n\nEn tant que Tech Lead, vous accompagnez une équipe de développeurs aux profils variés dans leur progression technique et leur montée en compétences. Vous jouez un rôle clé dans la structuration des pratiques de développement et dans la diffusion des standards au sein des équipes.\nVous êtes garant.e de la cohérence technique des développements, en lien avec les équipes d'architecture, et contribuez aux choix technologiques afin d'assurer la performance, la sécurité et la scalabilité des applications, tout en optimisant l'expérience utilisateur.\nVous intervenez également sur le maintien en conditions opérationnelles des solutions : supervision, gestion des incidents, amélioration continue et fiabilisation des applications. Vous veillez à la maîtrise de la dette technique en pilotant les actions de refactoring et en alimentant les backlogs.\nVous êtes moteur sur les sujets qualité : mise en place de stratégies de tests (unitaires, fonctionnels), bonnes pratiques de développement, performance et sécurité des applications.\nPar ailleurs, vous participez activement à la dynamique d'innovation : veille technologique, expérimentations (POC), contribution aux réflexions d'architecture et partage des retours d'expérience.\nEnfin, vous prenez part à la vie de l'équipe au sens large : suivi d'avancement, collaboration avec les équipes produit, et contribution aux recrutements techniques.\n\nProfil Attendu :\n\nIssu.e d'une formation en informatique (Bac+3 à Bac+5), vous justifiez d'une expérience significative d'au moins 8 ans en développement .NET, idéalement dans des environnements web, avec une évolution vers des rôles de lead technique, architecte ou référent.\nVous disposez d'une solide maîtrise des environnements cloud, notamment sur Azure, et êtes à l'aise avec les pratiques DevSecOps ainsi que les outils d'infrastructure as code et de conteneurisation (type Terraform, Docker, Kubernetes).\nVous avez une forte sensibilité aux enjeux de qualité logicielle, de performance et de sécurité, ainsi qu'une bonne compréhension des architectures modernes.\nReconnu pour votre leadership, vous savez accompagner, structurer et faire progresser une équipe technique tout en instaurant un cadre de travail collaboratif et exigeant.\nCurieux, proactif et orienté amélioration continue, vous aimez explorer de nouvelles solutions et contribuer activement à l'évolution des pratiques et des technologies au sein de votre environnement.\n\nKENT est un employeur engagé en faveur de la diversité et de l'égalité des chances. Tous nos postes sont ouverts à toutes et à tous, sans distinction ni discrimination. Nos décisions de recrutement reposent exclusivement sur les compétences, les aptitudes et la motivation.",
+    "dateCreation": "2026-09-07T20:20:30.550Z",
+    "dateActualisation": "2026-09-08T10:42:04.345Z",
+    "lieuTravail": {
+      "libelle": "69 - Brignais",
+      "latitude": 45.675095,
+      "longitude": 4.758753,
+      "codePostal": "69530",
+      "commune": "69027"
+    },
+    "romeCode": "M1305",
+    "romeLibelle": "Fablab Manager",
+    "appellationlibelle": "Forgeur / Forgeuse numérique",
+    "entreprise": {
+      "nom": "E-KENT",
+      "entrepriseAdaptee": false
+    },
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "E",
+    "experienceLibelle": "8 An(s)",
+    "competences": [
+      {
+        "code": "119672",
+        "libelle": "Logiciels de conception ou dessin assisté par ordinateur (CAO/DAO)",
+        "exigence": "S"
+      },
+      {
+        "code": "113831",
+        "libelle": "Gérer un parc informatique",
+        "exigence": "S"
+      },
+      {
+        "code": "105407",
+        "libelle": "Surveiller les données de mesure de la machine au cours de l'impression",
+        "exigence": "S"
+      },
+      {
+        "code": "120360",
+        "libelle": "Réaliser des prototypes",
+        "exigence": "S"
+      },
+      {
+        "libelle": "#TDFE2026",
+        "exigence": "S"
+      }
+    ],
+    "salaire": {
+      "libelle": "Annuel de 55000.0 Euros à 65000.0 Euros"
+    },
+    "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+    "dureeTravailLibelleConverti": "Temps plein",
+    "alternance": false,
+    "contact": {},
+    "agence": {},
+    "nombrePostes": 1,
+    "qualificationCode": "9",
+    "qualificationLibelle": "Cadre",
+    "codeNAF": "62.02A",
+    "secteurActivite": "62",
+    "secteurActiviteLibelle": "Conseil en systèmes et logiciels informatiques",
+    "qualitesProfessionnelles": [
+      {
+        "libelle": "Faire preuve de curiosité, d'ouverture d'esprit",
+        "description": "Capacité à aller chercher au-delà de ce qui est donné à voir, à s'ouvrir sur la nouveauté et à investiguer pour comprendre et agir de façon appropriée."
+      },
+      {
+        "libelle": "Organiser son travail selon les priorités et les objectifs",
+        "description": "Capacité à planifier, prioriser, anticiper des actions, en tenant compte des moyens, des ressources, des objectifs et du calendrier pour les réaliser."
+      },
+      {
+        "libelle": "Faire preuve de créativité, d'inventivité",
+        "description": "Capacité à créer, imaginer quelque chose de nouveau (nouveau produit, nouvelle solution, …)."
+      }
+    ],
+    "trancheEffectifEtab": "1 ou 2 salariés",
+    "origineOffre": {
+      "origine": "1",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/213NCJL"
+    },
+    "offresManqueCandidats": false,
+    "contexteTravail": {
+      "horaires": [
+        "35H/semaine\nTravail en journée"
+      ]
+    },
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "6693104",
+    "intitule": "Tech lead data & applications web F/H",
+    "description": "NOTRE MISSIONENEDIS est devenu un pionnier de la transformation digitale du système électrique, et permet chaque jour à l'ensemble des acteurs consommateurs et producteurs de mieux maîtriser leur consommation et leur impact CO2La DSI d'ENEDIS conçoit, développe les Systèmes d'Information qui permettent au réseau d'être intelligent, plus anticipatif, plus automatisé, plus performant.\nRejoignez le pôle SIRE (SI Réseau Electrique) qui est, à la DSI, au cœur de la transformation des réseaux électriques et invente les SI des femmes et hommes qui l'exploitent, le conduisent et le maintiennent.\nNous mettons l'utilisateur, l'agilité et l'expérience collaborateur au centre de notre démarche.\n Vous intégrerez l'équipe produit Okoumé (principal acteur du calcul du critère B) sur le périmètre Exploitation, une équipe engagée et passionnée.\n Nous sommes attachés à livrerdes outils fiables, robustes dans un contexte challengeant.\nVotre mission en tant qu'expert technique consiste à définir la trajectoire technique du produit et accompagner sa mise en oeuvre ainsi qu'à encadrer l'équipe technique.\nVos activités seront les suivantes :- Définir la trajectoire technique et anticiper le cadrage technique des sujets à venir- Contribuer au développement du socle technique de l'application et de son outillage- Piloter le delivery avec un haut niveau de qualité- Superviser l'application en production et contribuer à la résolution des incidents- Contribuer à la qualification des prestations et les relations commerciales)Si vous aimez travailler sur des sujets variés et en constante évolution, au sein d'une équipe dynamique . Alors rejoignez-nous !",
+    "dateCreation": "2026-09-07T12:42:38.891Z",
+    "dateActualisation": "2026-09-07T12:42:38.891Z",
+    "lieuTravail": {
+      "libelle": "69 - Lyon",
+      "commune": "69123"
+    },
+    "romeCode": "M1811",
+    "romeLibelle": "Data engineer",
+    "appellationlibelle": "Data manager",
+    "entreprise": {},
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "D",
+    "experienceLibelle": "Débutant accepté",
+    "salaire": {},
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/6693104",
+      "partenaires": [
+        {
+          "nom": "DIRECTEMPLOI",
+          "url": "https://www.directemploi.com/candidatOffre/55609738?utm_source=pole-emploi&utm_medium=referral&utm_campaign=Pôle-Emploi",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/directemploi80.png"
+        }
+      ]
+    },
+    "contexteTravail": {},
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "6517609",
+    "intitule": "Lead Tech / DevOps Sénior (H/F)",
+    "description": "TUANIS Conseil est une Entreprise de Services du Numérique (ESN/SSII) de 100 personnes, fondée en 2018, en perpétuel mouvement, à l image de son animal emblématique, le Colibri, et tournée vers la différence. \n\nNous sommes reconnus pour notre partage, notre proximité et notre volonté de permettre à chacun d'évoluer au sein de Tuanis Conseil. \n\nEn intégrant nos équipes, vous rejoignez un environnement convivial où vos idées seront les bienvenues.\n\nLe poste : \n\nNous recherchons pour l'un de nos clients un Lead tech/DevOps sur Lyon.\nContexte\nL'équipe est composée d'environ 25 personnes réparties en 4 squads :\n3 Feature Teams en charge du développement des fonctionnalités (PO, développeurs)\n1 Core Team regroupant les expertises transverses : DevOps et Lead Tech\nDans le cadre d'un renfort d'équipe et du remplacement d'un profil DevOps sortant, nous recherchons un profil expérimenté capable d'intervenir à la fois sur les sujets DevOps, architecture technique et développement.\nDémarrage souhaité : Septembre / Octobre.\n \nMission : Au sein de la Core Team, le consultant participera à :\nVolet DevOps (50%)\nGestion et amélioration des chaînes CI/CD\nAccompagnement des mises en production\nAutomatisation et industrialisation des déploiements\nConteneurisation des applications\nAmélioration continue des pratiques DevOps\nParticipation aux évolutions de l'infrastructure technique\nVolet Lead Tech / Développement (50%)\nParticipation aux développements sur les sujets techniques et transverses\nRéalisation de tickets techniques complexes\nAccompagnement des équipes de développement sur les bonnes pratiques\nRevue et amélioration de la qualité du code\nContribution aux réflexions d'architecture et aux évolutions fonctionnelles\nRéalisation d'études techniques et partage des recommandations auprès des équipes\nResponsabilités techniques\nArchitecture & Expertise technique\nGestion des versions et des montées de version techniques\nSuivi des sujets Red Hat\nAdministration et évolution des plateformes ElasticSearch\nDéfinition et diffusion des bonnes pratiques de développement\nAccompagnement des équipes sur les choix techniques\nEnvironnement DevOps\nLinux / Shell scripting\nAnsible\nTerraform\nGit\nJenkins\nGitLab\nArtifactory\nVault\nDocker\nKubernetes (montée en puissance prévue)\nGrafana / Observabilité\nBases de données & Middleware\nPostgreSQL\nElasticSearch (administration et mises à jour)\nDéveloppement\nJava\nAngular\n \n\n\n\nProfil recherché : \n\nProfil recherché\nCompétences techniques\nSolide expérience DevOps et intégration continue\nBonne maîtrise de Linux et des outils d'automatisation\nConnaissances en architecture applicative\nExpérience significative en développement Java / Angular\nCapacité à intervenir sur des problématiques transverses (Build, Run, Architecture)\nSoft Skills\nCapacité à s'intégrer rapidement dans un environnement complexe\nBon relationnel et excellente communication\nForce de proposition\nCapacité à challenger les choix techniques et à partager ses recommandations\nGoût pour l'accompagnement et la montée en compétence des équipes\nExpérience attendue\nMinimum 6 ans d'expérience sur des environnements similaires\nProfil cible : 8 ans d'expérience ou plus\nUne forte maturité technique et un potentiel de leadership sont attendus\n ",
+    "dateCreation": "2026-09-02T11:21:32.119Z",
+    "dateActualisation": "2026-09-02T11:21:32.119Z",
+    "lieuTravail": {
+      "libelle": "69 - Lyon 1er Arrondissement",
+      "codePostal": "69001",
+      "commune": "69381"
+    },
+    "romeCode": "M1855",
+    "romeLibelle": "Développeur / Développeuse web",
+    "appellationlibelle": "Développeur / Développeuse web",
+    "entreprise": {
+      "nom": "Tuanis Conseil"
+    },
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "E",
+    "experienceLibelle": "5 An(s)",
+    "salaire": {},
+    "complementExercice": "Temps plein",
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/6517609",
+      "partenaires": [
+        {
+          "nom": "PMEJOB",
+          "url": "https://www.jobposting.pro/emploi-2688205-120",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/pmejob80.png"
+        }
+      ]
+    },
+    "contexteTravail": {},
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "212YRWT",
+    "intitule": "Tech lead IA F/H",
+    "description": "\nEn tant que Tech Lead, pilotez, innovez et inspirez une équipe de développeurs pour concevoir des solutions techniques performantes. Vous serez au coeur de la conception, du développement et de l'optimisation des produits, tout en accompagnant votre équipe dans un environnement technologique stimulant.\n\nVos missions principales :\n\n * Piloter des projets techniques : respect des délais, budgets et exigences qualité.\n\n * Encadrer une équipe : revues de code, montées en compétence, résolution de problèmes, environnement stimulant.\n\n * Concevoir des architectures logicielles robustes : choix des technologies, frameworks et patterns adaptés.\n\n * Innover avec l'IA générative : intégration de solutions performantes, alignées sur les objectifs métiers.\n\n * Industrialiser : DevOps (CI/CD, IaC, observabilité), intégration fluide dans le SI, optimisation des performances et scalabilité.\n\n * Garantir la qualité : tests unitaires, revues de code, documentation, conformité aux standards.\n\n * Résoudre et arbitrer : solutions pérennes pour les bugs bloquants, collaboration avec les PO, gestion de projet et cloud design.\n\n * Veille et partage : suivi des innovations, contribution aux communautés techniques, diffusion des standards.\n\nProfil recherché :\nRejoignez-nous si vous êtes titulaire d'un diplôme Bac+5 en informatique, génie logiciel, SI ou école d'ingénieurs (ou équivalent).\n\nExpérience : 5 à 8 ans en développement applicatif, dont plusieurs années en rôle de référent technique/lead. Pratique confirmée de la gestion de projets techniques en environnement agile et cloud.\n\nCompétences techniques :\n\n * Langages : maîtrise avancée de Java, JavaScript, HTML/CSS, Python.\n\n * Front-end : expérience sur Angular et/ou React.\n\n * Cloud : connaissance d'AWS, GCP, Azure ; maîtrise de Docker, Kubernetes, Terraform (IaC).\n\n * IA générative : intégration d'API LLM (Claude Code, OpenAI, Mistral Codestral), optimisation des performances.\n\n * Outils : Git/GitLab (CI/CD).\n\n * Architecture : conception d'API, microservices, architectures distribuées ; choix des patterns/frameworks adaptés.\n\n * Méthodologies : pratique de Scrum/Kanban et participation active aux cérémonies agiles.\n\nPosture professionnelle :\n\n * Communication : capacité à vulgariser des sujets techniques pour des publics variés (PO, gestion de projet, cloud design, métiers).\n\n * Leadership : animation et montée en compétence d'une équipe de développeurs, prise de décision technique.\n\n * Performance/qualité : culture de l'optimisation, robustesse, sécurité ; exigence sur la qualité du code et la documentation.\n\n * Gestion de projet : organisation, priorisation, arbitrage entre coûts/délais/qualité.\n\n * Numérique responsable : sensibilité à la sobriété numérique, à la sécurité et à l'éthique de l'IA.\n\n * Vision SI : capacité à identifier les besoins, concevoir des applications et piloter leur développement de bout en bout.\n",
+    "dateCreation": "2026-08-26T17:08:29.953Z",
+    "dateActualisation": "2026-09-11T22:46:29.545Z",
+    "lieuTravail": {
+      "libelle": "69 - Lyon 8e Arrondissement",
+      "latitude": 45.734721,
+      "longitude": 4.87297,
+      "codePostal": "69008",
+      "commune": "69388"
+    },
+    "romeCode": "M1889",
+    "romeLibelle": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+    "appellationlibelle": "Développeur / Développeuse IA",
+    "entreprise": {
+      "nom": "SNCF MARSEILLE 03 17 AV GENERAL LECLERC",
+      "entrepriseAdaptee": false
+    },
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "E",
+    "experienceLibelle": "5 An(s)",
+    "salaire": {
+      "libelle": "Annuel de 55000.0 Euros à 74000.0 Euros sur 12.0 mois"
+    },
+    "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+    "dureeTravailLibelleConverti": "Temps plein",
+    "alternance": false,
+    "contact": {
+      "coordonnees1": "https://www.altays-progiciels.com/sncf-recrutement-externe/back/offre/redirectOffreSiteCarriere/1?NoOffre=2857834&NoSociete=389&NoLangue=1&NoSource=16003",
+      "urlPostulation": "https://www.altays-progiciels.com/sncf-recrutement-externe/back/offre/redirectOffreSiteCarriere/1?NoOffre=2857834&NoSociete=389&NoLangue=1&NoSource=16003"
+    },
+    "agence": {},
+    "nombrePostes": 1,
+    "qualificationCode": "6",
+    "qualificationLibelle": "Employé qualifié",
+    "codeNAF": "49.10Z",
+    "secteurActivite": "49",
+    "secteurActiviteLibelle": "Transport ferroviaire interurbain de voyageurs",
+    "trancheEffectifEtab": "250 à 499 salariés",
+    "origineOffre": {
+      "origine": "1",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/212YRWT"
+    },
+    "offresManqueCandidats": true,
+    "contexteTravail": {
+      "horaires": [
+        "35H/semaine\nTravail en journée"
+      ]
+    },
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "6284640",
+    "intitule": "Tech Lead Java/Angular - Services Financiers - Lyon (H/F)",
+    "description": "\n            Description de l'entrepriseSopra Steria, acteur majeur de la Tech en Europe, avec 51000 collaborateurs dans près de 30 pays, est reconnu pour ses activités de conseil, de services et solutions numériques. Il aide ses clients à mener leur transformation digitale et à obtenir des bénéfices concrets et durables. Le Groupe apporte une réponse globale aux enjeux de compétitivité des grandes entreprises et organisations, en combinant une connaissance approfondie des secteurs d'activité et des technologies à une approche collaborative.\n\nSopra Steria place l'humain au cœur de son action et s'engage auprès de ses clients à tirer le meilleur parti du numérique pour construire un avenir positif. En 2025, le Groupe a réalisé un chiffre d'affaires de 5,6 milliards d'euros.\nThe world is how we shape itDescription du posteLa division « Services Financiers » s'est développée autour des métiers de la banque de détail, de la banque privée et des services financiers spécialisés. Nous participons à la révolution digitale grâce à notre expertise en automatisation des processus, Big Data, IA, Cloud. Nous accompagnons la transformation de nos clients en y associant nos compétences technologiques et sectorielles.Vous souhaitez intégrer une communauté d'experts, prendre part à l'accompagnement de vos collègues dans leur montée en compétences ou encore partager vos expertises pour enrichir nos savoir-faire ? Rencontrons-nous !Votre rôle et vos missions :Vous évoluez au sein d'une équipe de développement et assurez ainsi un rôle de référent(e) technique :  Vous travaillez dans un contexte Agile Vous participez à la conception et à la modélisation d'applications Web stratégiques Vous êtes garant (e) s des bonnes pratiques projet et veillez à la qualité des développements Vous êtes force de proposition au sein des comités techniques et entretenez un lien privilégié avec l'architecte solution pour définir les orientations du produit et garantir les normes qualité et sécurité Vous mettez en place et maintenez les chaînes d'intégration continue (CI/CD) dans un contexte DevOps  Vous encadrez et accompagnez l'équipe de développementVous êtes acteur/trice (pas de s)de notre communauté technique et contribuez à la veille technologique.Vous travaillez dans un environnement technique riche et innovant : Java 17+, Angular 8+Craftsmanship, Clean architecture, TDD Apache Kafka, PostgreSQL, Elastic Search GitLab, Kubernetes, Azure, AWSSpring batch / Spring bootQualificationsVotre profil :Vous disposez d'une forte appétence pour le management d'équipe et souhaitez prendre des responsabilités ?  Vous êtes polyvalent(e)s et avez un bon relationnel ?Vous êtes motivé(e)s pour intégrer un secteur dynamique en pleine expansion, au sein d'un groupe ambitieux ?   Diplômé(e) d'une école d'Ingénieurs ou équivalent Universitaire, vous disposez d'une expérience d'au moins 5 ans sur un poste de développeur web Java/Angular en environnement Agile et votre connaissance d'Angular 14 ou 15 est un plus.La maîtrise de l'anglais sera fortement appréciée.Nous vous offrons un parcours sur mesure vous permettant d'évoluer rapidement dans votre carrière : rejoignez-nous ! Informations supplémentairesLes avantages à nous rejoindre :   Un accord télétravail pour télétravailler jusqu'à 2 jours par semaine selon vos missions.Un package avantages intéressants : une mutuelle, un CSE, des titres restaurants, un accord d'intéressement, des primes vacances et cooptation.Un accompagnement individualisé avec un manager que vous choisissez de la part de votre manager et de notre équipe RH.Des opportunités de carrières multiples : plus de 50 métiers, des secteurs d'activités très hétérogènes autant de passerelles à imaginer ensemble.La possibilité de s'engager auprès de notre fondation et / ou de notre partenaire « Vendredi »L'opportunité de rejoindre le collectif Tech'Me UP / Tech Women Up, communauté technique du groupe pour s'enrichir de formations, conférences, actions de veille, et bien plus encore...Plusieurs centaines de formations accessibles en toute autonomie avec la Sopra Steria AcademyEmployeur inclusif et engagé, notre société œuvre chaque jour pour lutter contre toute forme de discrimination et favoriser un environnement de travail respectueux. C'est pourquoi, attachés à la mixité et à la diversité, nous encourageons toutes les candidatures et tous les profils.https://www.soprasteria.fr/nous-connaitre/nos-engagements \n            ",
+    "dateCreation": "2026-08-26T05:30:55.669Z",
+    "dateActualisation": "2026-08-26T05:30:55.669Z",
+    "lieuTravail": {
+      "libelle": "69 - Lyon 1er Arrondissement",
+      "codePostal": "69001",
+      "commune": "69381"
+    },
+    "romeCode": "I1404",
+    "romeLibelle": "Conseiller / Conseillère support technique informatique",
+    "appellationlibelle": "Technicien / Technicienne helpdesk",
+    "entreprise": {},
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "E",
+    "experienceLibelle": "0 An(s)",
+    "salaire": {},
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "qualificationCode": "7",
+    "qualificationLibelle": "Technicien",
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/6284640",
+      "partenaires": [
+        {
+          "nom": "TALENTS_HANDICAP",
+          "url": "https://www.talents-handicap.com/165-sopra-steria/339006-tech-lead-java-angular-services-financiers-lyon-11?src=FranceTravail",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/talents_handicap80.png"
+        }
+      ]
+    },
+    "contexteTravail": {},
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "5724949",
+    "intitule": "Tech lead C# .net F/H - Carso Investment",
+    "description": "Vous intégrerez le pool de Tech Leads pour accompagner la modernisation du parc applicatif Web .NET (8.0 & Framework legacy) et la montée en compétences de l'équipe.\n \n \n \nVos responsabilités principales :\n \n- Leader technique : conception, architecture, développement de fonctionnalités structurantes \n- Accompagnement et mentoring des développeurs, relecture/validation de code \n- Participation aux ateliers techniques : cadrage, conception SQL, architecture \n- Contribution à la transition vers une architecture microservices \n- Participation aux sprints Agile et interventions ponctuelles sur FrontEnd (MAUI / Blazor / React) \n- Rayonnement transverse sur le pôle, porter la qualité et les bonnes pratiques \n \nStack technique\n \n- .NET Framework / .NET Core / 8 / 9 \n- Backend majoritairement, IHM clients lourds (WinForm, WPF) \n- Nouvelles applications Web & API REST \n- LIMS (V9 - langage propriétaire) \n- SQL Server, ETL SnapLogic, Crystal Reports \n- GitLab & SVN, déploiement On Premise \n- Méthodologie Agile, CI/CD en cours de mise en place \n- Architecture hexagonale, tests automatisés, Docker \n \n \n \nExigences SSE (MASE)\n \nLe respect des exigences Santé, Sécurité et Environnement fait partie intégrante du poste. À ce titre, vous appliquez les consignes de sécurité, portez les EPI requis, adoptez les bonnes pratiques environnementales, signalez toute situation à risque et participez activement à l'amélioration continue de la démarche SSE.- Expérience solide en développement .NET et architecture Web \n- Leadership et capacité à accompagner une équipe technique \n- Curiosité, rigueur et sens de l'amélioration continue \n- Expérience souhaitée avec legacy et modernisation \n- Connaissance CI/CD (GitLab), microservices et SQL \n- Sensibilité au monde du laboratoire appréciée \n \n \n Nous vous proposons : \nContrat : CDI - Cadre (218 jours travaillés)\n \nRémunération : A partir de 45K€brut annuel\n \nAvantages : RTT, mutuelle, prime de vacances, télétravail possible\n \n \n \nUne formation préparatoire d'environ 8 semaines peut être proposée via le dispositif POEI, pour accompagner la prise de fonction et faciliter l'intégration.\n \n \n \nAu sein du Groupe Carso, nous respectons et valorisons la diversité de nos collaborateurs, leurs parcours et leurs expériences dans un objectif d'égalité des chances pour tous. Dans le cadre de son engagement diversité, le Groupe Carso accueille et intègre des collaborateurs en situation de handicap.",
+    "dateCreation": "2026-08-05T12:53:46.000Z",
+    "dateActualisation": "2026-08-05T12:53:46.000Z",
+    "lieuTravail": {
+      "libelle": "69 - Vénissieux",
+      "latitude": 45.695917,
+      "longitude": 4.874121,
+      "codePostal": "69200",
+      "commune": "69259"
+    },
+    "romeCode": "M1839",
+    "romeLibelle": "Architecte systèmes et réseaux",
+    "appellationlibelle": "Architecte technique informatique",
+    "entreprise": {
+      "nom": "Carso Investment",
+      "description": "Le Groupe CARSO est un des leaders européens dans le domaine des prestations analytiques environnementales, agroalimentaire et santé.\n \n \n \nNotre mission : Garantir un monde plus sain.\n \n \n \nL'ADN du groupe CARSO, c'est avant tout ses équipes et leur expertise nous permettant d'obtenir de nombreux agréments et accréditations assurant la qualité de nos analyses.\n \n \n \nAvec près de 3000 collaborateurs, nous avons l'ambition d'étendre notre réseau européen et de développer très fortement nos act..."
+    },
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "E",
+    "experienceLibelle": "3 An(s)",
+    "salaire": {},
+    "dureeTravailLibelle": "39H/semaine\nTravail en journée",
+    "dureeTravailLibelleConverti": "Temps plein",
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "codeNAF": "70.10Z",
+    "secteurActivite": "70",
+    "secteurActiviteLibelle": "Activités des sièges sociaux",
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/5724949",
+      "partenaires": [
+        {
+          "nom": "WE_RECRUIT",
+          "url": "https://careers.werecruit.io/fr/groupe-carso/offres/tech-lead-c-net-fbe3b5?utm_source=francetravail&utm_medium=job-board",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/we_recruit80.png"
+        }
+      ]
+    },
+    "contexteTravail": {
+      "horaires": [
+        "39H/semaine\nTravail en journée"
+      ]
+    },
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "5671775",
+    "intitule": "Architect / Tech Lead .Net F/H h/f",
+    "description": "Rejoignez VISEO et découvrez un monde de possibilités où nous mettons l'Humain, le Collectif et le Challenge au cœur de tout ce que nous faisons. Qui êtes-vous?De formation Bac+5 en informatique, vous justifiez impérativement d'au moins 3 ansdans le rôle et avez une expérience de développement d'au moins 7 à 10 ans. Vous êtes évidemment aguerri aux méthodes agiles et avez participé à plusieurs projets utilisant ces méthodes.Vous êtes intervenu(e) sur des projets à fort enjeux business (directement lié au métier de l'entreprise et à ses ambitions) et avec des contraintes de time-to-market significative.Les principales caractéristiques d'un bon Technical Leader sont:Expertise solide en .NET / C#Maîtrise avancée de Microsoft AzureExpérience confirmée en :Architecture et conception de solutionsInfrastructure as Code (Bicep, Terraform)CI/CD, DevOpsContainerisationConnaissance des workloads Data & AI sur Azure appréciéeDDD, CQRS, messaging appréciésCertification Azure appréciéeLa pédagogie et l'encadrement des membres de l'équipeLe goût du challenge et de l'opérationnel: vous ne survolez pas les sujets mais vous êtes au cœur des problématiques avec l'équipe.Capacité à challenger le fonctionnel et le client.Vous vous intéressez à la conception logicielle, aux nouvelles pratiques de développements. Vous faites de la veille et vous aimez partager votre expertise. Pragmatique, rigoureux et soucieux de la satisfaction client, vous aimez proposer des solutions. Votre aisance et votre culture des méthodes de conception techniques notamment autour de DDD, design pattern, TDD, etc vous permettent d'appréhender les sujets les plus complexes et proposer des architectures applicatives adaptées aux problèmes rencontrés.Ce que nous allons faire ensemble ?Découvrez comment votre quotidien sera transformé en rejoignant la practice Modern Application Development basée à Lyon.\nVous pourrez : Intervenir et être force de proposition sur toutes les phases du projet;Garantir les aspects qualité (robustesse, performance, résistance, justesse, évolutivité, lisibilité) ;Apprendre et partager vos connaissances et vos idées au sein d'un collectif animé par la technique. Ce que nous avons à vous offrir?Des formations, des certifications et un système de mentoring ;Un environnement stimulant, souple et agile pour des parcours sans limite ;Un engagement fort pour l'environnement, la société, l'égalité et l'inclusion : la plateforme \"Vendredi\", des ateliers \"Fresque du Climat\", le \"Café Joyeux\", l'institut Imagine, Yumaincap et bien d'autres;Une organisationflexible pour un bon équilibre vie pro / vie perso.Ce qui nous différencie ?Une communauté active de passionnés : des talks toutes les semaines, la participation à des évènements techniques (ateliers, rencontres d'experts, Tech An Hour, BBL, Rex, Sponsoring ) ;Des dispositifs collectifs d'épargne salariale (PEE et PERECO) et la possibilité de devenir actionnaire VISEO ;Un partenariat privilégié avec Microsoft Azureet AWS, qui vous donnera accès à des environnements internes sur les dernières versions.Envie de nous rejoindre ? Contactez-nous ! Et rejoignez le #VISEOspiritEn tant qu'employeur, VISEO s'engage en faveur de la diversité et de l'inclusionA propos de VISEOAvec 3 000 collaborateurs intervenant sur 5 continents, VISEO concilie agilité et complémentarité de ses savoir-faire pour faire du numérique un réel levier de compétitivité et de performance.#PositiveDigitalMakers",
+    "dateCreation": "2026-08-01T22:28:16.386Z",
+    "dateActualisation": "2026-08-01T22:28:16.386Z",
+    "lieuTravail": {
+      "libelle": "69 - Rhône"
+    },
+    "romeCode": "M1868",
+    "romeLibelle": "Architecte base de données",
+    "appellationlibelle": "Data architect",
+    "entreprise": {},
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "E",
+    "experienceLibelle": "Expérience exigée",
+    "salaire": {},
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/5671775",
+      "partenaires": [
+        {
+          "nom": "JOBINLIVE",
+          "url": "http://www.missionhandicap.com/emploi/viseo-zC5lRkCdfk#utm_source=PoleEmploi",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/jobinlive80.png"
+        }
+      ]
+    },
+    "contexteTravail": {},
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "211VKBZ",
+    "intitule": "Lead tech manager python/django (H/F)",
+    "description": "Poste\nNotre partenaire est une entreprise en pleine expansion spécialisée dans le e-commerce. \n\nLa société repense entièrement à sa DSI, un chantier clé pour les prochaines années. Nous cherchons un profil engagé, prêt à insuffler une nouvelle énergie et à contribuer activement à cette transformation.\n\nA ce poste, vous serez impliqué(e) dans la conception et l'évolution des plateformes e-commerce, tout en prenant part aux travaux essentiels liés au backend métier.\n\nBien que le rôle soit majoritairement backend, une bonne maîtrise du front-end est attendue pour des interventions ponctuelles sur les interfaces utilisateurs.\n\nVos principales missions :\n\nAssurer le pilotage et l'accompagnement technique d'une équipe de développeurs.\nTrouver le juste équilibre entre priorités business, dette technique et innovation.\nFaciliter la communication et la collaboration avec les équipes non techniques\nConcevoir, développer et maintenir les fonctionnalités e-commerce\nContribuer à l'évolution du backend métier : gestion des produits, intégration des flux marketplace, gestion des commandes et autres projets transverses.\nIntervenir ponctuellement sur les interfaces utilisateurs en HTML, CSS et JavaScript.\nCollaborer avec l'ensemble des pôles internes : produit, logistique, catalogue, support. \nContribuer à l'amélioration continue des performances, de la qualité logicielle et de la documentation.\nConditions du poste : \n\nContrat CDI \nStatut cadre \nSalaire : 60K - 70K brut annuel en fixe \nTélétravail : 2 jours / semaine\nAvantages : Mutuelle (prise en charge à 50 %), RTT, livraison de repas sur place (pris en charge à 50 %), panier de fruits tous les jours, thé et café à volonté, séances de sport hebdomadaires avec un super coach.\nProfil recherché\nNous recherchons un Développeur-se backend expérimenté-e, avec 7 ans d'expérience en développement web, idéalement autour de l'écosystème Python / Django.\n\nUne première expérience en tant que Manager technique est également requise.\n\nCompétences techniques\n\nExcellente maîtrise de Python, du Django Framework et du développement d'API REST.\nSolide expérience en tests automatisés.\nPratique Devops indispensable : Git, Docker, Kubernetes, etc... \nBases de données relationnelles : MongoDB\nUne attention particulière doit être portée à la sécurité du code.\nSoft skills & leadership\n\nAttitude positive qui fédère les équipes et facilite la recherche de solutions.\nD'excellentes compétences en communication et en collaboration.\nForte capacité d'adaptation, vous permettant d'intervenir sur une variété de sujets.\nApproche transverse, facilitant la collaboration avec différents métiers et pôles internes.\nBonus\n\nExpérience dans le e-commerce ou projet à forte valeur ajoutée\nUne expérience en React JS.",
+    "dateCreation": "2026-07-29T10:50:52.815Z",
+    "dateActualisation": "2026-08-21T15:36:04.733Z",
+    "lieuTravail": {
+      "libelle": "69 - LYON",
+      "latitude": 45.760123,
+      "longitude": 4.849235,
+      "codePostal": "69003",
+      "commune": "69383"
+    },
+    "romeCode": "M1855",
+    "romeLibelle": "Développeur / Développeuse web",
+    "appellationlibelle": "Développeur / Développeuse back-end",
+    "entreprise": {
+      "nom": "AK RECRUTEMENT"
+    },
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "E",
+    "experienceLibelle": "7 An(s)",
+    "competences": [
+      {
+        "code": "300688",
+        "libelle": "Application web",
+        "exigence": "S"
+      },
+      {
+        "code": "109846",
+        "libelle": "Concevoir une application web",
+        "exigence": "S"
+      }
+    ],
+    "salaire": {
+      "libelle": "Annuel de 60000.0 Euros à 70000.0 Euros sur 12.0 mois",
+      "complement1": "Primes",
+      "complement2": "Intéressement / participation",
+      "listeComplements": [
+        {
+          "code": "1",
+          "libelle": "Primes"
+        },
+        {
+          "code": "10",
+          "libelle": "Intéressement / participation"
+        },
+        {
+          "code": "14",
+          "libelle": "Indemnité transports"
+        },
+        {
+          "code": "8",
+          "libelle": "Restauration"
+        },
+        {
+          "code": "9",
+          "libelle": "CSE"
+        }
+      ]
+    },
+    "dureeTravailLibelle": "39H/semaine\nTravail en journée",
+    "dureeTravailLibelleConverti": "Temps plein",
+    "alternance": false,
+    "contact": {
+      "coordonnees1": "https://jobaffinity.fr/apply/k8hc590oxym1n9jb49",
+      "urlPostulation": "https://jobaffinity.fr/apply/k8hc590oxym1n9jb49"
+    },
+    "agence": {},
+    "nombrePostes": 1,
+    "deplacementCode": "1",
+    "deplacementLibelle": "Jamais Zone départementale",
+    "qualificationCode": "9",
+    "qualificationLibelle": "Cadre",
+    "codeNAF": "70.22Z",
+    "secteurActivite": "70",
+    "secteurActiviteLibelle": "Conseil pour les affaires et autres conseils de gestion",
+    "trancheEffectifEtab": "1 ou 2 salariés",
+    "origineOffre": {
+      "origine": "1",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/211VKBZ"
+    },
+    "contexteTravail": {
+      "horaires": [
+        "39H/semaine\nTravail en journée"
+      ]
+    },
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "5218230",
+    "intitule": "TECH LEAD TALEND / ARCHITECTE FLUX & DATA (H/F)",
+    "description": "L'ENTREPRISE ACCOMPAGNÉE ET LES MISSIONS\nMarre du \"billing\" en ESN, des missions d'exécution répétitives et des structures managériales lourdes ?\nAu sein de la DSI d'un groupe leader dans la supply chain et l'internationalisation des flux, notre client opère une refonte globale du socle technologique pour supprimer définitivement la dette technique et l'obsolescence.\nIntégré(e) au sein d'un centre d'expertise resserré (3 à 4 experts passionnés), vous intervenez comme Leader Technique Talend référent.\nVotre mission : piloter la refonte de l'application centrale de gestion des flux inter-applicatifs et faire évoluer notre plateforme vers un modèle distribué, scalable et hautement disponible.\nZéro Management Hiérarchique direct : votre légitimité repose sur votre expertise, votre pédagogie et votre vision de l'architecture, pas sur un titre managérial.\nVotre mission (build & architecture) :\n- Refonte du Core Business System : participer activement à la réécriture et au replateforming de l'application centrale du groupe (migration de solutions legacy vers un écosystème moderne Talend + .NET).\n- Urbanisation Data & Bus de Données : concevoir et déployer l'architecture en bus de données (Event-Driven / ETL / API) pour interconnecter nos briques métiers (WMS, TMS, ERP, CRM, Douanes).\n- Replateforming & Infrastructure : travailler en binôme avec le Responsable Plateforme pour garantir la scalabilité, la résilience et la sécurité des environnements Talend (Open Studio / TAC).\n- Industrialisation & Qualité : instaurer les bonnes pratiques de développement, de conteneurisation (Docker, microservices) et concevoir une documentation technique réellement exploitable.\n- Accompagnement & Mentoring : transmettre vos connaissances à l'équipe, apporter votre soutien sur les analyses complexes (Support N3 : 20-30% du temps) et animer la culture de l'excellence technique.\n\n\nPROFIL\n- Expérience : vous justifiez d'au moins 3 ans d'expérience sur la technologie Talend (ETL, ESB, Data Integration).\n- Vernis Infra & BDD : vous maîtrisez le SQL et les bases relationnelles (PostgreSQL, MariaDB), et vous avez de la culture générale sur les environnements distribués (Docker, Microservices, Load Balancing, WAF).\n- Culture Projet : issu(e) idéalement d'une ETI ou d'un grand groupe structuré, vous êtes familiarisé(e) avec la rigueur des méthodes projet et les processus ITIL.\n- Soft Skills : humble, pédagogue et doté(e) d'un leadership naturel, vous aimez partager votre savoir et résoudre des nœuds architecturaux complexes.\n- Langues : niveau d'anglais professionnel (B2) requis pour échanger dans un contexte d'internationalisation.\n- Une première exposition à des projets en IA générative (LLM, RAG, agents) constitue un atout apprécié, sans être indispensable.\n\n\nAVANTAGES\nPourquoi rejoindre ce projet ?\n- Impact direct : vous travaillez sur le système nerveux de l'entreprise, pas sur un projet secondaire.\n- Autonomie & Modernisation : un vrai budget de refonte et un feu vert pour supprimer la dette technique.\n- Cadre stimulant : une petite équipe agile et très performante où votre voix compte à 100%.\n- Package attractif : salaire fixe compétitif, variable de 10%, avantages sociaux et perspectives d'évolution.\n- Les conditions de travail :\n- Salaire : 45 000 à 50 000 € / an fixe pour le profil attendu\n- Remote : 2 jours / semaine\n- Localisation : dans l'Est Lyonnais (possibilité de transport en commun mais voiture conseillée)\n- Le process de recrutement :\n- Traitement candidature et RDV avec Aude LEBRETON\n- 1 RDV avec le N+2\n- 1 RDV avec la DSI et/ou la DRH\n",
+    "dateCreation": "2026-07-21T23:01:18.000Z",
+    "dateActualisation": "2026-08-21T23:01:14.365Z",
+    "lieuTravail": {
+      "libelle": "69 - Villeurbanne",
+      "codePostal": "69100",
+      "commune": "69266"
+    },
+    "romeCode": "M1811",
+    "romeLibelle": "Data engineer",
+    "appellationlibelle": "Ingénieur / Ingénieure big data",
+    "entreprise": {
+      "nom": "Externatic"
+    },
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "E",
+    "experienceLibelle": "3 An(s)",
+    "salaire": {
+      "libelle": "Annuel de 45000.0 Euros à 50000.0 Euros"
+    },
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "codeNAF": "70.22Z",
+    "secteurActivite": "70",
+    "secteurActiviteLibelle": "Conseil pour les affaires et autres conseils de gestion",
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/5218230",
+      "partenaires": [
+        {
+          "nom": "NICOKA",
+          "url": "https://externatic.nicoka.com/public/jobs/568-3576bbaf6cc184f/?source=90",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/nicoka80.png"
+        }
+      ]
+    },
+    "contexteTravail": {},
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  },
+  {
+    "id": "4635609",
+    "intitule": "Tech lead java (h/f)",
+    "description": "\n\nQUI ETES-VOUS ?\n\nPROFIL :\n\nVous venez d'être diplômé(e) d'un master d'une école d'ingénieur et justifiez d'une expérience significative d'environ 2 ans (stages professionnels/stages, projets universitaires ou personnels tels que GIT Hub, Meet Ups, etc.)\nVous êtes débrouillard(e), innovant(e) et orienté(e) solutions\nVous avez l'esprit d'équipe\nVous aimez également travailler de manière indépendante et recherchez les responsabilités\n\nCOMPÉTENCES :\n\nVous êtes capable de vous adapter et de réagir au changement\nVous savez et aimez concevoir, développer et tester des solutions et/ou des composants logiciels sécurisés\nVous pouvez démontrer votre connaissance des langages et cadres de programmation Full Stack ou pure back/pure front (JAVA, C, C++, Python, ou tout autre)\nVous êtes familier(ère) avec la compilation/construction de code/intégration continue\nVous avez connaissance des plateformes informatiques, des systèmes d'exploitation et des hyperviseurs du SI\nVous connaissez les principes Agile\n\nATOUTS SUPPLÉMENTAIRES :\n\n(Les connaissances spécifiques liées au domaine / produit / projet sont à compléter par les Engineering Managers ou Talent Acquisition)\n\n\nCE QUE NOUS POUVONS FAIRE ENSEMBLE :\n\nThales Services Numériques est une entité rattachée au groupe Thales, spécialisée dans l'IT et présente au national. \nL'agence de Lyon adresse divers sujets d'expertise : ingénierie logiciels, cybersécurité, infogérance des infrastructures et transformation digitale. \n \nLe pôle life science est spécialisé dans les projets pharmaceutiques, médicaux ou de diagnostic in vitro.\nIl accompagne nos clients à travers divers aspects/services majeurs :\n- La réalisation de ses projets,\n- Le conseil (cyber sécurité, respect des exigences normatives, accompagnement dans « l'agilisation » des projets fortement contraints). \n\nFort de ses nombreux projets (+15 projets), notre pôle life science de Lyon recherche un Tech lead H/F, pour intégrer ses équipes et participer à ses projets de développement logiciels.\n\nVOTRE ROLE : \n\nIntégrer à notre équipe de développeurs, sur la stack technique Java/Angular/Spring, vous participerez à la réalisation des nouveaux besoins de notre client, le tout dans un contexte agile (Framework Scrum).\nVous découvrirez la richesse qu'offrent les projets logiciels liés à des devices médicaux (domaine métier, complexité technique ...).\n\nPlus précisément, en tant que Tech lead vous :\n- Encadrerez l'équipe de développeurs,\n- Mettrez en place et/ou suivrez des bonnes pratiques sur le projet,\n- Serez le point d'entrée privilégié pour toute question technique ou de conception,\n- Participerez à l'amélioration continue du projet (process, technique ...)\n- Intègrerez la communauté des experts techniques afin de partager les bonnes pratiques, expériences mais aussi pour vous appuyer sur vos pairs en cas de difficultés.\n\nEnfin, la qualité étant un enjeu primordial du projet, vous participerez à la stratégie de vérification.\nVous serez en collaboration avec le chef de projet et notre Test lead afin d'identifier et d'améliorer l'automatisation des tests.\n- Les tests fonctionnels se font via robot framework, \n- Les tests de qualités code via Sonar,\n- Les tests de performances via Scala/Grafana et Gatling.\nLe tout, sans oublier la couche cyber sécurité !\n\nVOTRE CARRIÈRE CHEZ THALES :\n\nIntégrer une ESN en pleine croissance qui offre de nombreuses possibilités d'évolution au sein du pôle life science mais aussi dans d'autres pôles d'expertise.\nVous travaillerez également dans une entreprise résolument humaine avec des valeurs fortes comme la sécurité au travail, l'égalité Homme/Femme et l'équilibre vie personnelle/professionnelle (Accord Télétravail).\nRattaché(e) à la Convention métallurgie, vous bénéficierez aussi de ses multiples avantages.\n\nDifférentes opportunités vous permettront de découvrir d'autres domaines ou sites. Vous pourrez évoluer et développer vos compétences dans différents domaines :\n- Explorez un espace attentif au développement personnel\n- Développez vos talents dans un autre domaine du groupe Thales, en découvrant de nouveaux produits, de nouveaux clients, un nouveau pays ou en vous orientant vers une solution plus complexe\n- Choisissez entre une expertise technique ou un parcours de leadership\n",
+    "dateCreation": "2026-07-07T08:15:47.000Z",
+    "dateActualisation": "2026-08-15T08:21:01.000Z",
+    "lieuTravail": {
+      "libelle": "69 - Lyon",
+      "commune": "69123"
+    },
+    "romeCode": "M1831",
+    "romeLibelle": "Développeur / Développeuse - jeux vidéo",
+    "appellationlibelle": "Lead programmeur / Lead programmeuse - jeux vidéo",
+    "entreprise": {},
+    "typeContrat": "CDI",
+    "typeContratLibelle": "CDI",
+    "natureContrat": "Contrat travail",
+    "experienceExige": "D",
+    "experienceLibelle": "Débutant accepté",
+    "salaire": {},
+    "dureeTravailLibelle": "\nTravail en journée",
+    "alternance": false,
+    "contact": {},
+    "nombrePostes": 1,
+    "origineOffre": {
+      "origine": "2",
+      "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/4635609",
+      "partenaires": [
+        {
+          "nom": "JOBDEFENSE",
+          "url": "https://www.jobdefense.com/emploi-defense/tech-lead-java-hf~22484.html?fromref=poleemploi",
+          "logo": "https://www.francetravail.fr/logos/img/partenaires/jobdefense80.png"
+        }
+      ]
+    },
+    "contexteTravail": {
+      "horaires": [
+        "\nTravail en journée"
+      ]
+    },
+    "entrepriseAdaptee": false,
+    "employeurHandiEngage": false
+  }
+]

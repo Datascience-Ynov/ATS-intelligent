@@ -51,7 +51,7 @@
         "support": 100.0
       }
     },
-    "training_time_s": 2.314
+    "training_time_s": 2.216
   },
   "Random Forest": {
     "cv_roc_auc_mean": 0.9344,
@@ -105,7 +105,7 @@
         "support": 100.0
       }
     },
-    "training_time_s": 2.358
+    "training_time_s": 2.027
   },
   "Gradient Boosting": {
     "cv_roc_auc_mean": 0.9338,
@@ -159,7 +159,7 @@
         "support": 100.0
       }
     },
-    "training_time_s": 1.639
+    "training_time_s": 1.527
   },
   "_best_model_name": "Régression Logistique"
 }

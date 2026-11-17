@@ -1,6 +1,6 @@
 {
   "version": "v1",
-  "date_creation": "2026-09-06T19:16:48.674230+00:00",
+  "date_creation": "2026-09-16T15:18:15.162742+00:00",
   "modele_type": "RandomForestClassifier",
   "modele_nom": "Régression Logistique",
   "n_features": 14,

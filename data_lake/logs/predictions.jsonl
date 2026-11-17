@@ -199,3 +199,6 @@
 {"timestamp": "2026-09-02T15:45:27.266851+00:00", "cv_id": 42, "offre_id": 164, "score": 0.5641, "confidence": 0.3704}
 {"timestamp": "2026-09-02T15:45:27.290966+00:00", "cv_id": 37, "offre_id": 178, "score": 0.2756, "confidence": 0.7438}
 {"timestamp": "2026-09-06T19:55:09.450313+00:00", "cv_id": null, "offre_id": null, "score": 0.9387, "confidence": 0.9387}
+{"timestamp": "2026-09-16T16:32:25.903374+00:00", "cv_id": null, "offre_id": null, "score": 0.9512, "confidence": 0.9512}
+{"timestamp": "2026-09-16T16:33:03.880830+00:00", "cv_id": null, "offre_id": null, "score": 0.9512, "confidence": 0.9512}
+{"timestamp": "2026-09-16T17:02:27.017460+00:00", "cv_id": null, "offre_id": null, "score": 0.9512, "confidence": 0.9512}

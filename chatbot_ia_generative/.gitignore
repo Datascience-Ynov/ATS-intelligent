@@ -1,0 +1,78 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.Python
+*.pyc
+
+# ── Environnements virtuels ───────────────────────────────────────────────────
+.env
+.venv/
+venv/
+env/
+ENV/
+
+# ── Secrets et configuration locale ──────────────────────────────────────────
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# ── Data Lake (fichiers volumineux, ne pas versionner) ───────────────────────
+data_lake/raw/
+data_lake/processed/*.parquet
+data_lake/processed/*.csv
+
+# ── Modèles ML (binaires lourds) ─────────────────────────────────────────────
+# data_lake/models/latest/ est versionné pour Streamlit Cloud
+*.h5
+*.onnx
+data_lake/models/
+!data_lake/models/latest/
+!data_lake/models/latest/*.joblib
+!data_lake/models/latest/*.json
+
+# ── MLflow ───────────────────────────────────────────────────────────────────
+mlruns/
+mlflow.db
+mlartifacts/
+
+# ── PostgreSQL / Docker volumes ───────────────────────────────────────────────
+postgres_data/
+pgdata/
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Notebooks checkpoints ─────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── IDEs et éditeurs ─────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Couverture de tests ───────────────────────────────────────────────────────
+.coverage
+htmlcov/
+.pytest_cache/
+
+# ── Streamlit ─────────────────────────────────────────────────────────────────
+.streamlit/secrets.toml
+
+# ── Divers ────────────────────────────────────────────────────────────────────
+*.tmp
+*.bak
+~$*

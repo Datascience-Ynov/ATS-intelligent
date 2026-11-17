@@ -82,7 +82,7 @@ class ModelRegistry:
             self.metadata      = json.loads(meta_path.read_text()) if meta_path.exists() else {}
             self.loaded_at     = datetime.now(timezone.utc).isoformat()
             self.is_ready      = True
-            log.info("Modèle chargé : %s — %d features",
+            log.info("Modèle chargé : %s - %d features",
                      self.metadata.get("modele_nom", "?"), len(self.feature_names))
         except Exception as e:
             log.error("Erreur chargement modèle : %s", e)

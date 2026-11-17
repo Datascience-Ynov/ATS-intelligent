@@ -1,0 +1,728 @@
+[
+  {
+    "id": "jobspy_https://groupe-atlantic.nous-recrutons.fr/poste/gedf0yqntb",
+    "intitule": "Stage Ingénieur simulations CFD aéro acoustique H/F",
+    "description": {
+      "libelle": "### **À propos de nous**\n\n\n\nBienvenue sur notre site de Meyzieu où 600 collègues conçoivent, fabriquent et distribuent des produits de ventilation et climatisation.\n\n\nAu sein de notre Laboratoire Acoustique et Climatique, tu évolues dans un environnement technique au cœur des enjeux d’innovation et de performance des produits.\n\n **Les stages chez GROUPE ATLANTIC : UNE EXPÉRIENCE QUI COMPTE**\n\n\nChez nous, un stage ne se vit pas en solo. Il se partage, s’enrichit et se structure :\n\n* Un parcours d’intégration personnalisé pour découvrir notre site, nos métiers et les enjeux industriels du confort thermique\n* Une communauté de 200 stagiaires et alternants dynamique pour échanger, s’entraider et partager\n\n  \n\nEt ce ne sont pas que des promesses !  \n\n**96\\.8 %**\\* de nos alternants et stagiaires nous recommandent pour une expérience enrichissante.\n\n* Label Happy Trainees, basé sur les avis de nos étudiants actuels et anciens.\n\n\n### **Mission**\n\n\n\nRejoins l’équipe R\\&D en tant qu' ingénieur simulations CFD aéro acoustique (f/h)en stage, à partir de janvier 2027 pour une durée de **6** **mois.**\n\n  \n\nTon projet : évaluer et approfondir une méthodologie basée sur l’intelligence artificielle pour prédire le bruit aéraulique des systèmes de ventilation, en combinant des simulations FD RANS sous Ansys Fluent et un réseau de neurones de type MLP développé en Python.\n\n  \n\nL’objectif ? Déterminer le potentiel de cette approche pour obtenir des prédictions acoustiques fiables tout en réduisant fortement les temps de calcul par rapport aux simulations LES (Large Eddy Simulation).\n\n **Accompagné mais autonome**  \n\n  \n\nTon tuteur, Rémi, ingénieur simulation, sera là pour te former, te challenger tout en te laissant une réelle autonomie dans l’exploration et l’expérimentation de nouvelles approches.\n\n  \n\nConcrètement, tu vas\n\n* Réaliser des simulations CFD 3D sous Ansys Fluent : préparation CAO, maillage, calcul, post\\-traitement et analyse des résultats\n\n  \n\n* Mettre en œuvre et entraîner un réseau de neurones MLP en Python pour prédire les niveaux sonores\n* Analyser les performances de la méthode : précision des niveaux sonores globaux et gains en temps de calcul, puis identifier ses limites et ses perspectives d’amélioration\n\n\n### **Profil**\n\n\n* Formation : Tu es en dernière année d’école d’ingénieur, avec une spécialisation en mécanique des fluides, génie énergétique, thermodynamique, aéraulique, acoustique ou simulation CFD.\n* Tu maîtrises Ansys Fluent ou Star\\-CCM\\+ et possèdes de bonnes bases en mécanique des fluides et simulation numérique. Des connaissances en Python et en intelligence artificielle sont un vrai plus.\n* Curieux et rigoureux, tu aimes comprendre les phénomènes physiques, analyser des résultats et confronter les modèles à la réalité expérimentale\n* \n\n**POURQUOI NOUS REJOINDRE ? –**\n\n* Un projet de R\\&D concret, à la croisée de la CFD, de l’acoustique et de l’intelligence artificielle\n* Développer des compétences sur des outils et méthodes recherchés : Ansys Fluent, Python, simulation CFD et machine learning\n* Travailler sur une problématique industrielle avec des résultats expérimentaux disponibles au laboratoire\n* Gratification : 1200€/mois\n* Abonnement transport en commun pris en charge à 75%\n\n **PRÊT À TENTER L’AVENTURE ?**\n\n\nAlors envoie ton CV sans attendre (en précisant ta date de début).\n\n *Si tu es sélectionné, on se retrouve sur le site de Meyzieu pour échanger sur ton projet !*\n\n  \n\nPlus d’infos ici *Groupe Atlantic – L’expérience étudiante GA*\n\n *Dans le cadre de sa politique diversité, le GROUPE ATLANTIC étudie, à compétences égales, toutes les candidatures dont celles de personnes en situation de handicap.*"
+    },
+    "entreprise": {
+      "nom": "Groupe Atlantic"
+    },
+    "lieuTravail": {
+      "libelle": "Meyzieu, ARA, FR"
+    },
+    "typeContrat": "internship",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://fr.indeed.com/viewjob?jk=14b6ccef360e8a0f"
+    },
+    "_source": "indeed"
+  },
+  {
+    "id": "jobspy_https://www.free-work.com/fr/tech-it/job-mission/ingenieur-apres-vente/ingenieur-ia-generative-ai?ut",
+    "intitule": "Ingénieur IA / Generative AI",
+    "description": {
+      "libelle": "Dans le cadre du développement de nouveaux projets autour de l?intelligence artificielle générative, nous recherchons un Ingénieur IA / Generative AI capable de concevoir, développer et industrialiser des solutions basées sur les LLM, les Agents IA et les architectures RAG.\n  \n  \n\nMissions principales\n  \n  \n\nConcevoir et développer des solutions d?Intelligence Artificielle Générative basées sur les LLM, Agents et RAG.\n  \nReprendre, analyser et optimiser les use cases IA existants.\n  \nDévelopper de nouveaux cas d?usage conformément à la roadmap produit/projet.\n  \nGarantir le respect des engagements en matière de qualité, délais et performance.\n  \nConcevoir des architectures robustes, évolutives et maintenables.\n  \nAssurer la qualité du code à travers les tests automatisés, la documentation et les code reviews.\n  \nParticiper à l?amélioration continue des pratiques de développement et d?industrialisation des solutions IA.\n  \nCollaborer avec les différentes équipes techniques et métiers afin de transformer les besoins fonctionnels en solutions IA concrètes.\n  \n  \n\nCompétences recherchées\n  \n  \n\nExpérience significative dans le développement de solutions autour des LLM / Generative AI.\n  \nBonne maîtrise des architectures RAG ? Retrieval\\-Augmented Generation.\n  \nExpérience dans la conception ou l?utilisation d?Agents IA / systèmes agentiques.\n  \nTrès bonnes compétences en développement, idéalement Python.\n  \n**Connaissance des frameworks et outils de l?écosystème LLM :** LangChain, LangGraph, LlamaIndex ou équivalents.\n  \nConnaissance des Vector Databases / moteurs de recherche sémantique.\n  \nMaîtrise des API et de l?intégration de modèles de langage.\n  \n**Bonnes pratiques de développement :** Clean Code, tests, Git, documentation et code review.\n  \nUne expérience dans l?industrialisation et le déploiement de solutions IA en environnement de production serait fortement appréciée.\n  \n  \n\n**Profil candidat:**  \n\nProfil recherché\n  \n  \n\nVous disposez d?une expérience concrète dans le développement de solutions d?IA générative et souhaitez intervenir sur des projets combinant innovation, développement logiciel et mise en production de nouveaux cas d?usage.\n  \n  \n\nVous êtes autonome, rigoureux et capable de travailler dans un environnement agile avec des contraintes de qualité et de délais."
+    },
+    "entreprise": {
+      "nom": "DataCorp"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, ARA, FR"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://fr.indeed.com/viewjob?jk=f03f8c886e9ac56d"
+    },
+    "_source": "indeed"
+  },
+  {
+    "id": "jobspy_http://fr.indeed.com/job/ing%C3%A9nieur-instrumentation-labview-hf-86a84c2063d08fb0",
+    "intitule": "Ingénieur Instrumentation / LabVIEW (H/F)",
+    "description": {
+      "libelle": "**ACTIVITES DE LA SOCIETE**\n\n**INNODURA** est une société Lyonnaise à la pointe des technologies de contrôle et d’automatisation de procédés industriels. Nous sommes spécialisés dans le **développement logiciel**, l’**intelligence artificielle**, la **vision 3D**, la **robotique** et la **conception de systèmes de mesure et de contrôle**. Nous travaillons pour des grands comptes dans de nombreux secteurs (**Automobile**, **Aéronautique**, **Industrie 4\\.0**, **Recyclage**, **Médical**, **Logistique**, **Agroalimentaire**, …) pour lesquels nous proposons des **solutions innovantes et sur mesure**. Notre ADN étant l’innovation, nous travaillons en partenariat avec plusieurs laboratoires de recherche. Notre équipe pluridisciplinaire, jeune et dynamique est composée d'une **30aine de personnes soudées**, travailleuses et attirées par les **défis technologiques**. Nous prônons le **made in FRANCE**, et l’intégralité de nos logiciels, systèmes mécaniques \\& électriques sont pensés, conçus et fabriqués dans nos ateliers à Lyon.\n\nInformations sur la société : www.innodura.fr\n\n**POSTE**\n\nCe poste s’intègre dans la constitution d’une équipe de développement dynamique. Vous participerez au développement des systèmes de mesure depuis le prototypage jusqu’à la livraison de solutions industrielles. Dans ce contexte, vous serez rattaché(e) aux chefs de projet. L’Ingénieur LabVIEW \\& Instrumentation conçoit, développe et maintien des systèmes de test, de mesure et d’acquisition de données. Il intervient sur l’architecture logicielle LabVIEW, l’intégration d’instrumentation et l’automatisation de bancs de test, en garantissant la fiabilité des mesures et la conformité aux exigences techniques. Vos missions s’articuleront autour des axes suivants :\n\n* Vous participerez **à la définition des systèmes de mesure**.\n* Vous développerez des **applications logicielles** **sous LabVIEW** et LabVIEW RT\\&FPGA.\n* Vous définirez et **réaliserez les tests de validation**.\n* Vous veillerez à l’optimisation des algorithmes et aux choix techniques futurs.\n\n**PROFIL SOUHAITE**\n\nIngénieur (Bac\\+5\\) Instrumentation, développement Logiciel, Mécatronique. Vous bénéficiez d’une expérience réussie (ou stage significatif) dans le développement de logiciels d’applications ou la définition d’algorithme de traitement du signal. Les certifications NI LabVIEW CLAD ou CLD seront un plus.\n\nIntéressé(e) par les domaines des nouvelles technologies, vous souhaitez vous investir dans un projet d’entreprise ambitieux où autonomie, implication et initiative sont des vecteurs de réussite.\n\nRémunération : à partir de 34 000,00€ par an\n\nAvantages :\n\n* Flextime\n* Intéressement et participation\n* Prise en charge du transport quotidien\n* Restaurant d'entreprise\n* RTT\n\nLieu du poste : En présentiel"
+    },
+    "entreprise": {
+      "nom": "INNODURA TB"
+    },
+    "lieuTravail": {
+      "libelle": "Rillieux-la-Pape, ARA, FR"
+    },
+    "typeContrat": "fulltime",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://fr.indeed.com/viewjob?jk=86a84c2063d08fb0"
+    },
+    "_source": "indeed"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Senior AI Solution Engineer",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Volvo Group"
+    },
+    "lieuTravail": {
+      "libelle": "Vénissieux, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4432293875"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Consultant Data/IA - F/H",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Niji"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4446208784"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Ingénieur Développement Informatique - Traitement de Signal et Vision (H/F)",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "URBAN LINKER"
+    },
+    "lieuTravail": {
+      "libelle": "Rillieux-la-Pape, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4466197013"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Audience Data Engineer",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Euronews"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4465525554"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "RESPONSABLE DATA et BI h/f - CDI - LYON",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Tyredating"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4467703075"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Senior Data Scientist - IA Générative F/H",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Devoteam Data Driven"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4465736333"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Architecte IA",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "CNAM"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4465735744"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Data scientist H/F",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Kicklox"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4467028404"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Senior Data Engineer Databricks H/F",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Devoteam Data Driven"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4465717346"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Data engineer",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Neosoft"
+    },
+    "lieuTravail": {
+      "libelle": ""
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4465711480"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Architecte Data Snowflake (F/H)",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Atos"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4411385596"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Senior Data Engineer Snowflake F/H",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Devoteam Data Driven"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4465732344"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "AI Engineer",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Scaleway"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4465566696"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Ingénieurs en Intelligence Artificielle (H/F)",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Infologic"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4431513830"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Senior AI/Gen AI Engineer F/H",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Talan"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4467759620"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Tech Lead AI F/H",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Talan"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4468200052"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "AI Consultant",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Belmont Lavan"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4467974767"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Lead Tech Data Python/Spark Senior H/F",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "KAIZEN Solutions (KZS)"
+    },
+    "lieuTravail": {
+      "libelle": ""
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4467965859"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Software Engineer (AI Training)",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Alignerr"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4467915707"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Senior Principal AI Infrastructure Architect",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "NTT DATA, Inc."
+    },
+    "lieuTravail": {
+      "libelle": "Ain, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4409289193"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Data Engineer - Confirmé(e) / Senior",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "eXalt"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4420304719"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Manager Data & IA - F/H",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Niji"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4446216119"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Data Engineer Spark / Java / Python et Databricks - Confirmé (H/F)",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "ACENSI"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4466190941"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Ingénieur Data / DevOps Azure - Databricks H/F",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Free-Work"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4465945693"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Responsable IA H/F",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "ELSEN / implid"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4467938202"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Responsable IA H/F",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "implid"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4466522603"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Architecte Data Snowflake (F/H)",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Atos"
+    },
+    "lieuTravail": {
+      "libelle": "Villeurbanne, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4411393419"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Alternant Ingénieur Informatique Industrielle (H/F)",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Carrier"
+    },
+    "lieuTravail": {
+      "libelle": "Culoz, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4464568364"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Consultant Data AWS F/H",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Talan"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4467756603"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_nan",
+    "intitule": "Business Analyst IA - F/H",
+    "description": {
+      "libelle": "nan"
+    },
+    "entreprise": {
+      "nom": "Niji"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "nan",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4446257222"
+    },
+    "_source": "linkedin"
+  }
+]

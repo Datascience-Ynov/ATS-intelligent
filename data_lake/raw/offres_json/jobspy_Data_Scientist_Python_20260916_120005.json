@@ -1,0 +1,442 @@
+[
+  {
+    "id": "jobspy_None",
+    "intitule": "Consultant Data/IA - F/H",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Niji"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4446208784"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Senior AI Solution Engineer",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Volvo Group"
+    },
+    "lieuTravail": {
+      "libelle": "Vénissieux, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4432293875"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Audience Data Engineer",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Euronews"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4465525554"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Ingénieur Développement Informatique - Traitement de Signal et Vision (H/F)",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "URBAN LINKER"
+    },
+    "lieuTravail": {
+      "libelle": "Rillieux-la-Pape, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4466197013"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Senior Data Scientist - IA Générative F/H",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Devoteam Data Driven"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4465736333"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Data-Analyst - CDAOA/CEM/BNUM",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Commissariat au Numérique de Défense - CND"
+    },
+    "lieuTravail": {
+      "libelle": "Poleymieux-au-Mont-d’Or, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4416243462"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Data scientist H/F",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Kicklox"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4467028404"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Senior Data Engineer Databricks H/F",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Devoteam Data Driven"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4465717346"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Data analyst H/F",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Kicklox"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4467040378"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Data Engineer GCP (H/F)",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Davidson consulting"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4438675104"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Ingénieurs en Intelligence Artificielle (H/F)",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Infologic"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4431513830"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Lead Tech Data Python/Spark Senior H/F",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "KAIZEN Solutions (KZS)"
+    },
+    "lieuTravail": {
+      "libelle": ""
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4467965859"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Tech Lead AI F/H",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Talan"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4468200052"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "AI Engineer",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Scaleway"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4465566696"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Senior AI/Gen AI Engineer F/H",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Talan"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4467759620"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Data Engineer Spark / Java / Python et Databricks - Confirmé (H/F)",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "ACENSI"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4466190941"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Data Engineer - Confirmé(e) / Senior",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "eXalt"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4420304719"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Ingénieur d'études en informatique",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Université Gustave Eiffel"
+    },
+    "lieuTravail": {
+      "libelle": "Bron, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4465576907"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Ingénieur(e) en Bio-informatique - Lyon",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Vulcain Engineering Group"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4457601387"
+    },
+    "_source": "linkedin"
+  },
+  {
+    "id": "jobspy_None",
+    "intitule": "Data Engineer",
+    "description": {
+      "libelle": "None"
+    },
+    "entreprise": {
+      "nom": "Recrulab"
+    },
+    "lieuTravail": {
+      "libelle": "Lyon, Auvergne-Rhône-Alpes, France"
+    },
+    "typeContrat": "None",
+    "experienceLibelle": "",
+    "salaire": {
+      "libelle": ""
+    },
+    "origineOffre": {
+      "urlOrigineOffre": "https://www.linkedin.com/jobs/view/4464357644"
+    },
+    "_source": "linkedin"
+  }
+]

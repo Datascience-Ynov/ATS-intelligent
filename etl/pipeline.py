@@ -149,7 +149,10 @@ COMPETENCES_IT: dict[str, str] = {
 # ── Fonctions de connexion DB ────────────────────────────────────────────────────
 
 def get_db_connection() -> psycopg2.extensions.connection:
-    """Ouvre une connexion PostgreSQL depuis les variables d'environnement (C1.3.2)."""
+    """Ouvre une connexion PostgreSQL — DATABASE_URL (Supabase) ou variables individuelles (local)."""
+    url = os.getenv("DATABASE_URL", "")
+    if url:
+        return psycopg2.connect(url, connect_timeout=10)
     return psycopg2.connect(
         host=os.getenv("DB_HOST", "localhost"),
         port=int(os.getenv("DB_PORT", "5432")),

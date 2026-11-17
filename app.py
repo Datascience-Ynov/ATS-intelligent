@@ -3,7 +3,7 @@ ATS Intelligent — Interface Streamlit principale
 Auteur : Mourad Amoussa | Lyon Ynov M2 IA & Data | RNCP39586
 
 Intègre :
-  - Chatbot IA Générative (NVIDIA NIM)
+  - Chatbot IA Générative (Groq)
   - Recherche d'offres + analyse CV
   - Dashboard analytique (Bloc 2 — C2.1.2, C2.1.3, C2.1.4, C2.2.1)
 """
@@ -22,7 +22,7 @@ import psycopg2
 from openai import OpenAI
 
 from core import CSS, UI, Message
-from core import LLMService, CVParser, JobSearchService, CompatibilityAnalyzer
+from core import LLMService, CVParser, JobSearchService, CompatibilityAnalyzer, MLScorer
 
 # Chemins data lake
 DATA_LAKE_PROC = Path(__file__).resolve().parent / "data_lake" / "processed"
@@ -30,31 +30,125 @@ DATA_LAKE_MODELS = Path(__file__).resolve().parent / "data_lake" / "models" / "l
 
 load_dotenv()
 
+
+def _get_db():
+    """Connexion PostgreSQL — DATABASE_URL (Supabase/Streamlit Cloud) ou variables individuelles (local)."""
+    try:
+        url = st.secrets.get("DATABASE_URL", "")
+    except Exception:
+        url = ""
+    if not url:
+        url = os.getenv("DATABASE_URL", "")
+    if url:
+        return psycopg2.connect(url)
+    return psycopg2.connect(
+        host=os.getenv("DB_HOST", "127.0.0.1"),
+        port=int(os.getenv("DB_PORT", 15432)),
+        dbname=os.getenv("DB_NAME", "ats_db"),
+        user=os.getenv("DB_USER", "postgres"),
+        password=os.getenv("DB_PASSWORD", "postgres"),
+    )
+
+
+def _extract_cv_metadata(texte: str) -> dict:
+    """Extrait les métadonnées structurées d'un CV à partir du texte brut.
+    Retourne un dict avec : experience_annees, formations, langages, localisation.
+    """
+    import re
+
+    # ── Années d'expérience ───────────────────────────────────────────────────
+    exp_annees = None
+    exp_match = re.search(
+        r'(\d+)\s*(?:ans?|années?|years?)\s+(?:d\'?expérience|of\s+experience)',
+        texte, re.IGNORECASE
+    )
+    if exp_match:
+        exp_annees = int(exp_match.group(1))
+    else:
+        # Heuristique : nombre d'emplois/stages × ~1.5 an
+        nb_postes = len(re.findall(
+            r'\b(?:20\d{2}|19\d{2})\s*[-–]\s*(?:20\d{2}|présent|present|aujourd|actuel)',
+            texte, re.IGNORECASE
+        ))
+        if nb_postes > 0:
+            exp_annees = nb_postes  # approximation 1 an par poste
+
+    # ── Formations ────────────────────────────────────────────────────────────
+    formations: list[str] = []
+    for pat in [
+        r'\b(Master\s*\d?|M\s*2|M\s*1|MBA|MSc|MS\b)',
+        r'\b(Licence\s*\d?|Bachelor|BSc|L\s*3)',
+        r'\b(Bac\s*\+\s*\d)',
+        r'\b(Ingénieur|Grande\s+École|RNCP)',
+        r'\b(BTS|DUT|BUT)',
+        r'\b(Doctorat|PhD|Thèse)',
+    ]:
+        found = re.findall(pat, texte, re.IGNORECASE)
+        formations.extend([f.strip() for f in found])
+    formations = list(dict.fromkeys(formations))[:5]  # dédoublonnage, max 5
+
+    # ── Langues ───────────────────────────────────────────────────────────────
+    LANGUES_FR = {
+        "Français": r'\bfrançais\b', "Anglais": r'\banglais\b',
+        "Espagnol": r'\bespagnol\b', "Allemand": r'\ballemand\b',
+        "Arabe": r'\barabe\b', "Mandarin": r'\bmandarin\b',
+        "Italien": r'\bitalien\b', "Portugais": r'\bportugais\b',
+        "English": r'\benglish\b', "French": r'\bfrench\b',
+    }
+    langages = [lang for lang, pat in LANGUES_FR.items() if re.search(pat, texte, re.IGNORECASE)]
+
+    # ── Localisation ──────────────────────────────────────────────────────────
+    localisation = None
+    VILLES = [
+        "Paris", "Lyon", "Marseille", "Bordeaux", "Toulouse", "Nantes", "Lille",
+        "Strasbourg", "Nice", "Montpellier", "Rennes", "Grenoble", "Rouen",
+        "Toulon", "Metz", "Nancy", "Limoges", "Brest", "Tours", "Saint-Étienne",
+        "Villeurbanne", "Aix-en-Provence", "Caen", "Clermont-Ferrand",
+    ]
+    for ville in VILLES:
+        if re.search(r'\b' + re.escape(ville) + r'\b', texte, re.IGNORECASE):
+            localisation = ville
+            break
+
+    return {
+        "experience_annees": exp_annees,
+        "formations": formations,
+        "langages":   langages,
+        "localisation": localisation,
+    }
+
+
 def _save_cv_to_db(nom_fichier: str, texte_brut: str, competences: list) -> int | None:
     """
     Persiste le CV uploadé dans la table PostgreSQL cvs (C1.2.2, C2.3.2).
+    Extrait automatiquement : experience_annees, formations, langages, localisation.
     Retourne l'id de la ligne insérée, ou None si la connexion échoue.
     """
     try:
-        conn = psycopg2.connect(
-            host=os.getenv("DB_HOST", "127.0.0.1"),
-            port=int(os.getenv("DB_PORT", 15432)),
-            dbname=os.getenv("DB_NAME", "ats_db"),
-            user=os.getenv("DB_USER", "postgres"),
-            password=os.getenv("DB_PASSWORD", "postgres"),
-        )
+        conn = _get_db()
         hash_cv = hashlib.sha256(texte_brut.encode()).hexdigest()
+        meta = _extract_cv_metadata(texte_brut)
         with conn.cursor() as cur:
             cur.execute("""
-                INSERT INTO cvs (nom_fichier, texte_brut, competences, hash_fichier)
-                VALUES (%s, %s, %s, %s)
-                ON CONFLICT (hash_fichier) DO UPDATE SET date_upload = NOW()
+                INSERT INTO cvs (nom_fichier, texte_brut, competences, hash_fichier,
+                                 experience_annees, formations, langages, localisation)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+                ON CONFLICT (hash_fichier) DO UPDATE
+                    SET date_upload       = NOW(),
+                        experience_annees = EXCLUDED.experience_annees,
+                        formations        = EXCLUDED.formations,
+                        langages          = EXCLUDED.langages,
+                        localisation      = EXCLUDED.localisation
                 RETURNING id
             """, (
                 nom_fichier[:500],
                 texte_brut,
                 competences,
                 hash_cv,
+                meta["experience_annees"],
+                meta["formations"] or None,
+                meta["langages"]   or None,
+                meta["localisation"],
             ))
             cv_id = cur.fetchone()[0]
         conn.commit()
@@ -63,36 +157,124 @@ def _save_cv_to_db(nom_fichier: str, texte_brut: str, competences: list) -> int 
     except Exception as e:
         return None
 
-MODEL_FALLBACKS = [
-    "meta/llama-3.2-11b-vision-instruct",
-    "mistralai/mistral-7b-instruct-v0.3",
-    "microsoft/phi-3-vision-128k-instruct",
-    "google/gemma-3-4b-it",
+def _save_scores_to_db(cv_nom: str, cv_id: int | None, scored_offers: list, features_map: dict) -> int:
+    """
+    Persiste TOUS les scores RF en base dans scores_matching.
+    Enrichit la table avec cv_nom et offre_titre pour la lisibilité.
+    features_map : dict {offer_url → features_raw dict}
+    """
+    try:
+        conn = _get_db()
+        # S'assurer que les colonnes cv_nom et offre_titre existent
+        with conn.cursor() as cur:
+            cur.execute("""
+                ALTER TABLE scores_matching
+                    ADD COLUMN IF NOT EXISTS cv_nom VARCHAR(255),
+                    ADD COLUMN IF NOT EXISTS offre_titre VARCHAR(255);
+            """)
+        conn.commit()
+
+        inserted = 0
+        with conn.cursor() as cur:
+            for offer in scored_offers:
+                feats = features_map.get(offer.url, {})
+                score_ml = offer.score / 100.0  # score normalisé 30-90 → 0.30-0.90
+                # Récupérer l'id entier de l'offre si elle existe (peut être NULL)
+                cur.execute(
+                    "SELECT id FROM offres WHERE url_offre = %s LIMIT 1",
+                    (offer.url[:500],)
+                )
+                row = cur.fetchone()
+                offre_db_id = row[0] if row else None
+                cur.execute("""
+                    INSERT INTO scores_matching
+                        (cv_id, offre_id, cv_nom, offre_titre, score_ml, score_percent,
+                         confidence, features_json, modele_version, interpretation)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s::jsonb, %s, %s)
+                """, (
+                    cv_id or 0,
+                    offre_db_id,
+                    cv_nom[:255],
+                    offer.title[:255],
+                    round(score_ml, 4),
+                    offer.score,
+                    round(score_ml, 4),
+                    json.dumps(feats) if feats else None,
+                    "v1",
+                    offer.analysis[:500] if offer.analysis else None,
+                ))
+                inserted += 1
+        conn.commit()
+        conn.close()
+        return inserted
+    except Exception:
+        return 0
+
+
+def _save_offers_to_db(offers) -> int:
+    """
+    Persiste toutes les offres scrapées dans la table PostgreSQL `offres`.
+    Utilise ON CONFLICT DO NOTHING pour éviter les doublons (idempotent).
+    Retourne le nombre d'offres réellement insérées.
+    """
+    import hashlib
+    try:
+        conn = _get_db()
+        inserted = 0
+        with conn.cursor() as cur:
+            for offer in offers:
+                # id_offre = hash URL → stable, court
+                id_offre = hashlib.md5(offer.url.encode()).hexdigest()[:32]
+                try:
+                    cur.execute(
+                        """
+                        INSERT INTO offres
+                            (id_offre, titre, entreprise, localisation, type_contrat,
+                             date_publication, url_offre, description, source_scraping)
+                        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+                        ON CONFLICT (id_offre) DO UPDATE
+                            SET description = EXCLUDED.description
+                            WHERE (offres.description IS NULL OR offres.description = '')
+                              AND EXCLUDED.description IS NOT NULL
+                              AND EXCLUDED.description <> ''
+                        """,
+                        (
+                            id_offre,
+                            offer.title[:255],
+                            (offer.company or "")[:255],
+                            (offer.location or "")[:255],
+                            (offer.contract or "")[:100],
+                            offer.date_posted or None,
+                            offer.url[:500],
+                            offer.body[:5000],
+                            "jobspy",
+                        ),
+                    )
+                    if cur.rowcount:
+                        inserted += 1
+                except Exception:
+                    conn.rollback()   # ligne unique échouée → on passe
+        conn.commit()
+        conn.close()
+        return inserted
+    except Exception:
+        return 0
+
+
+GROQ_MODELS = [
+    "llama-3.1-70b-versatile",
+    "llama-3.1-8b-instant",
+    "mixtral-8x7b-32768",
+    "gemma2-9b-it",
 ]
-_configured_model = os.getenv("NVIDIA_MODEL", "").strip()
-if _configured_model and _configured_model not in MODEL_FALLBACKS:
-    MODEL_FALLBACKS.insert(0, _configured_model)
+_configured_model = os.getenv("GROQ_MODEL", "").strip()
+if _configured_model and _configured_model not in GROQ_MODELS:
+    GROQ_MODELS.insert(0, _configured_model)
 
 
 def get_available_models(api_key: str) -> list[str]:
-    """Return model IDs known to the active NVIDIA account, with a stable fallback list."""
-    client = OpenAI(base_url="https://integrate.api.nvidia.com/v1", api_key=api_key)
-    try:
-        models = client.models.list().data
-        ids = [m.id for m in models if isinstance(getattr(m, "id", None), str) and "/" in m.id]
-        if not ids:
-            return MODEL_FALLBACKS
-
-        ordered: list[str] = []
-        for model in MODEL_FALLBACKS:
-            if model in ids and model not in ordered:
-                ordered.append(model)
-        for model in ids:
-            if model not in ordered:
-                ordered.append(model)
-        return ordered
-    except Exception:
-        return MODEL_FALLBACKS
+    """Retourne la liste des modèles Groq disponibles."""
+    return list(GROQ_MODELS)
 
 
 DEFAULT_SYSTEM_PROMPT = (
@@ -109,16 +291,21 @@ class App:
         st.set_page_config(page_title="Chatbot IA Générative", page_icon="🤖", layout="wide")
         st.markdown(CSS, unsafe_allow_html=True)
 
-        api_key = os.getenv("NVIDIA_API_KEY", "")
+        try:
+            api_key = st.secrets.get("GROQ_API_KEY", "")
+        except Exception:
+            api_key = ""
         if not api_key:
-            st.error("❌ Clé API NVIDIA manquante. Ajoute dans `.env` :\n```\nNVIDIA_API_KEY=nvapi-xxxx\n```")
+            api_key = os.getenv("GROQ_API_KEY", "")
+        if not api_key:
+            st.error("❌ Clé API Groq manquante. Ajoutez `GROQ_API_KEY` dans les secrets Streamlit (`.streamlit/secrets.toml`) ou dans `.env`.")
             st.stop()
 
         self._llm        = LLMService(api_key)
         self._cv_parser  = CVParser()
         self._job_search = JobSearchService(max_results=50)
         self.available_models = get_available_models(api_key)
-        self.model = os.getenv("NVIDIA_MODEL", self.available_models[0])
+        self.model = os.getenv("GROQ_MODEL", self.available_models[0])
         if self.model not in self.available_models:
             self.model = self.available_models[0]
 
@@ -156,7 +343,7 @@ class App:
                 st.session_state.messages = []
                 st.rerun()
             st.markdown("<br>", unsafe_allow_html=True)
-            st.caption("Propulsé par [NVIDIA NIM](https://build.nvidia.com) · Llama 3")
+            st.caption("Propulsé par [Groq](https://console.groq.com) · Llama 3.1")
 
     # ── Header ─────────────────────────────────────────────────────────────
     def _render_header(self) -> None:
@@ -343,6 +530,7 @@ class App:
             if uploaded:
                 with st.spinner("Extraction du texte…"):
                     st.session_state.cv_text = self._cv_parser.extract(uploaded)
+                st.session_state["cv_filename"] = uploaded.name  # pour scores_matching
                 st.success(f"✅ CV chargé — {len(st.session_state.cv_text)} caractères extraits")
                 with st.expander("Aperçu du texte extrait"):
                     st.text(st.session_state.cv_text[:1200] + "…")
@@ -419,21 +607,120 @@ class App:
                 st.warning("Aucune offre trouvée. Essaie d'autres mots-clés ou élargis la période.")
                 return
 
-            if analyze and st.session_state.cv_text:
-                # On plafonne l'analyse LLM à 15 offres max pour éviter les timeouts
-                MAX_LLM = 15
-                analyzer = CompatibilityAnalyzer(self._llm, self.model)
-                to_analyze = offers[:MAX_LLM]
-                rest = offers[MAX_LLM:]
-                if len(rest) > 0:
-                    st.caption(f"ℹ️ Analyse LLM limitée aux {MAX_LLM} premières offres pour la rapidité — {len(rest)} offres supplémentaires affichées sans score.")
-                progress = st.progress(0, text="Analyse en cours…")
-                for i, offer in enumerate(to_analyze):
-                    progress.progress((i + 1) / len(to_analyze), text=f"Analyse {i+1}/{len(to_analyze)}…")
-                    to_analyze[i] = analyzer.analyze(st.session_state.cv_text, offer)
-                progress.empty()
-                to_analyze.sort(key=lambda o: o.score, reverse=True)
-                offers = to_analyze + rest
+            # ── 1. Sauvegarde TOUTES les offres en PostgreSQL ───────────────────
+            nb_inserted = _save_offers_to_db(offers)
+            if nb_inserted > 0:
+                st.caption(f"💾 {nb_inserted} nouvelles offres sauvegardées en base.")
+
+            # ── 2. Scoring RandomForest pour toutes les offres ──────────────────
+            if st.session_state.cv_text:
+                from etl.pipeline import DataTransformer
+                scorer = MLScorer(DATA_LAKE_MODELS)
+
+                # Extraire compétences + métadonnées CV
+                cv_skills   = DataTransformer.extract_competences(st.session_state.cv_text)
+                cv_meta     = _extract_cv_metadata(st.session_state.cv_text)
+                cv_exp      = float(cv_meta.get("experience_annees") or 0)
+                cv_loc      = cv_meta.get("localisation") or ""
+
+                if scorer.available:
+                    score_src = "🤖 RandomForest"
+                else:
+                    score_src = "📐 Heuristique"
+
+                # features_map : url → dict de features (pour scores_matching)
+                features_map: dict = {}
+
+                rf_bar = st.progress(0, text=f"Scoring {score_src} ({len(offers)} offres)…")
+                for i, offer in enumerate(offers):
+                    offre_skills = DataTransformer.extract_competences(offer.body)
+                    cv_set   = {s.lower() for s in cv_skills if s}
+                    off_set  = {s.lower() for s in offre_skills if s}
+                    inter    = cv_set & off_set
+                    union    = cv_set | off_set
+                    jaccard  = len(inter) / len(union) if union else 0.0
+                    sk_ratio = len(inter) / len(off_set) if off_set else 0.0
+                    rf_score = scorer.score_offer(
+                        cv_skills=cv_skills,
+                        cv_exp=cv_exp,
+                        cv_loc=cv_loc,
+                        offre_skills=offre_skills,
+                        offre_loc=offer.location or "",
+                        offre_exp_min=0.0,
+                    )
+                    offer.score = int(round(rf_score * 100))
+                    # Sauvegarder les features brutes pour scores_matching
+                    features_map[offer.url] = {
+                        "skill_overlap":  round(jaccard, 4),
+                        "skill_ratio":    round(sk_ratio, 4),
+                        "cv_nb_skills":   len(cv_set),
+                        "offre_nb_skills": len(off_set),
+                        "skills_communs": sorted(list(inter))[:10],
+                        "cv_localisation": cv_loc,
+                        "offre_localisation": offer.location or "",
+                        "cv_experience":  cv_exp,
+                        "source": score_src,
+                    }
+                    rf_bar.progress((i + 1) / len(offers),
+                                    text=f"Scoring {score_src} {i+1}/{len(offers)}…")
+                rf_bar.empty()
+
+                # ── Normalisation des scores RF → plage lisible [30–90] ─────────
+                raw_scores = [o.score for o in offers]
+                min_s, max_s = min(raw_scores), max(raw_scores)
+                if max_s > min_s:
+                    for o in offers:
+                        o.score = int(30 + (o.score - min_s) / (max_s - min_s) * 60)
+                else:
+                    for o in offers:
+                        o.score = 55
+
+                # Trier par score normalisé décroissant
+                offers.sort(key=lambda o: o.score, reverse=True)
+
+                # ── 3. Enrichissement qualitatif IA — top 10 par score RF ──────
+                if analyze:
+                    # Le RF score TOUTES les offres ; le LLM enrichit les top 10
+                    # (limite VRAM : le modèle local ne peut traiter trop de requêtes)
+                    MAX_LLM = 10
+                    top_ia = offers[:MAX_LLM]
+                    n_ia = len(top_ia)
+                    analyzer = CompatibilityAnalyzer(self._llm, self.model)
+                    st.caption(
+                        f"✅ Scoring RF terminé sur {len(offers)} offres — "
+                        f"enrichissement qualitatif IA sur le top {n_ia}…"
+                    )
+                    progress = st.progress(0, text=f"Analyse qualitative 0/{n_ia}…")
+                    n_ok = 0
+                    for i, offer in enumerate(top_ia):
+                        progress.progress((i + 1) / n_ia,
+                                          text=f"Analyse qualitative {i+1}/{n_ia}…")
+                        try:
+                            enriched = analyzer.analyze(st.session_state.cv_text, offer)
+                            offer.analysis = enriched.analysis
+                            n_ok += 1
+                        except Exception as _llm_err:
+                            # OOM ou erreur réseau : on continue sans crasher
+                            offer.analysis = None
+                            st.warning(
+                                f"⚠️ Analyse IA ignorée pour « {offer.title[:60]} » "
+                                f"(VRAM insuffisante ou erreur réseau). "
+                                f"Le score RF reste valide.",
+                                icon="⚠️",
+                            )
+                    progress.empty()
+                    if n_ok < n_ia:
+                        st.caption(
+                            f"💡 {n_ok}/{n_ia} analyses qualitatives réussies. "
+                            f"Vérifiez votre quota Groq ou réessayez."
+                        )
+
+                # ── 4. Sauvegarder TOUS les scores dans scores_matching ───────────
+                cv_nom = st.session_state.get("cv_filename", "cv_inconnu")
+                cv_id  = st.session_state.get("cv_db_id")
+                nb_scores = _save_scores_to_db(cv_nom, cv_id, offers, features_map)
+                if nb_scores > 0:
+                    st.caption(f"💾 {nb_scores} scores sauvegardés dans scores_matching.")
 
             st.session_state.job_offers = offers
             # Stocker les offres matchées sous forme de dicts pour candidatures + chat
@@ -454,9 +741,16 @@ class App:
 
         if st.session_state.job_offers:
             n = len(st.session_state.job_offers)
-            scored = sum(1 for o in st.session_state.job_offers if o.score > 0)
-            st.markdown(f"**{n} offre(s) trouvée(s)** {'— ' + str(scored) + ' analysées avec ton CV' if scored else ''}")
-            for offer in st.session_state.job_offers:
+            scored_rf  = sum(1 for o in st.session_state.job_offers if o.score > 0)
+            scored_ia  = sum(1 for o in st.session_state.job_offers if o.analysis)
+            if scored_rf:
+                label = f"— {scored_rf} scorées par notre modèle ML"
+                if scored_ia:
+                    label += f", dont {scored_ia} avec analyse qualitative (top {scored_ia})"
+            else:
+                label = ""
+            st.markdown(f"**{n} offre(s) trouvée(s)** {label}")
+            for offer in sorted(st.session_state.job_offers, key=lambda o: o.score, reverse=True):
                 UI.render_job_card(offer)
 
 
@@ -473,13 +767,32 @@ class App:
 
         parquet_path = DATA_LAKE_PROC / "offres_clean.parquet"
 
+        # ── Bouton ETL manuel ─────────────────────────────────────────────────
+        with st.expander("🔄 Lancer / rafraîchir le pipeline ETL", expanded=not parquet_path.exists()):
+            col_q, col_src, col_n = st.columns([3, 1, 1])
+            with col_q:
+                etl_query = st.text_input("Requête", value="Data Scientist", key="etl_query")
+            with col_src:
+                etl_source = st.selectbox("Source", ["jobspy", "france_travail", "all"], key="etl_source")
+            with col_n:
+                etl_max = st.number_input("Max offres", min_value=10, max_value=200, value=50, step=10, key="etl_max")
+            if st.button("▶️ Lancer le pipeline ETL", use_container_width=True, key="etl_run_btn"):
+                with st.spinner("Pipeline ETL en cours — collecte et transformation des offres…"):
+                    try:
+                        from etl.pipeline import ETLPipeline
+                        result = ETLPipeline().run(query=etl_query, source=etl_source, max_offres=int(etl_max))
+                        st.success(
+                            f"✅ ETL terminé — {result.get('nb_extraites', 0)} offres extraites, "
+                            f"{result.get('nb_insérées', 0)} insérées, {result.get('nb_màj', 0)} mises à jour."
+                        )
+                        if result.get("erreurs"):
+                            st.warning("Avertissements : " + " | ".join(str(e) for e in result["erreurs"][:3]))
+                        st.rerun()
+                    except Exception as exc:
+                        st.error(f"Erreur ETL : {exc}")
+
         if not parquet_path.exists():
-            st.info(
-                "📂 Aucune donnée disponible pour le moment.\n\n"
-                "Le pipeline ETL collecte des offres automatiquement toutes les 2h. "
-                "Vous pouvez aussi le déclencher manuellement :\n"
-                "```bash\ndocker compose exec etl-scheduler python -m etl.scheduler --run-now\n```"
-            )
+            st.info("📂 Aucune donnée disponible — lancez le pipeline ETL ci-dessus.")
             self._show_demo_dashboard()
             return
 
@@ -504,17 +817,30 @@ class App:
 
         comp_series = pd.Series(all_comps).value_counts() if all_comps else pd.Series(dtype=int)
 
-        # Fallback : si parquet n'a pas de compétences extraites, on utilise les offres de la session
-        if comp_series.empty and st.session_state.get("job_offers"):
-            import re as _re
+        # Fallback 1 : re-extraire les compétences depuis les colonnes texte du parquet
+        if comp_series.empty and not df.empty:
             from etl.pipeline import DataTransformer
-            _fallback_comps: list[str] = []
+            _desc_col = next((c for c in ("description", "texte_complet", "titre") if c in df.columns), None)
+            if _desc_col:
+                _fallback_comps: list[str] = []
+                for _txt in df[_desc_col].dropna():
+                    _comps = DataTransformer.extract_competences(str(_txt))
+                    _fallback_comps.extend([c.strip() for c in _comps if isinstance(c, str) and c.strip()])
+                if _fallback_comps:
+                    comp_series = pd.Series(_fallback_comps).value_counts()
+                    all_comps = _fallback_comps
+                    st.caption("ℹ️ Compétences re-extraites depuis les descriptions (colonne `competences` du parquet vide)")
+
+        # Fallback 2 : si parquet n'a pas de compétences extraites, on utilise les offres de la session
+        if comp_series.empty and st.session_state.get("job_offers"):
+            from etl.pipeline import DataTransformer
+            _fallback_comps2: list[str] = []
             for _offer in st.session_state.job_offers:
                 _comps = DataTransformer.extract_competences(_offer.body)
-                _fallback_comps.extend([c.strip() for c in _comps if isinstance(c, str) and c.strip()])
-            if _fallback_comps:
-                comp_series = pd.Series(_fallback_comps).value_counts()
-                all_comps = _fallback_comps
+                _fallback_comps2.extend([c.strip() for c in _comps if isinstance(c, str) and c.strip()])
+            if _fallback_comps2:
+                comp_series = pd.Series(_fallback_comps2).value_counts()
+                all_comps = _fallback_comps2
                 st.caption("ℹ️ Compétences issues de la session de recherche (parquet non peuplé par ETL)")
 
         # ── KPIs (C2.1.2) ────────────────────────────────────────────────────
@@ -781,23 +1107,10 @@ GROUP BY comp ORDER BY frequence DESC LIMIT 10;
 
         # Connexion DB (nécessaire même pour récupérer cv_id après redémarrage)
         try:
-            conn = psycopg2.connect(
-                host=os.getenv("DB_HOST", "127.0.0.1"),
-                port=int(os.getenv("DB_PORT", 15432)),
-                dbname=os.getenv("DB_NAME", "ats_db"),
-                user=os.getenv("DB_USER", "postgres"),
-                password=os.getenv("DB_PASSWORD", "postgres"),
-            )
+            conn = _get_db()
         except Exception as e:
-            err_msg = str(e)
-            st.error(f"Connexion DB impossible : {err_msg}")
-            if "postgres" in err_msg.lower() and ("name resolution" in err_msg.lower() or "translate host" in err_msg.lower()):
-                st.warning(
-                    "🐳 **Erreur réseau Docker** : le hostname `postgres` ne se résout pas.\n\n"
-                    "Lancez tous les services ensemble : `docker compose up`"
-                )
-            else:
-                st.info("Assurez-vous que PostgreSQL est démarré (`docker compose up`).")
+            st.error(f"Connexion DB impossible : {e}")
+            st.info("Vérifiez que DATABASE_URL est configuré dans les secrets Streamlit ou dans .env")
             return
 
         # Après un redémarrage Streamlit, la session_state est vide — on récupère le CV le plus récent
@@ -887,12 +1200,55 @@ GROUP BY comp ORDER BY frequence DESC LIMIT 10;
 
                     if offre_db_id:
                         score_val = offre_selectionnee.get("score_percent", 0) / 100.0
+
+                        # ── Score ML + features (pour scores_matching + retrain) ──────
+                        ml_score    = None
+                        ml_conf     = None
+                        features_js = None
+                        try:
+                            from ml.dataset import compute_features
+                            from etl.pipeline import DataTransformer
+                            cv_txt_feat = st.session_state.get("cv_text", "")
+                            cv_comps    = DataTransformer.extract_competences(cv_txt_feat)
+                            offre_comps = DataTransformer.extract_competences(
+                                offre_selectionnee.get("description", "")
+                            )
+                            cv_dict  = {
+                                "competences": cv_comps,
+                                "localisation": "",
+                                "teletravail":  False,
+                                "salaire_min":  0,
+                                "experience_annees": 0,
+                            }
+                            offre_dict = {
+                                "competences": offre_comps,
+                                "localisation": offre_selectionnee.get("localisation", ""),
+                                "teletravail":  False,
+                                "salaire_max":  0,
+                                "exp_min":      0,
+                            }
+                            import numpy as _np
+                            feats = compute_features(cv_dict, offre_dict, _np.random.default_rng(42))
+                            model_path = DATA_LAKE_MODELS / "model.joblib"
+                            if model_path.exists():
+                                import joblib as _jl
+                                _clf = _jl.load(model_path)
+                                _feat_names = feats.get("feature_names", list(feats.keys()))
+                                _X = [[feats.get(f, 0) for f in _feat_names]]
+                                ml_score = float(_clf.predict_proba(_X)[0][1])
+                                ml_conf  = round(ml_score, 4)
+                            features_js = json.dumps({k: v for k, v in feats.items()
+                                                       if isinstance(v, (int, float, bool))})
+                        except Exception:
+                            pass  # ML facultatif
+
                         with conn.cursor() as cur:
                             cur.execute("""
                                 INSERT INTO candidatures
                                     (cv_id, offre_id, statut, notes, score_matching,
                                      lettre_motivation, nom_cv, conseils_ia)
                                 VALUES (%s, %s, 'nouveau', %s, %s, %s, %s, %s)
+                                RETURNING id
                             """, (
                                 cv_id,
                                 offre_db_id,
@@ -902,6 +1258,25 @@ GROUP BY comp ORDER BY frequence DESC LIMIT 10;
                                 st.session_state.get("cv_db_id", ""),
                                 conseils_auto or None,
                             ))
+                            cand_new_id = cur.fetchone()
+
+                            # Peuplement scores_matching avec features ML réelles
+                            if cand_new_id and features_js is not None:
+                                effective_score = ml_score if ml_score is not None else score_val
+                                cur.execute("""
+                                    INSERT INTO scores_matching
+                                        (cv_id, offre_id, score_ml, score_percent,
+                                         confidence, features_json, modele_version)
+                                    VALUES (%s, %s, %s, %s, %s, %s::jsonb, 'v1')
+                                    ON CONFLICT DO NOTHING
+                                """, (
+                                    cv_id,
+                                    offre_db_id,
+                                    effective_score,
+                                    int(effective_score * 100),
+                                    ml_conf or round(score_val, 4),
+                                    features_js,
+                                ))
                         conn.commit()
                         st.success(f"✅ Candidature enregistrée — {offre_selectionnee.get('titre')} chez {offre_selectionnee.get('entreprise')} !")
                     else:
@@ -953,40 +1328,35 @@ GROUP BY comp ORDER BY frequence DESC LIMIT 10;
                 'nouveau': '🆕', 'en_cours': '⏳', 'entretien': '🤝',
                 'test_technique': '💻', 'offre': '🎉', 'refus': '❌', 'accepte': '✅'
             }
+            st.caption("💡 Vue rapide — pour consulter la lettre de motivation et les conseils IA, ouvrez l'onglet **🗂️ Historique**.")
             for row in cands:
-                cand_id, titre, entreprise, contrat, statut, score_pct, notes, date, lettre_motiv, conseils = row
-                with st.container():
-                    col1, col2, col3 = st.columns([3, 1, 2])
-                    with col1:
-                        st.markdown(f"**{titre}** — {entreprise}  \n`{contrat}` | 📅 {date}")
-                    with col2:
-                        st.metric("Score", f"{score_pct or 0}%")
-                    with col3:
-                        idx_statut = STATUTS.index(statut) if statut in STATUTS else 0
-                        nouveau_statut = st.selectbox(
-                            "Statut",
-                            STATUTS,
-                            index=idx_statut,
-                            key=f"statut_{cand_id}",
-                            format_func=lambda s: f"{STATUT_EMOJI.get(s, '')} {s}",
-                        )
-                        if nouveau_statut != statut:
-                            with conn.cursor() as cur:
-                                cur.execute(
-                                    "UPDATE candidatures SET statut=%s WHERE id=%s",
-                                    (nouveau_statut, cand_id)
-                                )
-                            conn.commit()
-                            st.rerun()
-                    if notes:
-                        st.caption(f"📝 Notes : {notes}")
-                    if lettre_motiv:
-                        with st.expander("✉️ Lettre de motivation"):
-                            st.write(lettre_motiv)
-                    if conseils:
-                        with st.expander("💡 Conseils IA pour ce poste"):
-                            st.write(conseils)
-                    st.divider()
+                cand_id, titre, entreprise, contrat, statut, score_pct, notes, date, _lettre, _conseils = row
+                col1, col2, col3 = st.columns([4, 1, 2])
+                with col1:
+                    st.markdown(f"**{titre}** — {entreprise}")
+                    st.caption(f"`{contrat or '—'}` · 📅 {date}{' · 📝 ' + notes if notes else ''}")
+                with col2:
+                    score_color = "🟢" if (score_pct or 0) >= 70 else "🟡" if (score_pct or 0) >= 40 else "🔴"
+                    st.markdown(f"**{score_color} {score_pct or 0}%**")
+                with col3:
+                    idx_statut = STATUTS.index(statut) if statut in STATUTS else 0
+                    nouveau_statut = st.selectbox(
+                        "Statut",
+                        STATUTS,
+                        index=idx_statut,
+                        key=f"statut_{cand_id}",
+                        format_func=lambda s: f"{STATUT_EMOJI.get(s, '')} {s}",
+                        label_visibility="collapsed",
+                    )
+                    if nouveau_statut != statut:
+                        with conn.cursor() as cur:
+                            cur.execute(
+                                "UPDATE candidatures SET statut=%s WHERE id=%s",
+                                (nouveau_statut, cand_id)
+                            )
+                        conn.commit()
+                        st.rerun()
+                st.divider()
 
         conn.close()
 
@@ -1025,26 +1395,10 @@ GROUP BY comp ORDER BY frequence DESC LIMIT 10;
         st.caption("Consultez et gérez vos candidatures avec leur dossier complet.")
 
         try:
-            conn = psycopg2.connect(
-                host=os.getenv("DB_HOST", "127.0.0.1"),
-                port=int(os.getenv("DB_PORT", 15432)),
-                dbname=os.getenv("DB_NAME", "ats_db"),
-                user=os.getenv("DB_USER", "postgres"),
-                password=os.getenv("DB_PASSWORD", "postgres"),
-            )
+            conn = _get_db()
         except Exception as e:
-            err_msg = str(e)
-            st.error(f"Connexion DB impossible : {err_msg}")
-            if "postgres" in err_msg.lower() and ("name resolution" in err_msg.lower() or "translate host" in err_msg.lower()):
-                st.warning(
-                    "🐳 **Erreur réseau Docker** : le hostname `postgres` ne se résout pas.\n\n"
-                    "Cela signifie que le conteneur PostgreSQL n'est pas accessible depuis Streamlit. "
-                    "Lancez tous les services ensemble :\n"
-                    "```bash\ndocker compose up\n```\n"
-                    "Ou si vous êtes déjà dans Docker : `docker compose restart postgres` puis `docker compose restart streamlit`."
-                )
-            else:
-                st.info("⬆️ Assurez-vous que PostgreSQL est démarré (`docker compose up`).")
+            st.error(f"Connexion DB impossible : {e}")
+            st.info("Vérifiez que DATABASE_URL est configuré dans les secrets Streamlit ou dans .env")
             return
 
         try:
@@ -1104,7 +1458,20 @@ GROUP BY comp ORDER BY frequence DESC LIMIT 10;
                 st.caption(f"Candidature du {date} · CV : {nom_cv or '—'}")
             with col_b:
                 st.metric("Score matching", f"{score_pct}%")
-                st.markdown(f"**Statut :** {STATUT_EMOJI.get(statut, '')} {statut}")
+                STATUTS_HIST = ['nouveau', 'en_cours', 'entretien', 'test_technique', 'offre', 'refus', 'accepte']
+                idx_s = STATUTS_HIST.index(statut) if statut in STATUTS_HIST else 0
+                nouveau_statut_h = st.selectbox(
+                    "Statut",
+                    STATUTS_HIST,
+                    index=idx_s,
+                    key=f"hist_statut_{cand_id}",
+                    format_func=lambda s: f"{STATUT_EMOJI.get(s, '')} {s}",
+                )
+                if nouveau_statut_h != statut:
+                    with conn.cursor() as cur:
+                        cur.execute("UPDATE candidatures SET statut=%s WHERE id=%s", (nouveau_statut_h, cand_id))
+                    conn.commit()
+                    st.rerun()
 
             # Sous-onglets du dossier
             sub1, sub2, sub3, sub4 = st.tabs([
@@ -1113,13 +1480,45 @@ GROUP BY comp ORDER BY frequence DESC LIMIT 10;
 
             with sub1:
                 st.markdown("### Description du poste")
-                if description:
+
+                # ── Infos structurées ───────────────────────────────────────────
+                col_i1, col_i2 = st.columns(2)
+                with col_i1:
+                    st.markdown(f"🏢 **Entreprise :** {entreprise or '—'}")
+                    st.markdown(f"📍 **Localisation :** {localisation or '—'}")
+                with col_i2:
+                    st.markdown(f"📋 **Contrat :** {contrat or '—'}")
+                    st.markdown(f"📊 **Score de matching :** {score_pct} %")
+
+                st.divider()
+
+                # ── Compétences extraites automatiquement ───────────────────────
+                from etl.pipeline import DataTransformer
+                # Texte à analyser : body DB + titre comme fallback
+                _desc_for_skills = (description or "") + " " + (titre or "")
+                comp_extraites = DataTransformer.extract_competences(_desc_for_skills) if _desc_for_skills.strip() else []
+                if comp_extraites:
+                    st.markdown("#### 🔧 Compétences détectées")
+                    badges = "  ".join(f"`{c}`" for c in sorted(comp_extraites)[:20])
+                    st.markdown(badges)
+                    st.divider()
+
+                # ── Texte complet de l'offre ────────────────────────────────────
+                st.markdown("#### 📄 Description complète")
+                # Chercher dans session_state si la DB n'a pas le body
+                _body_live = ""
+                for _o in st.session_state.get("job_offers", []):
+                    if hasattr(_o, "title") and _o.title == titre:
+                        _body_live = getattr(_o, "body", "") or ""
+                        break
+                desc_display = (description or "").strip() or _body_live.strip()
+                if desc_display:
                     st.text_area(
-                        "", value=description[:3000], height=300,
+                        "", value=desc_display[:4000], height=280,
                         disabled=True, label_visibility="collapsed",
                     )
                 else:
-                    st.info("Description non disponible pour cette offre.")
+                    st.info("Description complète non disponible — seules les informations structurées sont enregistrées pour cette offre.")
 
             with sub2:
                 st.markdown("### Lettre de motivation")

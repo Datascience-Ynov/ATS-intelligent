@@ -1,0 +1,8 @@
+test FASTAPI :
+
+$body = @{ cv = @{ competences = @('Python','SQL','Machine Learning'); experience_annees = 3; localisation = 'Lyon' }; offre = @{ competences_requises = @('Python','SQL','Scikit-learn'); experience_requise = 2; localisation = 'Lyon' } } | ConvertTo-Json -Depth 5; $result = Invoke-RestMethod -Method Post -Uri 'http://localhost:8001/score' -ContentType 'application/json' -Body $body; $result | ConvertTo-Json -Depth 5
+
+
+training :
+
+python -m ml.train

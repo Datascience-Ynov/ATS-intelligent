@@ -57,11 +57,11 @@ from .models import Message, JobOffer
 
 
 class LLMService:
-    """Wraps le client NVIDIA NIM (OpenAI-compatible)."""
+    """Wraps le client Groq (OpenAI-compatible)."""
 
     def __init__(self, api_key: str) -> None:
         self._client = OpenAI(
-            base_url="https://integrate.api.nvidia.com/v1",
+            base_url="https://api.groq.com/openai/v1",
             api_key=api_key,
         )
 
@@ -122,6 +122,18 @@ def _clean(val, fallback: str = "") -> str:
     return fallback if s.lower() in ("nan", "none", "") else s
 
 
+def _extract_url(raw: str) -> str:
+    """
+    Certaines sources (Indeed via jobspy) retournent le job_url sous forme
+    de balise HTML : '<a class="job-link" href="https://...">'.
+    On extrait proprement le href ; sinon on retourne l'URL telle quelle.
+    """
+    if raw and raw.strip().startswith("<"):
+        m = re.search(r'href=["\']([^"\']+)["\']', raw)
+        return m.group(1) if m else "#"
+    return raw or "#"
+
+
 class JobSearchService:
     """Recherche des offres d'emploi via JobSpy (LinkedIn + Indeed + Glassdoor).
     Gratuit, sans clé API, sans inscription.
@@ -155,7 +167,7 @@ class JobSearchService:
         for _, row in df.iterrows():
             title    = _clean(row.get("title"), "Sans titre")
             desc     = _clean(row.get("description"), "")
-            url      = _clean(row.get("job_url"), "#")
+            url      = _extract_url(_clean(row.get("job_url"), "#"))
             comp     = _clean(row.get("company"), "")
             loc      = _clean(row.get("location"), "")
             src      = f"{comp} — {loc}" if comp and loc else comp or loc
@@ -180,6 +192,8 @@ class JobSearchService:
                 body_parts.append(f"Rémunération : {salary}")
             # Nettoyage HTML (certaines offres jobspy contiennent des balises brutes)
             desc = re.sub(r"<[^>]+>", "", desc).strip()
+            # Dé-échapper les séquences littérales \\n retournées par certaines sources
+            desc = desc.replace("\\n", "\n").replace("\\t", " ").strip()
             if desc:
                 body_parts.append(desc)
             body = "\n".join(body_parts)
@@ -202,11 +216,113 @@ def _strip_html(text: str) -> str:
     return re.sub(r"<[^>]+>", "", text).strip()
 
 
+class MLScorer:
+    """
+    Scoring CV↔offre via le RandomForest entraîné (data_lake/models/latest/).
+    Rapide (< 1ms/offre), varié (scores réellement distribués), sans API.
+    Utilisé en première passe pour classer toutes les offres avant l'analyse LLM.
+    """
+
+    def __init__(self, model_dir) -> None:
+        from pathlib import Path
+        self._model = None
+        self._feature_names: list[str] = []
+        try:
+            import joblib as _jl
+            md = Path(model_dir)
+            model_path  = md / "model.joblib"
+            feat_path   = md / "feature_names.json"
+            if model_path.exists() and feat_path.exists():
+                self._model = _jl.load(model_path)
+                self._feature_names = json.loads(feat_path.read_text())
+        except Exception:
+            pass  # modèle facultatif
+
+    @property
+    def available(self) -> bool:
+        return self._model is not None and bool(self._feature_names)
+
+    def score_offer(
+        self,
+        cv_skills: list[str],
+        cv_exp: float,
+        cv_loc: str,
+        offre_skills: list[str],
+        offre_loc: str,
+        offre_exp_min: float = 0.0,
+    ) -> float:
+        """
+        Retourne une probabilité de match [0.0–1.0] via predict_proba du RF.
+        Calcule les 14 features sur lesquelles le modèle a été sélectionné.
+        Si le modèle est indisponible, retourne le global_score heuristique.
+        """
+        cv_set    = {s.lower() for s in cv_skills if s}
+        offre_set = {s.lower() for s in offre_skills if s}
+        inter     = cv_set & offre_set
+        union     = cv_set | offre_set
+
+        jaccard      = len(inter) / len(union) if union else 0.0
+        skill_ratio  = len(inter) / len(offre_set) if offre_set else 0.0
+
+        # Location score (heuristique simple)
+        cv_l  = cv_loc.strip().lower() if cv_loc else ""
+        off_l = offre_loc.strip().lower() if offre_loc else ""
+        if cv_l and off_l and cv_l == off_l:
+            loc_score = 1.0
+        elif "remote" in off_l or "télétravail" in off_l or not off_l:
+            loc_score = 0.8
+        else:
+            loc_score = 0.5  # ville différente, score neutre
+
+        # Experience match
+        if offre_exp_min <= cv_exp:
+            exp_match = 1.0
+        else:
+            gap = offre_exp_min - cv_exp
+            exp_match = max(0.0, 1.0 - gap * 0.3)
+
+        cv_nb    = len(cv_set)
+        offre_nb = len(offre_set)
+        global_score = 0.5 * jaccard + 0.25 * exp_match + 0.15 * loc_score + 0.1 * skill_ratio
+
+        features_raw = {
+            # Core
+            "skill_overlap":    jaccard,
+            "skill_ratio":      skill_ratio,
+            "loc_score":        loc_score,
+            "exp_match":        exp_match,
+            "cv_nb_skills":     cv_nb,
+            "offre_nb_skills":  offre_nb,
+            "cv_experience":    cv_exp,
+            "exp_min_requis":   offre_exp_min,
+            "global_score":     global_score,
+            # Binaire SQL
+            "skill_sql":        int("sql" in cv_set),
+            # Composites (reproduit load_and_prepare de train.py)
+            "exp_gap":          cv_exp - offre_exp_min,
+            "skills_density":   cv_nb / (offre_nb + 1),
+            "overlap_x_loc":    jaccard * loc_score,
+            "match_difficulty": offre_exp_min / (cv_nb + 1),
+            "exp_match_sq":     exp_match ** 2,
+            "skills_sq":        jaccard ** 2,
+        }
+
+        if not self.available:
+            return round(global_score, 4)
+
+        try:
+            X = [[features_raw.get(f, 0.0) for f in self._feature_names]]
+            proba = float(self._model.predict_proba(X)[0][1])
+            return round(proba, 4)
+        except Exception:
+            return round(global_score, 4)
+
+
 class CompatibilityAnalyzer:
     """Analyse la compatibilité entre un CV et une offre d'emploi via LLM."""
 
     # Prompt très strict : on demande du JSON pur, on interdit tout le reste
-    _PROMPT = """Tu es un expert RH spécialisé dans les profils tech et data.
+    _PROMPT = """Tu es un expert RH très exigeant, spécialisé dans les profils tech et data.
 
 CV du candidat :
 ---
@@ -218,14 +334,22 @@ Offre d'emploi :
 {job}
 ---
 
-INSTRUCTIONS :
-- Réponds UNIQUEMENT avec un objet JSON valide.
-- N'ajoute aucun texte avant ou après le JSON.
-- N'utilise pas de balises HTML, markdown, ou code block.
-- Ne mentionne jamais le nom ou prénom du candidat dans ta réponse. Réfère-toi à lui uniquement par "le candidat".
-- Respecte exactement ce schéma :
+GRILLE DE NOTATION STRICTE — applique-la scrupuleusement :
+- 0-20  : profil hors-sujet (domaine différent, compétences non pertinentes)
+- 21-40 : peu de correspondance (manque la majorité des compétences clés requises)
+- 41-60 : correspondance partielle (quelques compétences présentes, lacunes importantes)
+- 61-75 : bonne correspondance (compétences principales présentes, 1-2 lacunes mineures)
+- 76-89 : très bonne correspondance (presque toutes les compétences, profil solide)
+- 90-100 : correspondance quasi-parfaite (toutes compétences + expérience exacte + localisation)
 
-{{"score": <entier 0 à 100>, "points_forts": "<phrase courte>", "points_faibles": "<phrase courte>", "conseil": "<action concrète>"}}"""
+RÈGLES :
+- Sois sévère : un profil junior sur une offre senior ne peut pas dépasser 55.
+- Si des compétences "required"/"obligatoires" de l'offre sont absentes du CV → score ≤ 50.
+- Ne mentionne jamais le nom ou prénom du candidat. Réfère-toi à lui par "le candidat".
+- Réponds UNIQUEMENT avec un objet JSON valide, sans texte avant/après, sans markdown.
+- Schéma exact :
+
+{{"score": <entier 0 à 100>, "points_forts": "<compétences clés présentes>", "points_faibles": "<compétences manquantes ou inadéquates>", "conseil": "<action concrète pour améliorer le profil>"}}"""
 
     def __init__(self, llm: LLMService, model: str) -> None:
         self._llm   = llm
