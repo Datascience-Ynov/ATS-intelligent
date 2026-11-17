@@ -320,7 +320,7 @@ PROVIDERS: dict[str, dict] = {
     # },
     "NVIDIA NIM": {
         "base_url":  "https://integrate.api.nvidia.com/v1",
-        "env_key":   "NIM_API_KEY",
+        "env_key":   "NVIDIA_API_KEY",   # nom utilisé dans .env et secrets Streamlit
         "link":      "https://build.nvidia.com",
         "caption":   "NVIDIA NIM · Llama / Mistral",
         "models": [
@@ -349,7 +349,8 @@ PROVIDERS: dict[str, dict] = {
 
 def get_available_models(provider_name: str) -> list[str]:
     """Retourne la liste des modèles du fournisseur sélectionné."""
-    return list(PROVIDERS.get(provider_name, PROVIDERS["Groq"])["models"])
+    first = next(iter(PROVIDERS.values()))   # premier provider disponible (fallback safe)
+    return list(PROVIDERS.get(provider_name, first)["models"])
 
 
 DEFAULT_SYSTEM_PROMPT = (
