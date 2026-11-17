@@ -135,8 +135,8 @@ section[data-testid="stSidebar"] button:hover {
    LAYOUT
 ══════════════════════════════════════════════ */
 .block-container {
-  max-width: 980px !important;
-  padding: 2.5rem 1.5rem 7rem 1.5rem !important;
+  max-width: 1100px !important;
+  padding: 2.5rem 2rem 7rem 2rem !important;
   margin: 0 auto !important;
 }
 

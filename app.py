@@ -1378,7 +1378,7 @@ GROUP BY comp ORDER BY frequence DESC LIMIT 10;
                 """, (cv_id,))
                 cands = cur.fetchall()
         except Exception:
-            # Fallback si colonnes lettre_motivation / conseils_ia pas encore créées
+            conn.rollback()  # obligatoire : reset la transaction avortée
             with conn.cursor() as cur:
                 cur.execute("""
                     SELECT c.id, o.titre, o.entreprise, o.type_contrat,
@@ -1491,7 +1491,7 @@ GROUP BY comp ORDER BY frequence DESC LIMIT 10;
                 """)
                 rows = cur.fetchall()
         except Exception:
-            # Fallback si colonnes lettre_motivation / conseils_ia absentes
+            conn.rollback()  # reset la transaction avortée
             try:
                 with conn.cursor() as cur:
                     cur.execute("""
