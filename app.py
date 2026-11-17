@@ -333,7 +333,7 @@ class App:
     """Orchestre l'application Streamlit."""
 
     def __init__(self) -> None:
-        st.set_page_config(page_title="Chatbot IA Générative", page_icon="🤖", layout="wide")
+        st.set_page_config(page_title="ATS Intelligent · IA", page_icon="✦", layout="wide")
         st.markdown(CSS, unsafe_allow_html=True)
 
         try:
@@ -395,12 +395,36 @@ class App:
         model_short = self.model.split("/")[-1]
         st.markdown(f"""
         <div class="chat-header">
-            <span class="robot-icon">🤖</span>
-            <h1>Chatbot IA Générative</h1>
-            <p class="caption">
-                Modèle actif&nbsp;<code>{model_short}</code>
-                &nbsp;&nbsp;Température&nbsp;<code>{self.temperature}</code>
-            </p>
+          <div class="logo-wrap">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="lg1" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#00e5c3"/>
+                  <stop offset="100%" stop-color="#6366f1"/>
+                </linearGradient>
+                <filter id="glow"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <rect width="44" height="44" rx="12" fill="url(#lg1)" fill-opacity="0.15"/>
+              <rect width="44" height="44" rx="12" stroke="url(#lg1)" stroke-width="1.5" fill="none"/>
+              <!-- Nodes -->
+              <circle cx="22" cy="10" r="3" fill="url(#lg1)" filter="url(#glow)"/>
+              <circle cx="10" cy="30" r="3" fill="url(#lg1)" filter="url(#glow)"/>
+              <circle cx="34" cy="30" r="3" fill="url(#lg1)" filter="url(#glow)"/>
+              <circle cx="22" cy="22" r="4" fill="url(#lg1)" filter="url(#glow)"/>
+              <!-- Lignes -->
+              <line x1="22" y1="10" x2="10" y2="30" stroke="url(#lg1)" stroke-width="1" stroke-opacity="0.5"/>
+              <line x1="22" y1="10" x2="34" y2="30" stroke="url(#lg1)" stroke-width="1" stroke-opacity="0.5"/>
+              <line x1="10" y1="30" x2="34" y2="30" stroke="url(#lg1)" stroke-width="1" stroke-opacity="0.5"/>
+              <line x1="22" y1="10" x2="22" y2="22" stroke="url(#lg1)" stroke-width="1.5"/>
+              <line x1="22" y1="22" x2="10" y2="30" stroke="url(#lg1)" stroke-width="1.5"/>
+              <line x1="22" y1="22" x2="34" y2="30" stroke="url(#lg1)" stroke-width="1.5"/>
+            </svg>
+            <h1>ATS Intelligent</h1>
+          </div>
+          <p class="caption">
+              Modèle actif&nbsp;<code>{model_short}</code>
+              &nbsp;·&nbsp;Température&nbsp;<code>{self.temperature}</code>
+          </p>
         </div>
         """, unsafe_allow_html=True)
         st.divider()
@@ -1466,10 +1490,28 @@ GROUP BY comp ORDER BY frequence DESC LIMIT 10;
                     LIMIT 50
                 """)
                 rows = cur.fetchall()
-        except Exception as e:
-            st.error(f"Erreur de lecture : {e}")
-            conn.close()
-            return
+        except Exception:
+            # Fallback si colonnes lettre_motivation / conseils_ia absentes
+            try:
+                with conn.cursor() as cur:
+                    cur.execute("""
+                        SELECT c.id, o.titre, o.entreprise, o.localisation, o.type_contrat,
+                               c.statut,
+                               COALESCE(ROUND(c.score_matching * 100)::int, 0) AS score_pct,
+                               c.notes, c.date_candidature::date,
+                               NULL, NULL,
+                               cv.nom_fichier, o.description
+                        FROM candidatures c
+                        JOIN offres o ON c.offre_id = o.id
+                        JOIN cvs cv ON c.cv_id = cv.id
+                        ORDER BY c.date_candidature DESC
+                        LIMIT 50
+                    """)
+                    rows = cur.fetchall()
+            except Exception as e2:
+                st.error(f"Erreur de lecture : {e2}")
+                conn.close()
+                return
 
         if not rows:
             st.info(
