@@ -90,6 +90,8 @@ class UI:
                 .replace("**Points forts :**", "<strong>Points forts :</strong>")
                 .replace("**Points faibles :**", "<strong>Points faibles :</strong>")
                 .replace("**Conseil :**", "<strong>Conseil :</strong>")
+                .replace("**", "")   # neutralise tout ** résiduel (LLM markdown → casse st.markdown)
+                .replace("*", "")    # idem pour * simple
             )
             analysis_html = f'<div class="analysis-box">{safe_analysis}</div>'
 
