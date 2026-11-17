@@ -318,6 +318,66 @@ class MLScorer:
             return round(global_score, 4)
 
 
+def _extract_json(raw: str) -> dict | None:
+    """Extrait le premier objet JSON valide d'une réponse LLM.
+
+    Gère trois cas courants :
+    - JSON pur retourné directement
+    - JSON enveloppé dans un bloc markdown ```json ... ```
+    - JSON précédé/suivi de texte explicatif, avec accolades imbriquées dans les valeurs
+    """
+    # 1. Essai direct (réponse JSON pure)
+    try:
+        result = json.loads(raw.strip())
+        if isinstance(result, dict):
+            return result
+    except (json.JSONDecodeError, ValueError):
+        pass
+
+    # 2. Supprimer les blocs markdown ```json … ``` ou ``` … ```
+    cleaned = re.sub(r"```(?:json)?\s*([\s\S]*?)\s*```", r"\1", raw).strip()
+    try:
+        result = json.loads(cleaned)
+        if isinstance(result, dict):
+            return result
+    except (json.JSONDecodeError, ValueError):
+        pass
+
+    # 3. Recherche de la première accolade ouvrante et extraction par comptage de profondeur
+    #    (robuste aux accolades dans les valeurs de strings)
+    start = raw.find("{")
+    if start == -1:
+        return None
+    depth = 0
+    in_string = False
+    escape_next = False
+    for i, c in enumerate(raw[start:], start):
+        if escape_next:
+            escape_next = False
+            continue
+        if c == "\\" and in_string:
+            escape_next = True
+            continue
+        if c == '"':
+            in_string = not in_string
+            continue
+        if in_string:
+            continue
+        if c == "{":
+            depth += 1
+        elif c == "}":
+            depth -= 1
+            if depth == 0:
+                try:
+                    result = json.loads(raw[start:i + 1])
+                    if isinstance(result, dict):
+                        return result
+                except (json.JSONDecodeError, ValueError):
+                    pass
+                break
+    return None
+
+
 class CompatibilityAnalyzer:
     """Analyse la compatibilité entre un CV et une offre d'emploi via LLM."""
 
@@ -364,11 +424,10 @@ RÈGLES :
             max_tokens=400,
         )
 
-        # Chercher un bloc JSON dans la réponse, même si le LLM a mis du texte autour
-        json_match = re.search(r"\{[^{}]*\}", raw, re.DOTALL)
-        if json_match:
+        # Extraire le JSON de manière robuste (gère markdown, accolades imbriquées…)
+        data = _extract_json(raw)
+        if data is not None:
             try:
-                data = json.loads(json_match.group())
                 score = int(data.get("score", 0))
                 offer.score    = max(0, min(100, score))  # clamp 0–100
                 offer.analysis = (
@@ -377,7 +436,7 @@ RÈGLES :
                     f"**Conseil :** {data.get('conseil', '—')}"
                 )
                 return offer
-            except (json.JSONDecodeError, ValueError):
+            except (ValueError, TypeError):
                 pass
 
         # Fallback : afficher le texte brut sans HTML
