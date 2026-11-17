@@ -324,11 +324,11 @@ PROVIDERS: dict[str, dict] = {
         "link":      "https://openrouter.ai/keys",
         "caption":   "OpenRouter · modèles :free (gratuit)",
         "models": [
-            "meta-llama/llama-3.3-70b-instruct:free",   # Llama 3.3 70B — gratuit
-            "meta-llama/llama-3.1-8b-instruct:free",    # Llama 3.1 8B — rapide
-            "google/gemma-2-9b-it:free",                # Gemma 2 9B — gratuit
-            "mistralai/mistral-7b-instruct:free",       # Mistral 7B — gratuit
-            "microsoft/phi-3-mini-128k-instruct:free",  # Phi-3 Mini — gratuit
+            # Liste vérifiée sur openrouter.ai/models?q=free — novembre 2026
+            "nvidia/nemotron-3-ultra-550b-a55b:free",   # NVIDIA Nemotron 3 Ultra 550B ⭐
+            "nvidia/nemotron-3.5-super-vl-120b:free",   # NVIDIA Nemotron 3.5 Super VL
+            "baidu/ernie-5.5-flash-preview:free",       # Baidu ERNIE 5.5 Flash
+            "meta-llama/llama-3.1-8b-instruct:free",    # Llama 3.1 8B (si dispo)
         ],
     },
     "NVIDIA NIM": {
