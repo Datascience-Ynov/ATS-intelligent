@@ -307,11 +307,10 @@ def _save_offers_to_db(offers) -> int:
 
 
 GROQ_MODELS = [
-    "llama-3.3-70b-versatile",   # remplace llama-3.1-70b-versatile (décommissionné)
-    "llama-3.1-8b-instant",
-    "llama3-70b-8192",
-    "mixtral-8x7b-32768",
-    "gemma2-9b-it",
+    "llama-3.3-70b-versatile",   # Production gratuit — modèle recommandé
+    "llama-3.1-8b-instant",      # Production gratuit — plus rapide
+    "gemma2-9b-it",              # Preview gratuit
+    "mixtral-8x7b-32768",        # Preview gratuit
 ]
 _configured_model = os.getenv("GROQ_MODEL", "").strip()
 if _configured_model and _configured_model not in GROQ_MODELS:
