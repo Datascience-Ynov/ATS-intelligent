@@ -308,16 +308,16 @@ def _save_offers_to_db(offers) -> int:
 
 # ── Fournisseurs LLM (tous OpenAI-compatibles) ───────────────────────────────
 PROVIDERS: dict[str, dict] = {
-    "Groq": {
-        "base_url":  "https://api.groq.com/openai/v1",
-        "env_key":   "GROQ_API_KEY",
-        "link":      "https://console.groq.com",
-        "caption":   "Groq · Llama 3",
-        "models": [
-            "llama-3.3-70b-versatile",   # Production gratuit — recommandé
-            "llama-3.1-8b-instant",      # Production gratuit — rapide
-        ],
-    },
+    # "Groq": {   ← désactivé temporairement (modèles en cours de dépréciation)
+    #     "base_url":  "https://api.groq.com/openai/v1",
+    #     "env_key":   "GROQ_API_KEY",
+    #     "link":      "https://console.groq.com",
+    #     "caption":   "Groq · Llama 3",
+    #     "models": [
+    #         "llama-3.3-70b-versatile",
+    #         "llama-3.1-8b-instant",
+    #     ],
+    # },
     "NVIDIA NIM": {
         "base_url":  "https://integrate.api.nvidia.com/v1",
         "env_key":   "NIM_API_KEY",
@@ -410,8 +410,8 @@ class App:
             ("job_offers", []),
             ("matched_offers", []),
             ("offre_cible_chat", None),
-            ("provider", "Groq"),
-            ("model", "llama-3.3-70b-versatile"),
+            ("provider", "NVIDIA NIM"),
+            ("model", "meta/llama-3.3-70b-instruct"),
         ]:
             st.session_state.setdefault(key, default)
 
@@ -838,7 +838,7 @@ class App:
                             err_short = err_msg[:120] + "…" if len(err_msg) > 120 else err_msg
                             st.warning(
                                 f"⚠️ Analyse IA ignorée pour « {offer.title[:60]} » "
-                                f"— Erreur Groq : {err_short}. "
+                                f"— Erreur LLM ({st.session_state.get('provider','IA')}) : {err_short}. "
                                 f"Le score ML reste valide.",
                                 icon="⚠️",
                             )
