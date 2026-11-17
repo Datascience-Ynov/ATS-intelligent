@@ -4,7 +4,8 @@ Projet réalisé dans le cadre du cours **Deep Learning — IA Générative**
 Mastère Data Scientist · Lyon Ynov Campus  
 Auteur : **Mourad Amoussa**
 
-🌐 **Application en ligne :** [https://chatbot-ia-generative-fu3iw9ev9ghgmbsnon9fc6.streamlit.app/](https://chatbot-ia-generative-fu3iw9ev9ghgmbsnon9fc6.streamlit.app/)
+🌐 **Application en ligne :** [https://ats-intelligent-hhtunbgp7rwdy5t7wcpafv.streamlit.app/](https://ats-intelligent-hhtunbgp7rwdy5t7wcpafv.streamlit.app/)
+
 
 ---
 
