@@ -6,9 +6,25 @@ CSS = """
 <style>
 html, body, .stApp, .stApp > * {
     background-color: #141920 !important;
-    color: #d1dce8;
+    color: #ffffff;
     font-family: 'Inter', 'Segoe UI', sans-serif;
 }
+
+/* ── Texte blanc partout ── */
+p, span, li, label, div, td, th,
+.stMarkdown p, .stMarkdown li, .stMarkdown span, .stMarkdown div,
+[data-testid="stMarkdownContainer"] p,
+[data-testid="stMarkdownContainer"] span,
+[data-testid="stCaption"] p,
+[data-testid="stCaption"],
+[data-testid="stText"],
+[data-testid="stMetricLabel"],
+[data-testid="stMetricValue"],
+[data-testid="stMetricDelta"] {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
 .stApp > footer, footer,
 div[data-testid="stBottom"],
 div[data-testid="stBottom"] > * {
@@ -22,7 +38,7 @@ section[data-testid="stSidebar"] {
     background-color: #0d1117 !important;
     border-right: 1px solid #1e2630 !important;
 }
-section[data-testid="stSidebar"] * { color: #8899aa !important; }
+section[data-testid="stSidebar"] * { color: #c8d8e8 !important; }
 section[data-testid="stSidebar"] .sidebar-title {
     font-size: 1.15rem; font-weight: 700;
     color: #4ef2d2 !important; display: block; margin-bottom: 18px;
@@ -67,7 +83,7 @@ section[data-testid="stSidebar"] button:hover {
     text-shadow: 0 0 18px rgba(78,242,210,0.35), 0 0 40px rgba(78,242,210,0.15);
     margin: 0 0 6px 0 !important; line-height: 1.1;
 }
-.chat-header .caption { font-size: 0.85rem; color: #4a5b6f; }
+.chat-header .caption { font-size: 0.85rem; color: #8899aa; }
 .chat-header .caption code {
     background: #1e2a38; color: #4ef2d2;
     padding: 1px 7px; border-radius: 4px; font-size: 0.82rem;
@@ -110,7 +126,7 @@ div[data-testid="stTabs"] button[aria-selected="true"] {
 }
 .bubble-user * { color: #ffffff !important; -webkit-text-fill-color: #ffffff !important; }
 .bubble-welcome {
-    color: #d1dce8 !important; -webkit-text-fill-color: #d1dce8 !important;
+    color: #ffffff !important; -webkit-text-fill-color: #ffffff !important;
     font-size: 0.97rem; line-height: 1.6; padding: 8px 0 0 0;
 }
 .bubble-welcome strong { color: #4ef2d2 !important; -webkit-text-fill-color: #4ef2d2 !important; }
@@ -128,10 +144,13 @@ div[data-testid="stChatInput"] {
     padding: 4px 14px !important;
 }
 div[data-testid="stChatInput"] textarea {
-    color: #d1dce8 !important; background: transparent !important;
-    -webkit-text-fill-color: #d1dce8 !important;
+    color: #ffffff !important; background: transparent !important;
+    -webkit-text-fill-color: #ffffff !important;
 }
-div[data-testid="stChatInput"] textarea::placeholder { color: #4a5b6f !important; }
+div[data-testid="stChatInput"] textarea::placeholder {
+    color: #8899aa !important;
+    -webkit-text-fill-color: #8899aa !important;
+}
 div[data-testid="stChatInput"] button {
     background-color: #4ef2d2 !important; border-radius: 50% !important;
     color: #0d1117 !important; box-shadow: 0 0 8px rgba(78,242,210,0.5) !important;
@@ -144,8 +163,8 @@ div[data-testid="stChatInput"] button {
 }
 .job-card:hover { border-color: rgba(78,242,210,0.5); }
 .job-title { font-size: 1rem; font-weight: 700; color: #4ef2d2 !important; -webkit-text-fill-color: #4ef2d2 !important; }
-.job-meta  { font-size: 0.82rem; color: #64748b !important; -webkit-text-fill-color: #64748b !important; margin: 4px 0 8px 0; }
-.job-snippet { font-size: 0.88rem; color: #94a3b8 !important; -webkit-text-fill-color: #94a3b8 !important; line-height: 1.5; }
+.job-meta  { font-size: 0.82rem; color: #a0b4c8 !important; -webkit-text-fill-color: #a0b4c8 !important; margin: 4px 0 8px 0; }
+.job-snippet { font-size: 0.88rem; color: #d1dce8 !important; -webkit-text-fill-color: #d1dce8 !important; line-height: 1.5; }
 .job-link { font-size: 0.82rem; color: #4ef2d2 !important; -webkit-text-fill-color: #4ef2d2 !important; }
 .score-badge {
     display: inline-block; padding: 4px 12px; border-radius: 20px;
@@ -228,8 +247,8 @@ div[data-testid="stTextInput"] input:focus {
     box-shadow: 0 0 0 1px #4ef2d2 !important;
 }
 div[data-testid="stTextInput"] input::placeholder {
-    color: #4a5b6f !important;
-    -webkit-text-fill-color: #4a5b6f !important;
+    color: #8899aa !important;
+    -webkit-text-fill-color: #8899aa !important;
 }
 
 /* ── Misc ── */
