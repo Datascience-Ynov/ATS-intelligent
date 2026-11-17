@@ -57,11 +57,11 @@ from .models import Message, JobOffer
 
 
 class LLMService:
-    """Wraps le client Groq (OpenAI-compatible)."""
+    """Client LLM OpenAI-compatible (Groq, NVIDIA NIM, Google Gemini…)."""
 
-    def __init__(self, api_key: str) -> None:
+    def __init__(self, api_key: str, base_url: str = "https://api.groq.com/openai/v1") -> None:
         self._client = OpenAI(
-            base_url="https://api.groq.com/openai/v1",
+            base_url=base_url,
             api_key=api_key,
         )
 

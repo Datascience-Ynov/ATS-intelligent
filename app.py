@@ -306,20 +306,50 @@ def _save_offers_to_db(offers) -> int:
         return 0
 
 
-GROQ_MODELS = [
-    "llama-3.3-70b-versatile",   # Production gratuit — modèle recommandé
-    "llama-3.1-8b-instant",      # Production gratuit — plus rapide
-    "gemma2-9b-it",              # Preview gratuit
-    "mixtral-8x7b-32768",        # Preview gratuit
-]
-_configured_model = os.getenv("GROQ_MODEL", "").strip()
-if _configured_model and _configured_model not in GROQ_MODELS:
-    GROQ_MODELS.insert(0, _configured_model)
+# ── Fournisseurs LLM (tous OpenAI-compatibles) ───────────────────────────────
+PROVIDERS: dict[str, dict] = {
+    "Groq": {
+        "base_url":  "https://api.groq.com/openai/v1",
+        "env_key":   "GROQ_API_KEY",
+        "link":      "https://console.groq.com",
+        "caption":   "Groq · Llama 3",
+        "models": [
+            "llama-3.3-70b-versatile",   # Production gratuit — recommandé
+            "llama-3.1-8b-instant",      # Production gratuit — rapide
+        ],
+    },
+    "NVIDIA NIM": {
+        "base_url":  "https://integrate.api.nvidia.com/v1",
+        "env_key":   "NIM_API_KEY",
+        "link":      "https://build.nvidia.com",
+        "caption":   "NVIDIA NIM · Llama / Mistral",
+        "models": [
+            "meta/llama-3.3-70b-instruct",          # Llama 3.3 70B
+            "meta/llama-3.1-70b-instruct",           # Llama 3.1 70B
+            "meta/llama-3.1-8b-instruct",            # Llama 3.1 8B (rapide)
+            "nvidia/llama-3.1-nemotron-70b-instruct",# NIM optimisé NVIDIA
+            "mistralai/mistral-7b-instruct-v0.2",    # Mistral 7B
+            "google/gemma-2-9b-it",                  # Gemma 2 9B (NIM)
+            "microsoft/phi-3-mini-128k-instruct",    # Phi-3 Mini
+        ],
+    },
+    "Google Gemini": {
+        "base_url":  "https://generativelanguage.googleapis.com/v1beta/openai/",
+        "env_key":   "GEMINI_API_KEY",
+        "link":      "https://aistudio.google.com/apikey",
+        "caption":   "Google AI Studio · Gemini",
+        "models": [
+            "gemini-2.0-flash",   # Gratuit — le plus rapide
+            "gemini-1.5-flash",   # Gratuit — stable
+            "gemini-1.5-pro",     # Gratuit (quota limité) — le plus capable
+        ],
+    },
+}
 
 
-def get_available_models(api_key: str) -> list[str]:
-    """Retourne la liste des modèles Groq disponibles."""
-    return list(GROQ_MODELS)
+def get_available_models(provider_name: str) -> list[str]:
+    """Retourne la liste des modèles du fournisseur sélectionné."""
+    return list(PROVIDERS.get(provider_name, PROVIDERS["Groq"])["models"])
 
 
 DEFAULT_SYSTEM_PROMPT = (
@@ -336,25 +366,38 @@ class App:
         st.set_page_config(page_title="ATS Intelligent · IA", page_icon="✦", layout="wide")
         st.markdown(CSS, unsafe_allow_html=True)
 
+        # ── Initialiser le state tôt pour lire le provider persisté ──────────
+        self._init_state()
+        provider_name = st.session_state.get("provider", "Groq")
+        provider = PROVIDERS[provider_name]
+
+        # ── Lecture de la clé API pour le fournisseur actif ──────────────────
+        env_key = provider["env_key"]
         try:
-            api_key = st.secrets.get("GROQ_API_KEY", "")
+            api_key = st.secrets.get(env_key, "")
         except Exception:
             api_key = ""
         if not api_key:
-            api_key = os.getenv("GROQ_API_KEY", "")
+            api_key = os.getenv(env_key, "")
         if not api_key:
-            st.error("❌ Clé API Groq manquante. Ajoutez `GROQ_API_KEY` dans les secrets Streamlit (`.streamlit/secrets.toml`) ou dans `.env`.")
-            st.stop()
+            st.warning(
+                f"⚠️ Clé API **{provider_name}** manquante (`{env_key}`). "
+                f"Obtenez-en une sur [{provider['link']}]({provider['link']}) "
+                f"puis ajoutez-la dans `.streamlit/secrets.toml` ou `.env`.",
+                icon="🔑",
+            )
+            # On ne stop() pas — l'utilisateur peut changer de provider dans la sidebar
+            api_key = "sk-missing"   # valeur factice pour éviter le crash OpenAI
 
-        self._llm        = LLMService(api_key)
+        self._llm        = LLMService(api_key, base_url=provider["base_url"])
         self._cv_parser  = CVParser()
         self._job_search = JobSearchService(max_results=50)
-        self.available_models = get_available_models(api_key)
-        self.model = os.getenv("GROQ_MODEL", self.available_models[0])
+        self.available_models = get_available_models(provider_name)
+        default_model = self.available_models[0]
+        self.model = st.session_state.get("model", default_model)
         if self.model not in self.available_models:
-            self.model = self.available_models[0]
+            self.model = default_model
 
-        self._init_state()
         self._render_sidebar()
         self._render_header()
         self._render_tabs()
@@ -367,6 +410,8 @@ class App:
             ("job_offers", []),
             ("matched_offers", []),
             ("offre_cible_chat", None),
+            ("provider", "Groq"),
+            ("model", "llama-3.3-70b-versatile"),
         ]:
             st.session_state.setdefault(key, default)
 
@@ -374,11 +419,27 @@ class App:
     def _render_sidebar(self) -> None:
         with st.sidebar:
             st.markdown('<span class="sidebar-title">⚙️ Configuration</span>', unsafe_allow_html=True)
-            self.model = st.selectbox(
-                "Modèle",
-                self.available_models,
-                index=self.available_models.index(self.model) if self.model in self.available_models else 0,
+
+            # ── Sélection du fournisseur LLM ─────────────────────────────────
+            provider_names = list(PROVIDERS.keys())
+            prev_provider = st.session_state.get("provider", "Groq")
+            selected_provider = st.selectbox(
+                "Fournisseur IA",
+                provider_names,
+                index=provider_names.index(prev_provider) if prev_provider in provider_names else 0,
+                help="Groq (clé GROQ_API_KEY) · NVIDIA NIM (NIM_API_KEY) · Gemini (GEMINI_API_KEY)",
             )
+            if selected_provider != prev_provider:
+                st.session_state.provider = selected_provider
+                # Réinitialiser le modèle au premier du nouveau fournisseur
+                st.session_state.model = PROVIDERS[selected_provider]["models"][0]
+                st.rerun()
+
+            # ── Sélection du modèle ───────────────────────────────────────────
+            current_idx = self.available_models.index(self.model) if self.model in self.available_models else 0
+            self.model = st.selectbox("Modèle", self.available_models, index=current_idx)
+            st.session_state.model = self.model
+
             self.system_prompt = st.text_area("System Prompt", value=DEFAULT_SYSTEM_PROMPT, height=130)
             st.markdown("<br>**Paramètres**", unsafe_allow_html=True)
             self.temperature = st.slider("Température", 0.0, 1.0, 0.5, 0.05)
@@ -388,7 +449,8 @@ class App:
                 st.session_state.messages = []
                 st.rerun()
             st.markdown("<br>", unsafe_allow_html=True)
-            st.caption("Propulsé par [Groq](https://console.groq.com) · Llama 3.1")
+            provider_cfg = PROVIDERS[selected_provider]
+            st.caption(f"[{provider_cfg['caption']}]({provider_cfg['link']})")
 
     # ── Header ─────────────────────────────────────────────────────────────
     def _render_header(self) -> None:
